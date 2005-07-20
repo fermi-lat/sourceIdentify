@@ -1,0 +1,116 @@
+------------------------------------------------------------
+User: jurgen  Wed Jul 20 13:11:23 PDT 2005
+sourceIdentify
+
+Log Message:
+
+
+Status:
+
+Vendor Tag:	GLAST
+Release Tags:	v0
+		
+U sourceIdentify/cmt/Makefile
+U sourceIdentify/cmt/requirements
+U sourceIdentify/cmt/rh9_gcc32.make
+U sourceIdentify/cmt/setup.csh
+U sourceIdentify/cmt/setup.sh
+U sourceIdentify/cmt/cleanup.csh
+U sourceIdentify/cmt/cleanup.sh
+U sourceIdentify/cmt/sourceIdentify.log
+N sourceIdentify/src/Catalogue.cxx
+N sourceIdentify/src/Log.cxx
+N sourceIdentify/src/Parameters.cxx
+N sourceIdentify/src/sourceIdentify.cxx
+N sourceIdentify/sourceIdentify/Catalogue.h
+N sourceIdentify/sourceIdentify/Log.h
+N sourceIdentify/sourceIdentify/Parameters.h
+N sourceIdentify/sourceIdentify/sourceIdentify.h
+N sourceIdentify/rh9_gcc32/sourceIdentifyLib.make
+U sourceIdentify/rh9_gcc32/sourceIdentifysetup.make
+N sourceIdentify/rh9_gcc32/sourceIdentifyLib_dependencies.make
+N sourceIdentify/rh9_gcc32/sourceIdentifyLib.stamp
+N sourceIdentify/rh9_gcc32/sourceIdentify.make
+N sourceIdentify/rh9_gcc32/sourceIdentify_dependencies.make
+U sourceIdentify/doc/release.notes
+U sourceIdentify/doc/used_packages.html
+U sourceIdentify/doc/doxy-html/doxygen.png
+U sourceIdentify/doc/doxy-html/tree.js
+U sourceIdentify/doc/doxy-html/main.html
+U sourceIdentify/doc/doxy-html/files.html
+U sourceIdentify/doc/doxy-html/_catalogue_8cxx-source.html
+U sourceIdentify/doc/doxy-html/_catalogue_8h-source.html
+U sourceIdentify/doc/doxy-html/_log_8cxx-source.html
+U sourceIdentify/doc/doxy-html/_log_8h-source.html
+U sourceIdentify/doc/doxy-html/_parameters_8cxx-source.html
+U sourceIdentify/doc/doxy-html/_parameters_8h-source.html
+U sourceIdentify/doc/doxy-html/release_8notes-source.html
+N sourceIdentify/doc/doxy-html/source_identify_8cxx-source.html
+N sourceIdentify/doc/doxy-html/source_identify_8h-source.html
+N sourceIdentify/doc/doxy-html/_catalogue_8cxx.html
+N sourceIdentify/doc/doxy-html/_catalogue_8cxx__incl.dot
+N sourceIdentify/doc/doxy-html/_catalogue_8h.html
+N sourceIdentify/doc/doxy-html/_catalogue_8h__incl.dot
+N sourceIdentify/doc/doxy-html/_catalogue_8h__dep__incl.dot
+N sourceIdentify/doc/doxy-html/_log_8cxx.html
+N sourceIdentify/doc/doxy-html/_log_8cxx__incl.dot
+N sourceIdentify/doc/doxy-html/_log_8h.html
+N sourceIdentify/doc/doxy-html/_log_8h__incl.dot
+N sourceIdentify/doc/doxy-html/_log_8h__dep__incl.dot
+N sourceIdentify/doc/doxy-html/_parameters_8cxx.html
+N sourceIdentify/doc/doxy-html/_parameters_8cxx__incl.dot
+N sourceIdentify/doc/doxy-html/_parameters_8h.html
+N sourceIdentify/doc/doxy-html/_parameters_8h__incl.dot
+N sourceIdentify/doc/doxy-html/_parameters_8h__dep__incl.dot
+N sourceIdentify/doc/doxy-html/release_8notes.html
+N sourceIdentify/doc/doxy-html/source_identify_8cxx.html
+N sourceIdentify/doc/doxy-html/source_identify_8cxx__incl.dot
+N sourceIdentify/doc/doxy-html/source_identify_8h.html
+N sourceIdentify/doc/doxy-html/source_identify_8h__incl.dot
+N sourceIdentify/doc/doxy-html/source_identify_8h__dep__incl.dot
+N sourceIdentify/doc/doxy-html/annotated.html
+N sourceIdentify/doc/doxy-html/functions.html
+N sourceIdentify/doc/doxy-html/namespaces.html
+N sourceIdentify/doc/doxy-html/namespacecatalog_access.html
+N sourceIdentify/doc/doxy-html/namespacesource_identify.html
+N sourceIdentify/doc/doxy-html/classsource_identify_1_1_catalogue.html
+N sourceIdentify/doc/doxy-html/classsource_identify_1_1_catalogue__coll__graph.dot
+N sourceIdentify/doc/doxy-html/classsource_identify_1_1_catalogue-members.html
+N sourceIdentify/doc/doxy-html/structsource_identify_1_1_c_c_element.html
+N sourceIdentify/doc/doxy-html/structsource_identify_1_1_c_c_element-members.html
+N sourceIdentify/doc/doxy-html/classsource_identify_1_1_parameters.html
+N sourceIdentify/doc/doxy-html/classsource_identify_1_1_parameters-members.html
+N sourceIdentify/doc/doxy-html/globals.html
+N sourceIdentify/doc/doxy-html/namespacemembers.html
+N sourceIdentify/doc/doxy-html/graph_legend.dot
+N sourceIdentify/doc/doxy-html/graph_legend.html
+N sourceIdentify/doc/doxy-html/doxygen.css
+N sourceIdentify/doc/doxy-html/treeview.js
+N sourceIdentify/doc/doxy-html/index.html
+N sourceIdentify/doc/doxy-html/tree.html
+N sourceIdentify/doc/doxy-html/ftv2blank.png
+N sourceIdentify/doc/doxy-html/ftv2doc.png
+N sourceIdentify/doc/doxy-html/ftv2folderclosed.png
+N sourceIdentify/doc/doxy-html/ftv2folderopen.png
+N sourceIdentify/doc/doxy-html/ftv2lastnode.png
+N sourceIdentify/doc/doxy-html/ftv2link.png
+N sourceIdentify/doc/doxy-html/ftv2mlastnode.png
+N sourceIdentify/doc/doxy-html/ftv2mnode.png
+N sourceIdentify/doc/doxy-html/ftv2node.png
+N sourceIdentify/doc/doxy-html/ftv2plastnode.png
+N sourceIdentify/doc/doxy-html/ftv2pnode.png
+N sourceIdentify/doc/doxy-html/ftv2vertline.png
+N sourceIdentify/pfiles/sourceIdentify.par
+N sourceIdentify/data/1rxs_50.tsv
+N sourceIdentify/data/3EG_all.tsv
+N sourceIdentify/data/veron_agn.tsv
+N sourceIdentify/data/veron_bllac.tsv
+N sourceIdentify/data/veron_qso.tsv
+N sourceIdentify/test/test1.com
+N sourceIdentify/test/test2.com
+N sourceIdentify/test/test3.com
+N sourceIdentify/test/test4.com
+
+No conflicts created by this import
+
+    *
