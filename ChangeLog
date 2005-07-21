@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jurgen  Thu Jul 21 09:26:52 PDT 2005
+sourceIdentify/data/outref
+
+Log Message:
+Directory /nfs/slac/g/glast/ground/cvs/sourceIdentify/data/outref added to the repository
+--> Using per-directory sticky tag `v0r1'
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r1, operation: add
 Package: sourceIdentify
