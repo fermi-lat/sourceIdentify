@@ -1,4 +1,743 @@
 ------------------------------------------------------------
+User: jurgen  Thu Jul 21 10:42:11 PDT 2005
+sourceIdentify/pfiles
+
+Removed Files:
+      Tag: v0r1p2
+	sourceIdentify.par 
+Log Message:
+
+    *
+------------------------------------------------------------
+User: jurgen  Thu Jul 21 10:38:22 PDT 2005
+sourceIdentify/test
+
+Removed Files:
+      Tag: v0r1p2
+	test1.com test2.com test3.com test4.com 
+Log Message:
+
+    *
+------------------------------------------------------------
+User: jurgen  Thu Jul 21 10:38:21 PDT 2005
+sourceIdentify/src
+
+Removed Files:
+      Tag: v0r1p2
+	Catalogue.cxx Log.cxx Parameters.cxx sourceIdentify.cxx 
+Log Message:
+
+    *
+------------------------------------------------------------
+User: jurgen  Thu Jul 21 10:38:21 PDT 2005
+sourceIdentify/sourceIdentify
+
+Removed Files:
+      Tag: v0r1p2
+	Catalogue.h Log.h Parameters.h sourceIdentify.h 
+Log Message:
+
+    *
+------------------------------------------------------------
+User: jurgen  Thu Jul 21 10:31:43 PDT 2005
+sourceIdentify/data
+
+Removed Files:
+      Tag: v0r1p2
+	3EG_all.tsv 
+Log Message:
+
+    *
+------------------------------------------------------------
+User: jurgen  Thu Jul 21 10:24:51 PDT 2005
+sourceIdentify/data/outref
+
+Removed Files:
+      Tag: v0r1p2
+	test1.dump test2.dump 
+Log Message:
+
+    *
+------------------------------------------------------------
+User: jurgen  Thu Jul 21 10:24:50 PDT 2005
+sourceIdentify/data
+
+Removed Files:
+      Tag: v0r1p2
+	1rxs_50.tsv veron_agn.tsv veron_bllac.tsv veron_qso.tsv 
+Log Message:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: v0r1p2, operation: add
+Package: sourceIdentify
+User: jurgen  Thu Jul 21 10:13:59 2005
+Files:
+  sourceIdentify/ChangeLog  1.13
+  sourceIdentify/.cvsignore  1.1.1.1
+  sourceIdentify/cmt/sourceIdentify.log  1.1.1.1
+  sourceIdentify/cmt/setup.csh  1.2
+  sourceIdentify/cmt/Makefile  1.1.1.1
+  sourceIdentify/cmt/setup.sh  1.2
+  sourceIdentify/cmt/rh9_gcc32.make  1.2
+  sourceIdentify/cmt/requirements  1.2
+  sourceIdentify/cmt/cleanup.sh  1.2
+  sourceIdentify/cmt/cleanup.csh  1.2
+  sourceIdentify/data/cygob2_egret_3eg.tsv  1.1.1.1
+  sourceIdentify/data/cygob2_veron_qso.tsv  1.1.1.1
+  sourceIdentify/data/cygob2_rosat_wgacat.tsv  1.1.1.1
+  sourceIdentify/data/cygob2_veron_agn.tsv  1.1.1.1
+  sourceIdentify/data/cygob2_rosat_2rxp.tsv  1.1.1.1
+  sourceIdentify/data/cygob2_rosat_quasars.tsv  1.1.1.1
+  sourceIdentify/data/cygob2_heao_x.tsv  1.1.1.1
+  sourceIdentify/data/cygob2_veron_bllac.tsv  1.1.1.1
+  sourceIdentify/data/cygob2_rosat_1rxs.tsv  1.1.1.1
+  sourceIdentify/data/cygob2_iras_ipac_pt.tsv  1.1.1.1
+  sourceIdentify/data/1rxs_50.tsv  1.1.1.1
+  sourceIdentify/data/3EG_all.tsv  1.1.1.1
+  sourceIdentify/data/cygob2_rosat_1rxh.tsv  1.1.1.1
+  sourceIdentify/data/cygob2_rosat_wd.tsv  1.1.1.1
+  sourceIdentify/data/veron_bllac.tsv  1.1.1.1
+  sourceIdentify/data/cygob2_integral_ref.tsv  1.1.1.1
+  sourceIdentify/data/veron_qso.tsv  1.1.1.1
+  sourceIdentify/data/cygob2_integral_1ibis.tsv  1.1.1.1
+  sourceIdentify/data/veron_agn.tsv  1.1.1.1
+  sourceIdentify/data/cygob2_rosat_faint.tsv  1.1.1.1
+  sourceIdentify/data/cygob2_iras_ipac_ser.tsv  1.1.1.1
+  sourceIdentify/data/outref/test1.fits  1.1.1.1
+  sourceIdentify/data/outref/test2.dump  1.1.1.1
+  sourceIdentify/data/outref/test1.log  1.2
+  sourceIdentify/data/outref/test1.dump  1.1.1.1
+  sourceIdentify/data/outref/test2.log  1.2
+  sourceIdentify/data/outref/test2.fits  1.1.1.1
+  sourceIdentify/doc/release.notes  1.2
+  sourceIdentify/doc/used_packages.html  1.2
+  sourceIdentify/doc/doxy-html/_log_8cxx.html  1.2
+  sourceIdentify/doc/doxy-html/source_identify_8h-source.html  1.2
+  sourceIdentify/doc/doxy-html/graph_legend.dot  1.1.1.1
+  sourceIdentify/doc/doxy-html/_log_8h-source.html  1.2
+  sourceIdentify/doc/doxy-html/structsource_identify_1_1_c_c_element.html  1.2
+  sourceIdentify/doc/doxy-html/namespaces.html  1.2
+  sourceIdentify/doc/doxy-html/ftv2folderopen.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/doxygen.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/classsource_identify_1_1_parameters-members.html  1.2
+  sourceIdentify/doc/doxy-html/_log_8cxx-source.html  1.2
+  sourceIdentify/doc/doxy-html/_parameters_8h__dep__incl.dot  1.2
+  sourceIdentify/doc/doxy-html/source_identify_8cxx.html  1.2
+  sourceIdentify/doc/doxy-html/functions.html  1.2
+  sourceIdentify/doc/doxy-html/_log_8h.html  1.2
+  sourceIdentify/doc/doxy-html/_catalogue_8h__dep__incl.dot  1.1.1.1
+  sourceIdentify/doc/doxy-html/tree.js  1.2
+  sourceIdentify/doc/doxy-html/namespacecatalog_access.html  1.2
+  sourceIdentify/doc/doxy-html/_catalogue_8cxx__incl.dot  1.2
+  sourceIdentify/doc/doxy-html/classsource_identify_1_1_catalogue.html  1.2
+  sourceIdentify/doc/doxy-html/index.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/annotated.html  1.2
+  sourceIdentify/doc/doxy-html/structsource_identify_1_1_c_c_element-members.html  1.2
+  sourceIdentify/doc/doxy-html/ftv2plastnode.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/main.html  1.2
+  sourceIdentify/doc/doxy-html/ftv2folderclosed.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/_catalogue_8cxx.html  1.2
+  sourceIdentify/doc/doxy-html/_catalogue_8h-source.html  1.2
+  sourceIdentify/doc/doxy-html/ftv2mnode.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/_catalogue_8h.html  1.2
+  sourceIdentify/doc/doxy-html/_parameters_8cxx.html  1.2
+  sourceIdentify/doc/doxy-html/ftv2vertline.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/ftv2blank.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/source_identify_8h.html  1.2
+  sourceIdentify/doc/doxy-html/globals.html  1.2
+  sourceIdentify/doc/doxy-html/ftv2link.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/_parameters_8cxx-source.html  1.2
+  sourceIdentify/doc/doxy-html/ftv2lastnode.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/_catalogue_8cxx-source.html  1.2
+  sourceIdentify/doc/doxy-html/_log_8h__dep__incl.dot  1.1.1.1
+  sourceIdentify/doc/doxy-html/classsource_identify_1_1_catalogue__coll__graph.dot  1.2
+  sourceIdentify/doc/doxy-html/classsource_identify_1_1_catalogue-members.html  1.2
+  sourceIdentify/doc/doxy-html/tree.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/files.html  1.2
+  sourceIdentify/doc/doxy-html/_log_8h__incl.dot  1.2
+  sourceIdentify/doc/doxy-html/namespacesource_identify.html  1.2
+  sourceIdentify/doc/doxy-html/_parameters_8cxx__incl.dot  1.2
+  sourceIdentify/doc/doxy-html/ftv2mlastnode.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/release_8notes.html  1.2
+  sourceIdentify/doc/doxy-html/release_8notes-source.html  1.2
+  sourceIdentify/doc/doxy-html/ftv2pnode.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/ftv2doc.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/namespacemembers.html  1.2
+  sourceIdentify/doc/doxy-html/_parameters_8h-source.html  1.2
+  sourceIdentify/doc/doxy-html/doxygen.css  1.1.1.1
+  sourceIdentify/doc/doxy-html/source_identify_8h__incl.dot  1.2
+  sourceIdentify/doc/doxy-html/graph_legend.html  1.2
+  sourceIdentify/doc/doxy-html/_catalogue_8h__incl.dot  1.2
+  sourceIdentify/doc/doxy-html/source_identify_8cxx__incl.dot  1.2
+  sourceIdentify/doc/doxy-html/_log_8cxx__incl.dot  1.2
+  sourceIdentify/doc/doxy-html/_parameters_8h__incl.dot  1.2
+  sourceIdentify/doc/doxy-html/source_identify_8cxx-source.html  1.2
+  sourceIdentify/doc/doxy-html/ftv2node.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/_parameters_8h.html  1.2
+  sourceIdentify/doc/doxy-html/classsource_identify_1_1_parameters.html  1.2
+  sourceIdentify/doc/doxy-html/treeview.js  1.1.1.1
+  sourceIdentify/doc/doxy-html/source_identify_8h__dep__incl.dot  1.2
+  sourceIdentify/pfiles/sourceIdentify.par  1.1.1.1
+  sourceIdentify/pfiles/gtsrcid.par  1.1.1.1
+  sourceIdentify/rh9_gcc32/sourceIdentifysetup.make  1.1.1.3
+  sourceIdentify/rh9_gcc32/gtsrcid_dependencies.make  1.1.1.2
+  sourceIdentify/rh9_gcc32/sourceIdentifyLib_dependencies.make  1.1.1.2
+  sourceIdentify/rh9_gcc32/sourceIdentifyLib.stamp  1.1.1.1
+  sourceIdentify/rh9_gcc32/sourceIdentifyLib.make  1.1.1.2
+  sourceIdentify/rh9_gcc32/sourceIdentify_dependencies.make  1.1.1.2
+  sourceIdentify/rh9_gcc32/gtsrcid.make  1.2
+  sourceIdentify/rh9_gcc32/sourceIdentify.make  1.1.1.2
+  sourceIdentify/sourceIdentify/Catalogue.h  1.1.1.1
+  sourceIdentify/sourceIdentify/sourceIdentify.h  1.1.1.1
+  sourceIdentify/sourceIdentify/Parameters.h  1.1.1.1
+  sourceIdentify/sourceIdentify/Log.h  1.1.1.1
+  sourceIdentify/src/sourceIdentify.cxx  1.1.1.1
+  sourceIdentify/src/Parameters.cxx  1.1.1.1
+  sourceIdentify/src/Catalogue.cxx  1.1.1.1
+  sourceIdentify/src/mainpage.h  1.1.1.1
+  sourceIdentify/src/Log.cxx  1.1.1.1
+  sourceIdentify/src/gtsrcid/Catalogue.h  1.1.1.1
+  sourceIdentify/src/gtsrcid/Parameters.cxx  1.1.1.1
+  sourceIdentify/src/gtsrcid/sourceIdentify.h  1.1.1.2
+  sourceIdentify/src/gtsrcid/Catalogue.cxx  1.1.1.2
+  sourceIdentify/src/gtsrcid/sourceIdentify.cxx  1.1.1.2
+  sourceIdentify/src/gtsrcid/Log.h  1.1.1.1
+  sourceIdentify/src/gtsrcid/Parameters.h  1.1.1.2
+  sourceIdentify/src/gtsrcid/Log.cxx  1.1.1.2
+  sourceIdentify/src/test/test2.csh  1.2
+  sourceIdentify/src/test/test1.csh  1.2
+  sourceIdentify/test/test2.com  1.1.1.1
+  sourceIdentify/test/test4.com  1.1.1.1
+  sourceIdentify/test/test1.com  1.1.1.1
+  sourceIdentify/test/test3.com  1.1.1.1
+
+    *
+------------------------------------------------------------
+User: jurgen  Thu Jul 21 10:10:22 PDT 2005
+sourceIdentify/src/test
+
+Modified Files:
+	test1.csh test2.csh 
+Log Message:
+
+    *
+------------------------------------------------------------
+User: jurgen  Thu Jul 21 10:10:22 PDT 2005
+sourceIdentify/rh9_gcc32
+
+Modified Files:
+	gtsrcid.make 
+Log Message:
+
+    *
+------------------------------------------------------------
+User: jurgen  Thu Jul 21 10:10:22 PDT 2005
+sourceIdentify/doc/doxy-html
+
+Modified Files:
+	_catalogue_8cxx-source.html _catalogue_8cxx.html 
+	_catalogue_8cxx__incl.dot _catalogue_8h-source.html 
+	_catalogue_8h.html _catalogue_8h__incl.dot 
+	_log_8cxx-source.html _log_8cxx.html _log_8cxx__incl.dot 
+	_log_8h-source.html _log_8h.html _log_8h__incl.dot 
+	_parameters_8cxx-source.html _parameters_8cxx.html 
+	_parameters_8cxx__incl.dot _parameters_8h-source.html 
+	_parameters_8h.html _parameters_8h__dep__incl.dot 
+	_parameters_8h__incl.dot annotated.html 
+	classsource_identify_1_1_catalogue-members.html 
+	classsource_identify_1_1_catalogue.html 
+	classsource_identify_1_1_catalogue__coll__graph.dot 
+	classsource_identify_1_1_parameters-members.html 
+	classsource_identify_1_1_parameters.html files.html 
+	functions.html globals.html graph_legend.html main.html 
+	namespacecatalog_access.html namespacemembers.html 
+	namespaces.html namespacesource_identify.html 
+	release_8notes-source.html release_8notes.html 
+	source_identify_8cxx-source.html source_identify_8cxx.html 
+	source_identify_8cxx__incl.dot source_identify_8h-source.html 
+	source_identify_8h.html source_identify_8h__dep__incl.dot 
+	source_identify_8h__incl.dot 
+	structsource_identify_1_1_c_c_element-members.html 
+	structsource_identify_1_1_c_c_element.html tree.js 
+Log Message:
+
+    *
+------------------------------------------------------------
+User: jurgen  Thu Jul 21 10:10:19 PDT 2005
+sourceIdentify/doc
+
+Modified Files:
+	release.notes used_packages.html 
+Log Message:
+
+    *
+------------------------------------------------------------
+User: jurgen  Thu Jul 21 10:10:18 PDT 2005
+sourceIdentify/data/outref
+
+Modified Files:
+	test1.log test2.log 
+Removed Files:
+      Tag: v0r1p1
+	test1.dump test2.dump 
+Log Message:
+
+    *
+------------------------------------------------------------
+User: jurgen  Thu Jul 21 10:10:18 PDT 2005
+sourceIdentify/data
+
+Removed Files:
+      Tag: v0r1p1
+	1rxs_50.tsv 3EG_all.tsv veron_agn.tsv veron_bllac.tsv 
+	veron_qso.tsv 
+Log Message:
+
+    *
+------------------------------------------------------------
+User: jurgen  Thu Jul 21 10:10:17 PDT 2005
+sourceIdentify/cmt
+
+Modified Files:
+	cleanup.csh cleanup.sh requirements rh9_gcc32.make setup.csh 
+	setup.sh 
+Log Message:
+
+    *
+------------------------------------------------------------
+User: jurgen  Thu Jul 21 09:49:07 PDT 2005
+sourceIdentify/pfiles
+
+Removed Files:
+      Tag: v0r1p1
+	sourceIdentify.par 
+Log Message:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: v0r1p1, operation: add
+Package: sourceIdentify
+User: jurgen  Thu Jul 21 09:39:34 2005
+Files:
+  sourceIdentify/ChangeLog  1.4
+  sourceIdentify/.cvsignore  1.1.1.1
+  sourceIdentify/cmt/sourceIdentify.log  1.1.1.1
+  sourceIdentify/cmt/setup.csh  1.1.1.3
+  sourceIdentify/cmt/Makefile  1.1.1.1
+  sourceIdentify/cmt/setup.sh  1.1.1.3
+  sourceIdentify/cmt/rh9_gcc32.make  1.1.1.3
+  sourceIdentify/cmt/requirements  1.1.1.3
+  sourceIdentify/cmt/cleanup.sh  1.1.1.3
+  sourceIdentify/cmt/cleanup.csh  1.1.1.3
+  sourceIdentify/data/cygob2_egret_3eg.tsv  1.1.1.1
+  sourceIdentify/data/cygob2_veron_qso.tsv  1.1.1.1
+  sourceIdentify/data/cygob2_rosat_wgacat.tsv  1.1.1.1
+  sourceIdentify/data/cygob2_veron_agn.tsv  1.1.1.1
+  sourceIdentify/data/cygob2_rosat_2rxp.tsv  1.1.1.1
+  sourceIdentify/data/cygob2_rosat_quasars.tsv  1.1.1.1
+  sourceIdentify/data/cygob2_heao_x.tsv  1.1.1.1
+  sourceIdentify/data/cygob2_veron_bllac.tsv  1.1.1.1
+  sourceIdentify/data/cygob2_rosat_1rxs.tsv  1.1.1.1
+  sourceIdentify/data/cygob2_iras_ipac_pt.tsv  1.1.1.1
+  sourceIdentify/data/1rxs_50.tsv  1.1.1.1
+  sourceIdentify/data/3EG_all.tsv  1.1.1.1
+  sourceIdentify/data/cygob2_rosat_1rxh.tsv  1.1.1.1
+  sourceIdentify/data/cygob2_rosat_wd.tsv  1.1.1.1
+  sourceIdentify/data/veron_bllac.tsv  1.1.1.1
+  sourceIdentify/data/cygob2_integral_ref.tsv  1.1.1.1
+  sourceIdentify/data/veron_qso.tsv  1.1.1.1
+  sourceIdentify/data/cygob2_integral_1ibis.tsv  1.1.1.1
+  sourceIdentify/data/veron_agn.tsv  1.1.1.1
+  sourceIdentify/data/cygob2_rosat_faint.tsv  1.1.1.1
+  sourceIdentify/data/cygob2_iras_ipac_ser.tsv  1.1.1.1
+  sourceIdentify/data/outref/test1.fits  1.1.1.1
+  sourceIdentify/data/outref/test2.dump  1.1.1.1
+  sourceIdentify/data/outref/test1.log  1.1.1.1
+  sourceIdentify/data/outref/test1.dump  1.1.1.1
+  sourceIdentify/data/outref/test2.log  1.1.1.1
+  sourceIdentify/data/outref/test2.fits  1.1.1.1
+  sourceIdentify/doc/release.notes  1.1.1.1
+  sourceIdentify/doc/used_packages.html  1.1.1.2
+  sourceIdentify/doc/doxy-html/_log_8cxx.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/source_identify_8h-source.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/graph_legend.dot  1.1.1.1
+  sourceIdentify/doc/doxy-html/_log_8h-source.html  1.1.1.2
+  sourceIdentify/doc/doxy-html/structsource_identify_1_1_c_c_element.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/namespaces.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/ftv2folderopen.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/doxygen.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/classsource_identify_1_1_parameters-members.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/_log_8cxx-source.html  1.1.1.2
+  sourceIdentify/doc/doxy-html/_parameters_8h__dep__incl.dot  1.1.1.1
+  sourceIdentify/doc/doxy-html/source_identify_8cxx.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/functions.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/_log_8h.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/_catalogue_8h__dep__incl.dot  1.1.1.1
+  sourceIdentify/doc/doxy-html/tree.js  1.1.1.2
+  sourceIdentify/doc/doxy-html/namespacecatalog_access.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/_catalogue_8cxx__incl.dot  1.1.1.1
+  sourceIdentify/doc/doxy-html/classsource_identify_1_1_catalogue.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/index.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/annotated.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/structsource_identify_1_1_c_c_element-members.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/ftv2plastnode.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/main.html  1.1.1.2
+  sourceIdentify/doc/doxy-html/ftv2folderclosed.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/_catalogue_8cxx.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/_catalogue_8h-source.html  1.1.1.2
+  sourceIdentify/doc/doxy-html/ftv2mnode.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/_catalogue_8h.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/_parameters_8cxx.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/ftv2vertline.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/ftv2blank.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/source_identify_8h.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/globals.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/ftv2link.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/_parameters_8cxx-source.html  1.1.1.2
+  sourceIdentify/doc/doxy-html/ftv2lastnode.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/_catalogue_8cxx-source.html  1.1.1.2
+  sourceIdentify/doc/doxy-html/_log_8h__dep__incl.dot  1.1.1.1
+  sourceIdentify/doc/doxy-html/classsource_identify_1_1_catalogue__coll__graph.dot  1.1.1.1
+  sourceIdentify/doc/doxy-html/classsource_identify_1_1_catalogue-members.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/tree.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/files.html  1.1.1.2
+  sourceIdentify/doc/doxy-html/_log_8h__incl.dot  1.1.1.1
+  sourceIdentify/doc/doxy-html/namespacesource_identify.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/_parameters_8cxx__incl.dot  1.1.1.1
+  sourceIdentify/doc/doxy-html/ftv2mlastnode.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/release_8notes.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/release_8notes-source.html  1.1.1.2
+  sourceIdentify/doc/doxy-html/ftv2pnode.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/ftv2doc.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/namespacemembers.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/_parameters_8h-source.html  1.1.1.2
+  sourceIdentify/doc/doxy-html/doxygen.css  1.1.1.1
+  sourceIdentify/doc/doxy-html/source_identify_8h__incl.dot  1.1.1.1
+  sourceIdentify/doc/doxy-html/graph_legend.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/_catalogue_8h__incl.dot  1.1.1.1
+  sourceIdentify/doc/doxy-html/source_identify_8cxx__incl.dot  1.1.1.1
+  sourceIdentify/doc/doxy-html/_log_8cxx__incl.dot  1.1.1.1
+  sourceIdentify/doc/doxy-html/_parameters_8h__incl.dot  1.1.1.1
+  sourceIdentify/doc/doxy-html/source_identify_8cxx-source.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/ftv2node.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/_parameters_8h.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/classsource_identify_1_1_parameters.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/treeview.js  1.1.1.1
+  sourceIdentify/doc/doxy-html/source_identify_8h__dep__incl.dot  1.1.1.1
+  sourceIdentify/pfiles/sourceIdentify.par  1.1.1.1
+  sourceIdentify/pfiles/gtsrcid.par  1.1.1.1
+  sourceIdentify/rh9_gcc32/sourceIdentifysetup.make  1.1.1.3
+  sourceIdentify/rh9_gcc32/gtsrcid_dependencies.make  1.1.1.2
+  sourceIdentify/rh9_gcc32/sourceIdentifyLib_dependencies.make  1.1.1.2
+  sourceIdentify/rh9_gcc32/sourceIdentifyLib.stamp  1.1.1.1
+  sourceIdentify/rh9_gcc32/sourceIdentifyLib.make  1.1.1.2
+  sourceIdentify/rh9_gcc32/sourceIdentify_dependencies.make  1.1.1.2
+  sourceIdentify/rh9_gcc32/gtsrcid.make  1.1.1.2
+  sourceIdentify/rh9_gcc32/sourceIdentify.make  1.1.1.2
+  sourceIdentify/sourceIdentify/Catalogue.h  1.1.1.1
+  sourceIdentify/sourceIdentify/sourceIdentify.h  1.1.1.1
+  sourceIdentify/sourceIdentify/Parameters.h  1.1.1.1
+  sourceIdentify/sourceIdentify/Log.h  1.1.1.1
+  sourceIdentify/src/sourceIdentify.cxx  1.1.1.1
+  sourceIdentify/src/Parameters.cxx  1.1.1.1
+  sourceIdentify/src/Catalogue.cxx  1.1.1.1
+  sourceIdentify/src/mainpage.h  1.1.1.1
+  sourceIdentify/src/Log.cxx  1.1.1.1
+  sourceIdentify/src/gtsrcid/Catalogue.h  1.1.1.1
+  sourceIdentify/src/gtsrcid/Parameters.cxx  1.1.1.1
+  sourceIdentify/src/gtsrcid/sourceIdentify.h  1.1.1.2
+  sourceIdentify/src/gtsrcid/Catalogue.cxx  1.1.1.2
+  sourceIdentify/src/gtsrcid/sourceIdentify.cxx  1.1.1.2
+  sourceIdentify/src/gtsrcid/Log.h  1.1.1.1
+  sourceIdentify/src/gtsrcid/Parameters.h  1.1.1.2
+  sourceIdentify/src/gtsrcid/Log.cxx  1.1.1.2
+  sourceIdentify/src/test/test2.csh  1.1.1.2
+  sourceIdentify/src/test/test1.csh  1.1.1.2
+  sourceIdentify/test/test2.com  1.1.1.1
+  sourceIdentify/test/test4.com  1.1.1.1
+  sourceIdentify/test/test1.com  1.1.1.1
+  sourceIdentify/test/test3.com  1.1.1.1
+
+    *
+------------------------------------------------------------
+User: jurgen  Thu Jul 21 09:33:59 PDT 2005
+sourceIdentify
+
+Log Message:
+Complete version
+
+Status:
+
+Vendor Tag:	GLAST
+Release Tags:	v0r1
+		
+U sourceIdentify/.cvsignore
+C sourceIdentify/ChangeLog
+U sourceIdentify/cmt/rh9_gcc32.make
+U sourceIdentify/cmt/Makefile
+U sourceIdentify/cmt/cleanup.csh
+U sourceIdentify/cmt/cleanup.sh
+U sourceIdentify/cmt/requirements
+U sourceIdentify/cmt/setup.csh
+U sourceIdentify/cmt/setup.sh
+U sourceIdentify/cmt/sourceIdentify.log
+U sourceIdentify/data/1rxs_50.tsv
+U sourceIdentify/data/3EG_all.tsv
+U sourceIdentify/data/veron_agn.tsv
+U sourceIdentify/data/veron_bllac.tsv
+U sourceIdentify/data/veron_qso.tsv
+N sourceIdentify/data/cygob2_egret_3eg.tsv
+N sourceIdentify/data/cygob2_heao_x.tsv
+N sourceIdentify/data/cygob2_integral_1ibis.tsv
+N sourceIdentify/data/cygob2_integral_ref.tsv
+N sourceIdentify/data/cygob2_iras_ipac_pt.tsv
+N sourceIdentify/data/cygob2_iras_ipac_ser.tsv
+N sourceIdentify/data/cygob2_rosat_1rxh.tsv
+N sourceIdentify/data/cygob2_rosat_1rxs.tsv
+N sourceIdentify/data/cygob2_rosat_2rxp.tsv
+N sourceIdentify/data/cygob2_rosat_faint.tsv
+N sourceIdentify/data/cygob2_rosat_quasars.tsv
+N sourceIdentify/data/cygob2_rosat_wd.tsv
+N sourceIdentify/data/cygob2_rosat_wgacat.tsv
+N sourceIdentify/data/cygob2_veron_agn.tsv
+N sourceIdentify/data/cygob2_veron_bllac.tsv
+N sourceIdentify/data/cygob2_veron_qso.tsv
+N sourceIdentify/data/outref/test1.dump
+N sourceIdentify/data/outref/test1.fits
+N sourceIdentify/data/outref/test1.log
+N sourceIdentify/data/outref/test2.dump
+N sourceIdentify/data/outref/test2.fits
+N sourceIdentify/data/outref/test2.log
+U sourceIdentify/doc/release.notes
+U sourceIdentify/doc/used_packages.html
+U sourceIdentify/doc/doxy-html/_catalogue_8cxx-source.html
+U sourceIdentify/doc/doxy-html/_catalogue_8cxx.html
+U sourceIdentify/doc/doxy-html/_catalogue_8cxx__incl.dot
+U sourceIdentify/doc/doxy-html/_catalogue_8h-source.html
+U sourceIdentify/doc/doxy-html/_catalogue_8h.html
+U sourceIdentify/doc/doxy-html/_catalogue_8h__dep__incl.dot
+U sourceIdentify/doc/doxy-html/_catalogue_8h__incl.dot
+U sourceIdentify/doc/doxy-html/_log_8cxx-source.html
+U sourceIdentify/doc/doxy-html/_log_8cxx.html
+U sourceIdentify/doc/doxy-html/_log_8cxx__incl.dot
+U sourceIdentify/doc/doxy-html/_log_8h-source.html
+U sourceIdentify/doc/doxy-html/_log_8h.html
+U sourceIdentify/doc/doxy-html/_log_8h__dep__incl.dot
+U sourceIdentify/doc/doxy-html/_log_8h__incl.dot
+U sourceIdentify/doc/doxy-html/_parameters_8cxx-source.html
+U sourceIdentify/doc/doxy-html/_parameters_8cxx.html
+U sourceIdentify/doc/doxy-html/_parameters_8cxx__incl.dot
+U sourceIdentify/doc/doxy-html/_parameters_8h-source.html
+U sourceIdentify/doc/doxy-html/_parameters_8h.html
+U sourceIdentify/doc/doxy-html/_parameters_8h__dep__incl.dot
+U sourceIdentify/doc/doxy-html/_parameters_8h__incl.dot
+U sourceIdentify/doc/doxy-html/annotated.html
+U sourceIdentify/doc/doxy-html/classsource_identify_1_1_catalogue-members.html
+U sourceIdentify/doc/doxy-html/classsource_identify_1_1_catalogue.html
+U sourceIdentify/doc/doxy-html/classsource_identify_1_1_catalogue__coll__graph.dot
+U sourceIdentify/doc/doxy-html/classsource_identify_1_1_parameters-members.html
+U sourceIdentify/doc/doxy-html/classsource_identify_1_1_parameters.html
+U sourceIdentify/doc/doxy-html/doxygen.css
+U sourceIdentify/doc/doxy-html/doxygen.png
+U sourceIdentify/doc/doxy-html/files.html
+U sourceIdentify/doc/doxy-html/ftv2blank.png
+U sourceIdentify/doc/doxy-html/ftv2doc.png
+U sourceIdentify/doc/doxy-html/ftv2folderclosed.png
+U sourceIdentify/doc/doxy-html/ftv2folderopen.png
+U sourceIdentify/doc/doxy-html/ftv2lastnode.png
+U sourceIdentify/doc/doxy-html/ftv2link.png
+U sourceIdentify/doc/doxy-html/ftv2mlastnode.png
+U sourceIdentify/doc/doxy-html/ftv2mnode.png
+U sourceIdentify/doc/doxy-html/ftv2node.png
+U sourceIdentify/doc/doxy-html/ftv2plastnode.png
+U sourceIdentify/doc/doxy-html/ftv2pnode.png
+U sourceIdentify/doc/doxy-html/ftv2vertline.png
+U sourceIdentify/doc/doxy-html/functions.html
+U sourceIdentify/doc/doxy-html/globals.html
+U sourceIdentify/doc/doxy-html/graph_legend.dot
+U sourceIdentify/doc/doxy-html/graph_legend.html
+U sourceIdentify/doc/doxy-html/index.html
+U sourceIdentify/doc/doxy-html/main.html
+U sourceIdentify/doc/doxy-html/namespacecatalog_access.html
+U sourceIdentify/doc/doxy-html/namespacemembers.html
+U sourceIdentify/doc/doxy-html/namespaces.html
+U sourceIdentify/doc/doxy-html/namespacesource_identify.html
+U sourceIdentify/doc/doxy-html/release_8notes-source.html
+U sourceIdentify/doc/doxy-html/release_8notes.html
+U sourceIdentify/doc/doxy-html/source_identify_8cxx-source.html
+U sourceIdentify/doc/doxy-html/source_identify_8cxx.html
+U sourceIdentify/doc/doxy-html/source_identify_8cxx__incl.dot
+U sourceIdentify/doc/doxy-html/source_identify_8h-source.html
+U sourceIdentify/doc/doxy-html/source_identify_8h.html
+U sourceIdentify/doc/doxy-html/source_identify_8h__dep__incl.dot
+U sourceIdentify/doc/doxy-html/source_identify_8h__incl.dot
+U sourceIdentify/doc/doxy-html/structsource_identify_1_1_c_c_element-members.html
+U sourceIdentify/doc/doxy-html/structsource_identify_1_1_c_c_element.html
+U sourceIdentify/doc/doxy-html/tree.html
+U sourceIdentify/doc/doxy-html/tree.js
+U sourceIdentify/doc/doxy-html/treeview.js
+N sourceIdentify/pfiles/gtsrcid.par
+U sourceIdentify/rh9_gcc32/sourceIdentifyLib.make
+U sourceIdentify/rh9_gcc32/sourceIdentifysetup.make
+U sourceIdentify/rh9_gcc32/sourceIdentifyLib_dependencies.make
+U sourceIdentify/rh9_gcc32/sourceIdentify.make
+U sourceIdentify/rh9_gcc32/sourceIdentify_dependencies.make
+U sourceIdentify/rh9_gcc32/gtsrcid.make
+U sourceIdentify/rh9_gcc32/gtsrcid_dependencies.make
+U sourceIdentify/src/mainpage.h
+U sourceIdentify/src/gtsrcid/Catalogue.cxx
+U sourceIdentify/src/gtsrcid/Catalogue.h
+U sourceIdentify/src/gtsrcid/Log.cxx
+U sourceIdentify/src/gtsrcid/Log.h
+U sourceIdentify/src/gtsrcid/Parameters.cxx
+U sourceIdentify/src/gtsrcid/Parameters.h
+U sourceIdentify/src/gtsrcid/sourceIdentify.cxx
+U sourceIdentify/src/gtsrcid/sourceIdentify.h
+U sourceIdentify/src/test/test1.csh
+U sourceIdentify/src/test/test2.csh
+
+1 conflicts created by this import.
+Use the following command to help the merge:
+
+	cvs checkout -jGLAST:yesterday -jGLAST sourceIdentify
+
+    *
+------------------------------------------------------------
+User: jurgen  Thu Jul 21 09:26:52 PDT 2005
+sourceIdentify/data/outref
+
+Log Message:
+Directory /nfs/slac/g/glast/ground/cvs/sourceIdentify/data/outref added to the repository
+--> Using per-directory sticky tag `v0r1'
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: v0r1, operation: add
+Package: sourceIdentify
+User: jurgen  Thu Jul 21 08:39:17 2005
+Files:
+  sourceIdentify/ChangeLog  1.1
+  sourceIdentify/.cvsignore  1.1.1.1
+  sourceIdentify/cmt/sourceIdentify.log  1.1.1.1
+  sourceIdentify/cmt/setup.csh  1.1.1.2
+  sourceIdentify/cmt/Makefile  1.1.1.1
+  sourceIdentify/cmt/setup.sh  1.1.1.2
+  sourceIdentify/cmt/rh9_gcc32.make  1.1.1.2
+  sourceIdentify/cmt/requirements  1.1.1.2
+  sourceIdentify/cmt/cleanup.sh  1.1.1.2
+  sourceIdentify/cmt/cleanup.csh  1.1.1.2
+  sourceIdentify/data/veron_bllac.tsv  1.1.1.1
+  sourceIdentify/data/veron_qso.tsv  1.1.1.1
+  sourceIdentify/data/3EG_all.tsv  1.1.1.1
+  sourceIdentify/data/1rxs_50.tsv  1.1.1.1
+  sourceIdentify/data/veron_agn.tsv  1.1.1.1
+  sourceIdentify/doc/release.notes  1.1.1.1
+  sourceIdentify/doc/used_packages.html  1.1.1.2
+  sourceIdentify/doc/doxy-html/_log_8cxx.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/source_identify_8h-source.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/graph_legend.dot  1.1.1.1
+  sourceIdentify/doc/doxy-html/_log_8h-source.html  1.1.1.2
+  sourceIdentify/doc/doxy-html/structsource_identify_1_1_c_c_element.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/namespaces.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/ftv2folderopen.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/doxygen.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/classsource_identify_1_1_parameters-members.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/_log_8cxx-source.html  1.1.1.2
+  sourceIdentify/doc/doxy-html/_parameters_8h__dep__incl.dot  1.1.1.1
+  sourceIdentify/doc/doxy-html/source_identify_8cxx.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/functions.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/_log_8h.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/_catalogue_8h__dep__incl.dot  1.1.1.1
+  sourceIdentify/doc/doxy-html/tree.js  1.1.1.2
+  sourceIdentify/doc/doxy-html/namespacecatalog_access.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/_catalogue_8cxx__incl.dot  1.1.1.1
+  sourceIdentify/doc/doxy-html/classsource_identify_1_1_catalogue.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/index.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/annotated.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/structsource_identify_1_1_c_c_element-members.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/ftv2plastnode.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/main.html  1.1.1.2
+  sourceIdentify/doc/doxy-html/ftv2folderclosed.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/_catalogue_8cxx.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/_catalogue_8h-source.html  1.1.1.2
+  sourceIdentify/doc/doxy-html/ftv2mnode.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/_catalogue_8h.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/_parameters_8cxx.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/ftv2vertline.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/ftv2blank.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/source_identify_8h.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/globals.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/ftv2link.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/_parameters_8cxx-source.html  1.1.1.2
+  sourceIdentify/doc/doxy-html/ftv2lastnode.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/_catalogue_8cxx-source.html  1.1.1.2
+  sourceIdentify/doc/doxy-html/_log_8h__dep__incl.dot  1.1.1.1
+  sourceIdentify/doc/doxy-html/classsource_identify_1_1_catalogue__coll__graph.dot  1.1.1.1
+  sourceIdentify/doc/doxy-html/classsource_identify_1_1_catalogue-members.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/tree.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/files.html  1.1.1.2
+  sourceIdentify/doc/doxy-html/_log_8h__incl.dot  1.1.1.1
+  sourceIdentify/doc/doxy-html/namespacesource_identify.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/_parameters_8cxx__incl.dot  1.1.1.1
+  sourceIdentify/doc/doxy-html/ftv2mlastnode.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/release_8notes.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/release_8notes-source.html  1.1.1.2
+  sourceIdentify/doc/doxy-html/ftv2pnode.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/ftv2doc.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/namespacemembers.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/_parameters_8h-source.html  1.1.1.2
+  sourceIdentify/doc/doxy-html/doxygen.css  1.1.1.1
+  sourceIdentify/doc/doxy-html/source_identify_8h__incl.dot  1.1.1.1
+  sourceIdentify/doc/doxy-html/graph_legend.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/_catalogue_8h__incl.dot  1.1.1.1
+  sourceIdentify/doc/doxy-html/source_identify_8cxx__incl.dot  1.1.1.1
+  sourceIdentify/doc/doxy-html/_log_8cxx__incl.dot  1.1.1.1
+  sourceIdentify/doc/doxy-html/_parameters_8h__incl.dot  1.1.1.1
+  sourceIdentify/doc/doxy-html/source_identify_8cxx-source.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/ftv2node.png  1.1.1.1
+  sourceIdentify/doc/doxy-html/_parameters_8h.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/classsource_identify_1_1_parameters.html  1.1.1.1
+  sourceIdentify/doc/doxy-html/treeview.js  1.1.1.1
+  sourceIdentify/doc/doxy-html/source_identify_8h__dep__incl.dot  1.1.1.1
+  sourceIdentify/pfiles/sourceIdentify.par  1.1.1.1
+  sourceIdentify/rh9_gcc32/sourceIdentifysetup.make  1.1.1.2
+  sourceIdentify/rh9_gcc32/gtsrcid_dependencies.make  1.1.1.1
+  sourceIdentify/rh9_gcc32/sourceIdentifyLib_dependencies.make  1.1.1.1
+  sourceIdentify/rh9_gcc32/sourceIdentifyLib.stamp  1.1.1.1
+  sourceIdentify/rh9_gcc32/sourceIdentifyLib.make  1.1.1.1
+  sourceIdentify/rh9_gcc32/sourceIdentify_dependencies.make  1.1.1.1
+  sourceIdentify/rh9_gcc32/gtsrcid.make  1.1.1.1
+  sourceIdentify/rh9_gcc32/sourceIdentify.make  1.1.1.1
+  sourceIdentify/sourceIdentify/Catalogue.h  1.1.1.1
+  sourceIdentify/sourceIdentify/sourceIdentify.h  1.1.1.1
+  sourceIdentify/sourceIdentify/Parameters.h  1.1.1.1
+  sourceIdentify/sourceIdentify/Log.h  1.1.1.1
+  sourceIdentify/src/sourceIdentify.cxx  1.1.1.1
+  sourceIdentify/src/Parameters.cxx  1.1.1.1
+  sourceIdentify/src/Catalogue.cxx  1.1.1.1
+  sourceIdentify/src/mainpage.h  1.1.1.1
+  sourceIdentify/src/Log.cxx  1.1.1.1
+  sourceIdentify/src/gtsrcid/Catalogue.h  1.1.1.1
+  sourceIdentify/src/gtsrcid/Parameters.cxx  1.1.1.1
+  sourceIdentify/src/gtsrcid/sourceIdentify.h  1.1.1.1
+  sourceIdentify/src/gtsrcid/Catalogue.cxx  1.1.1.1
+  sourceIdentify/src/gtsrcid/sourceIdentify.cxx  1.1.1.1
+  sourceIdentify/src/gtsrcid/Log.h  1.1.1.1
+  sourceIdentify/src/gtsrcid/Parameters.h  1.1.1.1
+  sourceIdentify/src/gtsrcid/Log.cxx  1.1.1.1
+  sourceIdentify/src/test/test2.csh  1.1.1.1
+  sourceIdentify/src/test/test1.csh  1.1.1.1
+  sourceIdentify/test/test2.com  1.1.1.1
+  sourceIdentify/test/test4.com  1.1.1.1
+  sourceIdentify/test/test1.com  1.1.1.1
+  sourceIdentify/test/test3.com  1.1.1.1
+
+    *
+------------------------------------------------------------
 User: jurgen  Wed Jul 20 13:11:23 PDT 2005
 sourceIdentify
 
