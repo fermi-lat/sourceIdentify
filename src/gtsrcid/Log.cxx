@@ -240,5 +240,5 @@ Status Log(MessageType msgType, const char *msgFormat, ...) {
  * @brief  Task logging routines.
  * @author J. Knodlseder
  *
- * $Header: $
+ * $Header: /nfs/slac/g/glast/ground/cvs/sourceIdentify/src/gtsrcid/Log.cxx,v 1.1.1.1 2005/05/25 15:57:45 jurgen Exp $
  */
