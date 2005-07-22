@@ -1,4 +1,24 @@
 ------------------------------------------------------------
+User: jurgen  Fri Jul 22 07:25:16 PDT 2005
+sourceIdentify/data
+
+Removed Files:
+      Tag: v0r1p3
+	1rxs_50.tsv 3EG_all.tsv veron_agn.tsv veron_bllac.tsv 
+	veron_qso.tsv 
+Log Message:
+Create a new tag using
+  cvs rtag v0r1p3 sourceIdentify
+Checkout this tag using
+  cvs checkout -d v0r1p3 -r v0r1p3 sourceIdentify
+Remove doxygen documentation since this poses always problems ...
+Remove obsolete files
+  cvs update
+Commit using
+  cvs commit
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r1p3, operation: add
 Package: sourceIdentify
