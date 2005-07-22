@@ -1,4 +1,30 @@
 ------------------------------------------------------------
+User: jurgen  Fri Jul 22 09:27:55 PDT 2005
+sourceIdentify/doc/doxy-html
+
+Removed Files:
+	_catalogue_8cxx-source.html _catalogue_8cxx.html 
+	_catalogue_8h-source.html _catalogue_8h.html 
+	_log_8cxx-source.html _log_8cxx.html _log_8h-source.html 
+	_log_8h.html _parameters_8cxx-source.html 
+	_parameters_8cxx.html _parameters_8h-source.html 
+	_parameters_8h.html annotated.html 
+	classsource_identify_1_1_catalogue-members.html 
+	classsource_identify_1_1_catalogue.html 
+	classsource_identify_1_1_parameters-members.html 
+	classsource_identify_1_1_parameters.html files.html 
+	functions.html globals.html graph_legend.html index.html 
+	main.html namespacecatalog_access.html namespacemembers.html 
+	namespaces.html namespacesource_identify.html 
+	release_8notes-source.html release_8notes.html 
+	source_identify_8cxx-source.html source_identify_8cxx.html 
+	source_identify_8h-source.html source_identify_8h.html 
+	structsource_identify_1_1_c_c_element-members.html 
+	structsource_identify_1_1_c_c_element.html tree.html 
+Log Message:
+Remove old doxygen documentation
+    *
+------------------------------------------------------------
 User: jurgen  Fri Jul 22 09:16:08 PDT 2005
 sourceIdentify/cmt
 
