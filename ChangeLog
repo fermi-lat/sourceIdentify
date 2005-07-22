@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jurgen  Fri Jul 22 10:21:33 PDT 2005
+sourceIdentify/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+New clean tag
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r2, operation: add
 Package: sourceIdentify
