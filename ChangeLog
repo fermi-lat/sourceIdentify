@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jurgen  Fri Jul 22 08:47:39 PDT 2005
+sourceIdentify/src
+
+Removed Files:
+	Catalogue.cxx Log.cxx Parameters.cxx sourceIdentify.cxx 
+Log Message:
+Remove obsolete files from src directory
+    *
+------------------------------------------------------------
 User: jurgen  Fri Jul 22 07:25:22 PDT 2005
 sourceIdentify/test
 
