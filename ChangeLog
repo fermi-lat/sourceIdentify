@@ -1,4 +1,25 @@
 ------------------------------------------------------------
+User: jurgen  Fri Jul 22 09:29:53 PDT 2005
+sourceIdentify/doc/doxy-html
+
+Removed Files:
+	_catalogue_8cxx__incl.dot _catalogue_8h__dep__incl.dot 
+	_catalogue_8h__incl.dot _log_8cxx__incl.dot 
+	_log_8h__dep__incl.dot _log_8h__incl.dot 
+	_parameters_8cxx__incl.dot _parameters_8h__dep__incl.dot 
+	_parameters_8h__incl.dot 
+	classsource_identify_1_1_catalogue__coll__graph.dot 
+	doxygen.css doxygen.png ftv2blank.png ftv2doc.png 
+	ftv2folderclosed.png ftv2folderopen.png ftv2lastnode.png 
+	ftv2link.png ftv2mlastnode.png ftv2mnode.png ftv2node.png 
+	ftv2plastnode.png ftv2pnode.png ftv2vertline.png 
+	graph_legend.dot source_identify_8cxx__incl.dot 
+	source_identify_8h__dep__incl.dot source_identify_8h__incl.dot 
+	tree.js treeview.js 
+Log Message:
+Remove old doxygen documentation
+    *
+------------------------------------------------------------
 User: jurgen  Fri Jul 22 09:27:55 PDT 2005
 sourceIdentify/doc/doxy-html
 
