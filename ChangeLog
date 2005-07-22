@@ -1,4 +1,44 @@
 ------------------------------------------------------------
+User: jurgen  Fri Jul 22 10:09:40 PDT 2005
+sourceIdentify/doc/doxy-html
+
+Added Files:
+	_catalogue_8cxx-source.html _catalogue_8cxx.html 
+	_catalogue_8cxx__incl.dot _catalogue_8h-source.html 
+	_catalogue_8h.html _catalogue_8h__dep__incl.dot 
+	_catalogue_8h__incl.dot _log_8cxx-source.html _log_8cxx.html 
+	_log_8cxx__incl.dot _log_8h-source.html _log_8h.html 
+	_log_8h__dep__incl.dot _log_8h__incl.dot 
+	_parameters_8cxx-source.html _parameters_8cxx.html 
+	_parameters_8cxx__incl.dot _parameters_8h-source.html 
+	_parameters_8h.html _parameters_8h__dep__incl.dot 
+	_parameters_8h__incl.dot annotated.html 
+	classapplication-members.html classapplication.html 
+	classsource_identify_1_1_catalogue-members.html 
+	classsource_identify_1_1_catalogue.html 
+	classsource_identify_1_1_catalogue__coll__graph.dot 
+	classsource_identify_1_1_parameters-members.html 
+	classsource_identify_1_1_parameters.html doxygen.css 
+	doxygen.png files.html ftv2blank.png ftv2doc.png 
+	ftv2folderclosed.png ftv2folderopen.png ftv2lastnode.png 
+	ftv2link.png ftv2mlastnode.png ftv2mnode.png ftv2node.png 
+	ftv2plastnode.png ftv2pnode.png ftv2vertline.png 
+	functions.html globals.html graph_legend.dot graph_legend.html 
+	index.html main.html mainpage_8h-source.html mainpage_8h.html 
+	namespacecatalog_access.html namespacemembers.html 
+	namespaces.html namespacesource_identify.html 
+	release_8notes-source.html release_8notes.html 
+	source_identify_8cxx-source.html source_identify_8cxx.html 
+	source_identify_8cxx__incl.dot source_identify_8h-source.html 
+	source_identify_8h.html source_identify_8h__dep__incl.dot 
+	source_identify_8h__incl.dot 
+	structsource_identify_1_1_c_c_element-members.html 
+	structsource_identify_1_1_c_c_element.html tree.html tree.js 
+	treeview.js 
+Log Message:
+New doxygen documentation (as of 22-Jul-2005)
+    *
+------------------------------------------------------------
 User: jurgen  Fri Jul 22 09:29:53 PDT 2005
 sourceIdentify/doc/doxy-html
 
