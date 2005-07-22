@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Fri Jul 22 08:54:53 PDT 2005
+sourceIdentify/data
+
+Removed Files:
+	1rxs_50.tsv 3EG_all.tsv veron_agn.tsv veron_bllac.tsv 
+	veron_qso.tsv 
+Log Message:
+Remove large catalogues
+    *
+------------------------------------------------------------
 User: jurgen  Fri Jul 22 08:52:57 PDT 2005
 sourceIdentify/data/outref
 
