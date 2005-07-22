@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jurgen  Fri Jul 22 10:24:50 PDT 2005
+sourceIdentify/sourceIdentify
+
+Removed Files:
+	Catalogue.h Log.h Parameters.h sourceIdentify.h 
+Log Message:
+Remove obsolete header files
+    *
+------------------------------------------------------------
 User: jurgen  Fri Jul 22 10:21:33 PDT 2005
 sourceIdentify/doc
 
