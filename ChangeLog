@@ -1,5 +1,24 @@
 ------------------------------------------------------------
 User: jurgen  Fri Jul 22 07:25:20 PDT 2005
+sourceIdentify/pfiles
+
+Removed Files:
+      Tag: v0r1p3
+	sourceIdentify.par 
+Log Message:
+Create a new tag using
+  cvs rtag v0r1p3 sourceIdentify
+Checkout this tag using
+  cvs checkout -d v0r1p3 -r v0r1p3 sourceIdentify
+Remove doxygen documentation since this poses always problems ...
+Remove obsolete files
+  cvs update
+Commit using
+  cvs commit
+
+    *
+------------------------------------------------------------
+User: jurgen  Fri Jul 22 07:25:20 PDT 2005
 sourceIdentify/doc/doxy-html
 
 Removed Files:
