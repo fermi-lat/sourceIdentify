@@ -47,7 +47,7 @@ Status LogInit(const char *logName, const char *taskName, Status status) {
     do {
     
       // Clean log task name
-      sprintf(gLogTaskName, "");
+      sprintf(gLogTaskName, "%s", "");
     
       // If there is already a log file opened then close it first
       if (gLogFilePtr != NULL) {
@@ -240,5 +240,5 @@ Status Log(MessageType msgType, const char *msgFormat, ...) {
  * @brief  Task logging routines.
  * @author J. Knodlseder
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/sourceIdentify/src/gtsrcid/Log.cxx,v 1.1.1.1 2005/05/25 15:57:45 jurgen Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/sourceIdentify/src/gtsrcid/Log.cxx,v 1.1.1.2 2005/07/21 16:33:47 jurgen Exp $
  */
