@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Tue Jan 31 06:31:57 PST 2006
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.cxx Catalogue.h Log.cxx Parameters.cxx Parameters.h 
+	sourceIdentify.cxx sourceIdentify.h 
+Log Message:
+
+    *
+------------------------------------------------------------
 User: jurgen  Tue Jan 31 06:31:55 PST 2006
 sourceIdentify/rh9_gcc32
 
