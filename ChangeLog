@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jurgen  Wed Feb  1 07:25:26 PST 2006
+sourceIdentify/data
+
+Removed Files:
+	cygob2_heao_x.tsv cygob2_integral_ref.tsv 
+	cygob2_iras_ipac_pt.tsv cygob2_iras_ipac_ser.tsv 
+Log Message:
+Remove obsolete catalogues
+
+    *
+------------------------------------------------------------
 User: jurgen  Wed Feb  1 07:22:36 PST 2006
 sourceIdentify/data
 
