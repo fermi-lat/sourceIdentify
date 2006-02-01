@@ -1,10 +1,15 @@
 /*------------------------------------------------------------------------------
-Id ........: $Id$
-Author ....: $Author$
-Revision ..: $Revision$
-Date ......: $Date$
+Id ........: $Id: Catalogue.cxx,v 1.3 2006/02/01 13:33:36 jurgen Exp $
+Author ....: $Author: jurgen $
+Revision ..: $Revision: 1.3 $
+Date ......: $Date: 2006/02/01 13:33:36 $
 --------------------------------------------------------------------------------
-$Log$
+$Log: Catalogue.cxx,v $
+Revision 1.3  2006/02/01 13:33:36  jurgen
+Tried to fix Win32 compilation bugs.
+Change revision number to 1.3.2.
+Replace header information with CVS typeset information.
+
 ------------------------------------------------------------------------------*/
 
 /* Includes _________________________________________________________________ */
@@ -1032,10 +1037,10 @@ Status Catalogue::create_output_catalogue(Parameters *par, Status status) {
       }
 
       // Allocate temporary memory to hold column information
-      ttype = new (char*)[num_col];
-      tform = new (char*)[num_col];
-      tunit = new (char*)[num_col];
-      tbucd = new (char*)[num_col];
+      ttype = new char*[num_col];
+      tform = new char*[num_col];
+      tunit = new char*[num_col];
+      tbucd = new char*[num_col];
       if (ttype == NULL ||
           tform == NULL ||
           tunit == NULL ||
