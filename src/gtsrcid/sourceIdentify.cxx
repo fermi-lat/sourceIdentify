@@ -1,10 +1,15 @@
 /*------------------------------------------------------------------------------
-Id ........: $Id$
-Author ....: $Author$
-Revision ..: $Revision$
-Date ......: $Date$
+Id ........: $Id: sourceIdentify.cxx,v 1.3 2006/02/01 13:33:37 jurgen Exp $
+Author ....: $Author: jurgen $
+Revision ..: $Revision: 1.3 $
+Date ......: $Date: 2006/02/01 13:33:37 $
 --------------------------------------------------------------------------------
-$Log$
+$Log: sourceIdentify.cxx,v $
+Revision 1.3  2006/02/01 13:33:37  jurgen
+Tried to fix Win32 compilation bugs.
+Change revision number to 1.3.2.
+Replace header information with CVS typeset information.
+
 ------------------------------------------------------------------------------*/
 
 /* Includes _________________________________________________________________ */
@@ -121,7 +126,8 @@ public:
  
     // Save the execution stop time and calculate elapsed time
     t_stop = clock();
-    t_elapse = (float)(t_stop - t_start) / (float)CLOCKS_PER_SEC;
+//    t_elapse = (float)(t_stop - t_start) / (float)CLOCKS_PER_SEC;
+    t_elapse = (float)(t_stop - t_start);
 
     // Dump termination message
     Log(Log_1, "Task terminated using %.3f sec CPU time.", t_elapse);
@@ -144,5 +150,5 @@ st_app::StAppFactory<application> g_factory(TOOL_NAME);
  * @brief  Source identification main program.
  * @author J. Knodlseder
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/sourceIdentify/src/gtsrcid/sourceIdentify.cxx,v 1.2 2006/01/31 14:31:56 jurgen Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/sourceIdentify/src/gtsrcid/sourceIdentify.cxx,v 1.3 2006/02/01 13:33:37 jurgen Exp $
  */
