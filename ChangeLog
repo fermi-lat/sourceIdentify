@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Wed Feb  1 07:59:36 PST 2006
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	sourceIdentify.cxx 
+Log Message:
+Don't devide by CLOCKS_PER_SEC
+
+    *
+------------------------------------------------------------
 User: jurgen  Wed Feb  1 07:34:25 PST 2006
 sourceIdentify/data/outref
 
