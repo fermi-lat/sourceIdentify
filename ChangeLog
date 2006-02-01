@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Wed Feb  1 07:17:11 PST 2006
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.cxx 
+Log Message:
+correct g++-3.4.3 compile error related to parentheses around (char*)
+
+    *
+------------------------------------------------------------
 User: jurgen  Wed Feb  1 07:17:10 PST 2006
 sourceIdentify/rh9_gcc32
 
