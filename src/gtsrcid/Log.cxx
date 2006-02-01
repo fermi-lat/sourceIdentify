@@ -1,14 +1,11 @@
-/*----------------------------------------------------------------------------*/
-/*                                  Log.cxx                                   */
-/* -------------------------------------------------------------------------- */
-/* Task            : Task logging interface file.                             */
-/* Author          : Jurgen Knodlseder CESR (C) (all rights reserved)         */
-/* Revision        : 1.0.0                                                    */
-/* Date of version : 20-May-2005                                              */
-/* -------------------------------------------------------------------------- */
-/* History :                                                                  */
-/* 1.0.0  20-May-2005  first version                                          */
-/*----------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------
+Id ........: $Id$
+Author ....: $Author$
+Revision ..: $Revision$
+Date ......: $Date$
+--------------------------------------------------------------------------------
+$Log$
+------------------------------------------------------------------------------*/
 
 /* Includes _________________________________________________________________ */
 #include <stdio.h>      // for "FILE" type
@@ -240,5 +237,5 @@ Status Log(MessageType msgType, const char *msgFormat, ...) {
  * @brief  Task logging routines.
  * @author J. Knodlseder
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/sourceIdentify/src/gtsrcid/Log.cxx,v 1.1.1.2 2005/07/21 16:33:47 jurgen Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/sourceIdentify/src/gtsrcid/Log.cxx,v 1.2 2006/01/31 14:31:56 jurgen Exp $
  */
