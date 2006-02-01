@@ -1,4 +1,33 @@
 ------------------------------------------------------------
+User: jurgen  Wed Feb  1 07:14:08 PST 2006
+sourceIdentify/doc/doxy-html
+
+Modified Files:
+	_catalogue_8cxx-source.html _catalogue_8cxx.html 
+	_catalogue_8h-source.html _catalogue_8h.html 
+	_log_8cxx-source.html _log_8cxx.html _log_8h-source.html 
+	_log_8h.html _parameters_8cxx-source.html 
+	_parameters_8cxx.html _parameters_8h-source.html 
+	_parameters_8h.html annotated.html 
+	classapplication-members.html classapplication.html 
+	classsource_identify_1_1_catalogue-members.html 
+	classsource_identify_1_1_catalogue.html 
+	classsource_identify_1_1_parameters-members.html 
+	classsource_identify_1_1_parameters.html doxygen.css 
+	doxygen.png files.html functions.html globals.html 
+	graph_legend.dot graph_legend.html index.html main.html 
+	mainpage_8h-source.html mainpage_8h.html 
+	namespacecatalog_access.html namespacemembers.html 
+	namespaces.html namespacesource_identify.html 
+	release_8notes-source.html release_8notes.html 
+	source_identify_8cxx-source.html source_identify_8cxx.html 
+	source_identify_8h-source.html source_identify_8h.html 
+	structsource_identify_1_1_c_c_element-members.html 
+	structsource_identify_1_1_c_c_element.html tree.html 
+Log Message:
+
+    *
+------------------------------------------------------------
 User: jurgen  Wed Feb  1 07:14:04 PST 2006
 sourceIdentify/doc
 
