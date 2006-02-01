@@ -1,4 +1,19 @@
 ------------------------------------------------------------
+User: jurgen  Wed Feb  1 07:28:43 PST 2006
+sourceIdentify/data
+
+Removed Files:
+	cygob2_integral_1ibis.tsv cygob2_rosat_1rxh.tsv 
+	cygob2_rosat_1rxs.tsv cygob2_rosat_2rxp.tsv 
+	cygob2_rosat_faint.tsv cygob2_rosat_quasars.tsv 
+	cygob2_rosat_wd.tsv cygob2_rosat_wgacat.tsv 
+	cygob2_veron_agn.tsv cygob2_veron_bllac.tsv 
+	cygob2_veron_qso.tsv 
+Log Message:
+Remove obsolete catalogues
+
+    *
+------------------------------------------------------------
 User: jurgen  Wed Feb  1 07:25:26 PST 2006
 sourceIdentify/data
 
