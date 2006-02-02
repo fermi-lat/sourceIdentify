@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Thu Feb  2 01:44:41 PST 2006
+sourceIdentify/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Remove doxygen documentation and set revision number to v0r5
+
+    *
+------------------------------------------------------------
 User: jurgen  Thu Feb  2 01:42:13 PST 2006
 sourceIdentify/doc/doxy-html
 
