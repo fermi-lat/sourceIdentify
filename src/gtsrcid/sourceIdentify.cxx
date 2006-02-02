@@ -1,10 +1,13 @@
 /*------------------------------------------------------------------------------
-Id ........: $Id: sourceIdentify.cxx,v 1.3 2006/02/01 13:33:37 jurgen Exp $
+Id ........: $Id: sourceIdentify.cxx,v 1.4 2006/02/01 15:59:35 jurgen Exp $
 Author ....: $Author: jurgen $
-Revision ..: $Revision: 1.3 $
-Date ......: $Date: 2006/02/01 13:33:37 $
+Revision ..: $Revision: 1.4 $
+Date ......: $Date: 2006/02/01 15:59:35 $
 --------------------------------------------------------------------------------
 $Log: sourceIdentify.cxx,v $
+Revision 1.4  2006/02/01 15:59:35  jurgen
+Don't devide by CLOCKS_PER_SEC
+
 Revision 1.3  2006/02/01 13:33:37  jurgen
 Tried to fix Win32 compilation bugs.
 Change revision number to 1.3.2.
@@ -77,9 +80,9 @@ public:
       Log(Log_1, 
          "* -------------------------------------------------------- *");
       Log(Log_1, 
-         "* Revision : 1.3.2                                         *");
+         "* Revision : v0r5                                          *");
       Log(Log_1, 
-         "* Date     : 1 February 2006                               *");
+         "* Date     : 2 February 2006                               *");
       Log(Log_1, 
          "* Author   : Jurgen Knodlseder (CESR)                      *");
       Log(Log_1, 
@@ -126,8 +129,7 @@ public:
  
     // Save the execution stop time and calculate elapsed time
     t_stop = clock();
-//    t_elapse = (float)(t_stop - t_start) / (float)CLOCKS_PER_SEC;
-    t_elapse = (float)(t_stop - t_start);
+    t_elapse = (float)(t_stop - t_start) / (float)CLOCKS_PER_SEC;
 
     // Dump termination message
     Log(Log_1, "Task terminated using %.3f sec CPU time.", t_elapse);
@@ -150,5 +152,5 @@ st_app::StAppFactory<application> g_factory(TOOL_NAME);
  * @brief  Source identification main program.
  * @author J. Knodlseder
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/sourceIdentify/src/gtsrcid/sourceIdentify.cxx,v 1.3 2006/02/01 13:33:37 jurgen Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/sourceIdentify/src/gtsrcid/sourceIdentify.cxx,v 1.4 2006/02/01 15:59:35 jurgen Exp $
  */
