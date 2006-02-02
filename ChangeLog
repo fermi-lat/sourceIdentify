@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jurgen  Thu Feb  2 01:26:14 PST 2006
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.cxx 
+Log Message:
+correct Win32 compile bugs
+
+    *
+------------------------------------------------------------
+User: jurgen  Thu Feb  2 01:26:14 PST 2006
 sourceIdentify/rh9_gcc32
 
 Modified Files:
