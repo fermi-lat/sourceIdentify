@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Thu Feb  2 01:29:29 PST 2006
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.cxx 
+Log Message:
+correct Win32 bug
+
+    *
+------------------------------------------------------------
 User: jurgen  Thu Feb  2 01:29:28 PST 2006
 sourceIdentify/rh9_gcc32
 
