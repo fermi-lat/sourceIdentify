@@ -1,17 +1,22 @@
 /*------------------------------------------------------------------------------
-Id ........: $Id$
-Author ....: $Author$
-Revision ..: $Revision$
-Date ......: $Date$
+Id ........: $Id: sourceIdentify.h,v 1.3 2006/02/01 13:33:37 jurgen Exp $
+Author ....: $Author: jurgen $
+Revision ..: $Revision: 1.3 $
+Date ......: $Date: 2006/02/01 13:33:37 $
 --------------------------------------------------------------------------------
-$Log$
+$Log: sourceIdentify.h,v $
+Revision 1.3  2006/02/01 13:33:37  jurgen
+Tried to fix Win32 compilation bugs.
+Change revision number to 1.3.2.
+Replace header information with CVS typeset information.
+
 ------------------------------------------------------------------------------*/
 #ifndef SOURCEIDENTIFY_H
 #define SOURCEIDENTIFY_H
 
 /* Definitions ______________________________________________________________ */
 #define TOOL_NAME     "gtsrcid"
-#define TOOL_VERSION  "gtsrcid-1.3.2"
+#define TOOL_VERSION  "gtsrcid-v0r5"
 #define TOOL_LOGFILE  "gtsrcid.log"
 #define USE_ST_APP 1
 
