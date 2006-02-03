@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: jurgen  Fri Feb  3 14:10:31 PST 2006
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.cxx 
+Log Message:
+Remove comments to correctly catch an error in the determination
+of the number of catalogue entries (these comments have been
+introduced due to a bug in catalogAccess - which has been fixed in
+version v0r2p6).
+
+    *
+------------------------------------------------------------
 User: jurgen  Fri Feb  3 14:10:30 PST 2006
 sourceIdentify/rh9_gcc32
 
