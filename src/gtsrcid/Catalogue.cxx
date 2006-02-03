@@ -1,10 +1,15 @@
 /*------------------------------------------------------------------------------
-Id ........: $Id: Catalogue.cxx,v 1.7 2006/02/02 09:31:55 jurgen Exp $
+Id ........: $Id: Catalogue.cxx,v 1.8 2006/02/03 12:14:51 jurgen Exp $
 Author ....: $Author: jurgen $
-Revision ..: $Revision: 1.7 $
-Date ......: $Date: 2006/02/02 09:31:55 $
+Revision ..: $Revision: 1.8 $
+Date ......: $Date: 2006/02/03 12:14:51 $
 --------------------------------------------------------------------------------
 $Log: Catalogue.cxx,v $
+Revision 1.8  2006/02/03 12:14:51  jurgen
+New version that allows additional probabilities to be taken
+into account. The code has been considerably reorganised. Also
+catalogue column prefixes are now handled differently.
+
 Revision 1.7  2006/02/02 09:31:55  jurgen
 fix last Win32 bug !!!
 
@@ -150,8 +155,8 @@ Status Catalogue::get_input_descriptor(Parameters *par, std::string catName,
           if (par->logTerse())
             Log(Error_2, "%d : Unable to determine number of objects in"
                 " catalogue '%s'.", caterr, catName.c_str());
-//JK: DOES NOT WORK ON FITS          status = STATUS_CAT_NOT_FOUND;
-//JK: DOES NOT WORK ON FITS          continue;
+          status = STATUS_CAT_NOT_FOUND;
+          continue;
         }
       }
           
