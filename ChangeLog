@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Fri Feb  3 05:38:32 PST 2006
+sourceIdentify/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Win32 compile check
+
+    *
+------------------------------------------------------------
 User: jurgen  Fri Feb  3 04:14:53 PST 2006
 sourceIdentify/src/test
 
