@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: jurgen  Fri Feb  3 04:11:37 PST 2006
+sourceIdentify/src/gtsrcid
+
+Added Files:
+	Catalogue_id.cxx 
+Log Message:
+New file that contains routines that have formerly been found in
+Catalogue.cxx. The routines have also been renamed and preceeded
+by "cid_". The routines handle source identification at the low
+level.
+
+    *
+------------------------------------------------------------
 User: jurgen  Fri Feb  3 04:09:54 PST 2006
 sourceIdentify/src/gtsrcid
 
