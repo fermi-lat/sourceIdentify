@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: jurgen  Fri Feb  3 04:09:54 PST 2006
+sourceIdentify/src/gtsrcid
+
+Added Files:
+	Catalogue_fits.cxx 
+Log Message:
+New file that contains routines that formerly existed in the file
+Catalogue.cxx. The routines have also been renamed and preceeded
+by "cfits_". These routines are handling the output catalogue
+creation and allow in memory catalogues and FITS disk catalogues.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r5, operation: add
 Package: sourceIdentify
