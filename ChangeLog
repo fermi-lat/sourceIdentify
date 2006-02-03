@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jurgen  Fri Feb  3 04:14:49 PST 2006
+sourceIdentify/cmt
+
+Modified Files:
+	rh9_gcc32.make 
+Log Message:
+New version that allows additional probabilities to be taken
+into account. The code has been considerably reorganised. Also
+catalogue column prefixes are now handled differently.
+
+    *
+------------------------------------------------------------
 User: jurgen  Fri Feb  3 04:13:25 PST 2006
 sourceIdentify/pfiles
 
