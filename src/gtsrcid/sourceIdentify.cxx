@@ -1,10 +1,13 @@
 /*------------------------------------------------------------------------------
-Id ........: $Id: sourceIdentify.cxx,v 1.4 2006/02/01 15:59:35 jurgen Exp $
+Id ........: $Id: sourceIdentify.cxx,v 1.5 2006/02/02 09:44:43 jurgen Exp $
 Author ....: $Author: jurgen $
-Revision ..: $Revision: 1.4 $
-Date ......: $Date: 2006/02/01 15:59:35 $
+Revision ..: $Revision: 1.5 $
+Date ......: $Date: 2006/02/02 09:44:43 $
 --------------------------------------------------------------------------------
 $Log: sourceIdentify.cxx,v $
+Revision 1.5  2006/02/02 09:44:43  jurgen
+Remove doxygen documentation and set revision number to v0r5
+
 Revision 1.4  2006/02/01 15:59:35  jurgen
 Don't devide by CLOCKS_PER_SEC
 
@@ -80,7 +83,7 @@ public:
       Log(Log_1, 
          "* -------------------------------------------------------- *");
       Log(Log_1, 
-         "* Revision : v0r5                                          *");
+         "* Revision : v1r0                                          *");
       Log(Log_1, 
          "* Date     : 2 February 2006                               *");
       Log(Log_1, 
@@ -116,15 +119,6 @@ public:
         continue;
       }
 
-      // Save counterpart candidate catalogue
-      status = cat.save(&par, status);
-      if (status != STATUS_OK) {
-        if (par.logTerse())
-          Log(Error_3, "%d : Error while saving counterpart candidate"
-                       " catalogue.", status);      
-        continue;
-      }
-
     } while (0); // End of main do-loop
  
     // Save the execution stop time and calculate elapsed time
@@ -152,5 +146,5 @@ st_app::StAppFactory<application> g_factory(TOOL_NAME);
  * @brief  Source identification main program.
  * @author J. Knodlseder
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/sourceIdentify/src/gtsrcid/sourceIdentify.cxx,v 1.4 2006/02/01 15:59:35 jurgen Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/sourceIdentify/src/gtsrcid/sourceIdentify.cxx,v 1.5 2006/02/02 09:44:43 jurgen Exp $
  */
