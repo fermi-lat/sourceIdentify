@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Fri Feb  3 04:13:25 PST 2006
+sourceIdentify/pfiles
+
+Modified Files:
+	gtsrcid.par 
+Log Message:
+Added new parameters srcCatPrefix and cptCatPrefix. 
+
+    *
+------------------------------------------------------------
 User: jurgen  Fri Feb  3 04:11:37 PST 2006
 sourceIdentify/src/gtsrcid
 
