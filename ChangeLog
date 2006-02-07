@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jurgen  Tue Feb  7 03:10:51 PST 2006
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.cxx Catalogue.h Parameters.cxx sourceIdentify.cxx 
+	sourceIdentify.h 
+Log Message:
+Suppress catalogAccess verbosity
+
+    *
+------------------------------------------------------------
 User: jurgen  Tue Feb  7 03:10:50 PST 2006
 sourceIdentify/pfiles
 
