@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jurgen  Tue Feb  7 08:05:01 PST 2006
+sourceIdentify/cmt
+
+Modified Files:
+	cleanup.csh cleanup.sh requirements rh9_gcc32.make setup.csh 
+	setup.sh 
+Log Message:
+Use ObjectInfo structure to hold catalogue object information
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r0p1, operation: add
 Package: sourceIdentify
