@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jurgen  Tue Feb  7 03:10:50 PST 2006
+sourceIdentify/pfiles
+
+Modified Files:
+	gtsrcid.par 
+Log Message:
+Suppress catalogAccess verbosity
+
+    *
+------------------------------------------------------------
+User: jurgen  Tue Feb  7 03:10:50 PST 2006
 sourceIdentify/doc
 
 Modified Files:
