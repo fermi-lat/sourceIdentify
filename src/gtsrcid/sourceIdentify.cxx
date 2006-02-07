@@ -1,10 +1,13 @@
 /*------------------------------------------------------------------------------
-Id ........: $Id: sourceIdentify.cxx,v 1.6 2006/02/03 12:14:52 jurgen Exp $
+Id ........: $Id: sourceIdentify.cxx,v 1.7 2006/02/07 11:10:51 jurgen Exp $
 Author ....: $Author: jurgen $
-Revision ..: $Revision: 1.6 $
-Date ......: $Date: 2006/02/03 12:14:52 $
+Revision ..: $Revision: 1.7 $
+Date ......: $Date: 2006/02/07 11:10:51 $
 --------------------------------------------------------------------------------
 $Log: sourceIdentify.cxx,v $
+Revision 1.7  2006/02/07 11:10:51  jurgen
+Suppress catalogAccess verbosity
+
 Revision 1.6  2006/02/03 12:14:52  jurgen
 New version that allows additional probabilities to be taken
 into account. The code has been considerably reorganised. Also
@@ -89,9 +92,9 @@ public:
       Log(Log_1, 
          "* -------------------------------------------------------- *");
       Log(Log_1, 
-         "* Revision : v1r0                                          *");
+         "* Revision : v1r0p2                                        *");
       Log(Log_1, 
-         "* Date     : 2 February 2006                               *");
+         "* Date     : 7 February 2006                               *");
       Log(Log_1, 
          "* Author   : Jurgen Knodlseder (CESR)                      *");
       Log(Log_1, 
@@ -152,5 +155,5 @@ st_app::StAppFactory<application> g_factory(TOOL_NAME);
  * @brief  Source identification main program.
  * @author J. Knodlseder
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/sourceIdentify/src/gtsrcid/sourceIdentify.cxx,v 1.6 2006/02/03 12:14:52 jurgen Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/sourceIdentify/src/gtsrcid/sourceIdentify.cxx,v 1.7 2006/02/07 11:10:51 jurgen Exp $
  */
