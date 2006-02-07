@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Tue Feb  7 03:10:49 PST 2006
+sourceIdentify/cmt
+
+Modified Files:
+	requirements rh9_gcc32.make 
+Log Message:
+Suppress catalogAccess verbosity
+
+    *
+------------------------------------------------------------
 User: jurgen  Mon Feb  6 05:26:15 PST 2006
 sourceIdentify/src/gtsrcid
 
