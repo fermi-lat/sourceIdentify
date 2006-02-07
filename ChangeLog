@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jurgen  Tue Feb  7 08:05:05 PST 2006
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.cxx Catalogue.h Catalogue_id.cxx sourceIdentify.cxx 
+	sourceIdentify.h 
+Log Message:
+Use ObjectInfo structure to hold catalogue object information
+
+    *
+------------------------------------------------------------
 User: jurgen  Tue Feb  7 08:05:03 PST 2006
 sourceIdentify/doc
 
