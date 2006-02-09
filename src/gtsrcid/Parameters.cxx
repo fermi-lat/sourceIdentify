@@ -1,10 +1,13 @@
 /*------------------------------------------------------------------------------
-Id ........: $Id: Parameters.cxx,v 1.5 2006/02/06 13:26:14 jurgen Exp $
+Id ........: $Id: Parameters.cxx,v 1.6 2006/02/07 11:10:51 jurgen Exp $
 Author ....: $Author: jurgen $
-Revision ..: $Revision: 1.5 $
-Date ......: $Date: 2006/02/06 13:26:14 $
+Revision ..: $Revision: 1.6 $
+Date ......: $Date: 2006/02/07 11:10:51 $
 --------------------------------------------------------------------------------
 $Log: Parameters.cxx,v $
+Revision 1.6  2006/02/07 11:10:51  jurgen
+Suppress catalogAccess verbosity
+
 Revision 1.5  2006/02/06 13:26:14  jurgen
 Remove whitespace in input parameter strings
 
@@ -56,7 +59,6 @@ std::string trim(std::string str) {
     char const* delims = " \t\r\n";
 
     // Declare variables
-    int                    pos;
     std::string::size_type notwhite;
     
     // Trim leading whitespace
