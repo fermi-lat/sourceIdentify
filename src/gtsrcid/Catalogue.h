@@ -1,10 +1,15 @@
 /*------------------------------------------------------------------------------
-Id ........: $Id: Catalogue.h,v 1.6 2006/02/07 16:05:04 jurgen Exp $
+Id ........: $Id: Catalogue.h,v 1.7 2006/02/09 13:06:18 jurgen Exp $
 Author ....: $Author: jurgen $
-Revision ..: $Revision: 1.6 $
-Date ......: $Date: 2006/02/07 16:05:04 $
+Revision ..: $Revision: 1.7 $
+Date ......: $Date: 2006/02/09 13:06:18 $
 --------------------------------------------------------------------------------
 $Log: Catalogue.h,v $
+Revision 1.7  2006/02/09 13:06:18  jurgen
+Put maximum number of source to load at once in a constant and change
+value to a large value (since the loading logic has not yet been
+implemented).
+
 Revision 1.6  2006/02/07 16:05:04  jurgen
 Use ObjectInfo structure to hold catalogue object information
 
@@ -85,8 +90,8 @@ namespace sourceIdentify {
 #define OUTCAT_COL_PROB_UCD        ""
 
 /* Class constants __________________________________________________________ */
-const long   c_maxCptLoad    = 10000000000; // Maximum # of sources to load at once
-const double c_filter_maxsep = 4.0;         // Filter all sources more distant than 2 deg
+const long   c_maxCptLoad    = 10000000000L; // Maximum # of sources to load at once
+const double c_filter_maxsep = 4.0;          // Filter all sources more distant than 2 deg
 
 /* Mathematical constants ___________________________________________________ */
 const double pi          = 3.1415926535897931159979635;
