@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Thu Feb  9 07:51:43 PST 2006
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Parameters.cxx 
+Log Message:
+Remove unreferenced local variable 'pos'
+
+    *
+------------------------------------------------------------
 User: jurgen  Thu Feb  9 07:51:42 PST 2006
 sourceIdentify/cmt
 
