@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Thu Feb  9 14:49:53 PST 2006
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.h 
+Log Message:
+Add 'L' to integer long constant
+
+    *
+------------------------------------------------------------
 User: jurgen  Thu Feb  9 14:49:48 PST 2006
 sourceIdentify/cmt
 
