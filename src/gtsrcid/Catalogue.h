@@ -1,10 +1,13 @@
 /*------------------------------------------------------------------------------
-Id ........: $Id: Catalogue.h,v 1.5 2006/02/07 11:10:50 jurgen Exp $
+Id ........: $Id: Catalogue.h,v 1.6 2006/02/07 16:05:04 jurgen Exp $
 Author ....: $Author: jurgen $
-Revision ..: $Revision: 1.5 $
-Date ......: $Date: 2006/02/07 11:10:50 $
+Revision ..: $Revision: 1.6 $
+Date ......: $Date: 2006/02/07 16:05:04 $
 --------------------------------------------------------------------------------
 $Log: Catalogue.h,v $
+Revision 1.6  2006/02/07 16:05:04  jurgen
+Use ObjectInfo structure to hold catalogue object information
+
 Revision 1.5  2006/02/07 11:10:50  jurgen
 Suppress catalogAccess verbosity
 
@@ -81,7 +84,11 @@ namespace sourceIdentify {
 #define OUTCAT_COL_PROB_UNIT       "probability"
 #define OUTCAT_COL_PROB_UCD        ""
 
-/* Constants ________________________________________________________________ */
+/* Class constants __________________________________________________________ */
+const long   c_maxCptLoad    = 10000000000; // Maximum # of sources to load at once
+const double c_filter_maxsep = 4.0;         // Filter all sources more distant than 2 deg
+
+/* Mathematical constants ___________________________________________________ */
 const double pi          = 3.1415926535897931159979635;
 const double twopi       = 6.2831853071795862319959269;
 const double sqrt2pi     = 2.5066282746310002416123552;
