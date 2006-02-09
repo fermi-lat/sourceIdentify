@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Thu Feb  9 07:51:42 PST 2006
+sourceIdentify/cmt
+
+Modified Files:
+	rh9_gcc32.make 
+Log Message:
+Remove unreferenced local variable 'pos'
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r0p2, operation: add
 Package: sourceIdentify
