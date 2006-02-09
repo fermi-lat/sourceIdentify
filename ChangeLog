@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Thu Feb  9 14:49:48 PST 2006
+sourceIdentify/cmt
+
+Modified Files:
+	rh9_gcc32.make 
+Log Message:
+Add 'L' to integer long constant
+
+    *
+------------------------------------------------------------
 User: jurgen  Thu Feb  9 07:51:43 PST 2006
 sourceIdentify/src/gtsrcid
 
