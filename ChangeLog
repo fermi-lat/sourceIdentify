@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jurgen  Thu Feb  9 05:06:17 PST 2006
+sourceIdentify/cmt
+
+Modified Files:
+	cleanup.csh cleanup.sh rh9_gcc32.make setup.csh setup.sh 
+Log Message:
+Put maximum number of source to load at once in a constant and change
+value to a large value (since the loading logic has not yet been
+implemented).
+
+    *
+------------------------------------------------------------
 User: jurgen  Tue Feb  7 08:05:05 PST 2006
 sourceIdentify/src/gtsrcid
 
