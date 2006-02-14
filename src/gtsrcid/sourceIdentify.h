@@ -1,10 +1,13 @@
 /*------------------------------------------------------------------------------
-Id ........: $Id: sourceIdentify.h,v 1.6 2006/02/07 11:10:51 jurgen Exp $
+Id ........: $Id: sourceIdentify.h,v 1.7 2006/02/07 16:05:05 jurgen Exp $
 Author ....: $Author: jurgen $
-Revision ..: $Revision: 1.6 $
-Date ......: $Date: 2006/02/07 11:10:51 $
+Revision ..: $Revision: 1.7 $
+Date ......: $Date: 2006/02/07 16:05:05 $
 --------------------------------------------------------------------------------
 $Log: sourceIdentify.h,v $
+Revision 1.7  2006/02/07 16:05:05  jurgen
+Use ObjectInfo structure to hold catalogue object information
+
 Revision 1.6  2006/02/07 11:10:51  jurgen
 Suppress catalogAccess verbosity
 
@@ -27,7 +30,7 @@ Replace header information with CVS typeset information.
 
 /* Definitions ______________________________________________________________ */
 #define TOOL_NAME     "gtsrcid"
-#define TOOL_VERSION  "gtsrcid-v1r0p2"
+#define TOOL_VERSION  "gtsrcid-v1r0p3"
 #define TOOL_LOGFILE  "gtsrcid.log"
 #define USE_ST_APP 1
 
