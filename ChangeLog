@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Tue Feb 14 07:38:54 PST 2006
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	sourceIdentify.h 
+Log Message:
+Set the version string to "v1r0p3"
+
+    *
+------------------------------------------------------------
 User: jurgen  Tue Feb 14 07:38:53 PST 2006
 sourceIdentify/cmt
 
