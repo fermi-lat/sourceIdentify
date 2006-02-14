@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Tue Feb 14 07:38:53 PST 2006
+sourceIdentify/cmt
+
+Modified Files:
+	cleanup.csh cleanup.sh rh9_gcc32.make setup.csh setup.sh 
+Log Message:
+Set the version string to "v1r0p3"
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r0p3, operation: add
 Package: sourceIdentify
