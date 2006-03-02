@@ -1,10 +1,13 @@
 /*------------------------------------------------------------------------------
-Id ........: $Id: sourceIdentify.cxx,v 1.7 2006/02/07 11:10:51 jurgen Exp $
+Id ........: $Id: sourceIdentify.cxx,v 1.8 2006/02/07 16:05:05 jurgen Exp $
 Author ....: $Author: jurgen $
-Revision ..: $Revision: 1.7 $
-Date ......: $Date: 2006/02/07 11:10:51 $
+Revision ..: $Revision: 1.8 $
+Date ......: $Date: 2006/02/07 16:05:05 $
 --------------------------------------------------------------------------------
 $Log: sourceIdentify.cxx,v $
+Revision 1.8  2006/02/07 16:05:05  jurgen
+Use ObjectInfo structure to hold catalogue object information
+
 Revision 1.7  2006/02/07 11:10:51  jurgen
 Suppress catalogAccess verbosity
 
@@ -92,9 +95,9 @@ public:
       Log(Log_1, 
          "* -------------------------------------------------------- *");
       Log(Log_1, 
-         "* Revision : v1r0p2                                        *");
+         "* Revision : v1r0p4                                        *");
       Log(Log_1, 
-         "* Date     : 7 February 2006                               *");
+         "* Date     : 1 March 2006                                  *");
       Log(Log_1, 
          "* Author   : Jurgen Knodlseder (CESR)                      *");
       Log(Log_1, 
@@ -155,5 +158,5 @@ st_app::StAppFactory<application> g_factory(TOOL_NAME);
  * @brief  Source identification main program.
  * @author J. Knodlseder
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/sourceIdentify/src/gtsrcid/sourceIdentify.cxx,v 1.7 2006/02/07 11:10:51 jurgen Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/sourceIdentify/src/gtsrcid/sourceIdentify.cxx,v 1.8 2006/02/07 16:05:05 jurgen Exp $
  */
