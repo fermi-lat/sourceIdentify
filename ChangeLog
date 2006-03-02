@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jurgen  Wed Mar  1 18:01:54 PST 2006
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	sourceIdentify.cxx sourceIdentify.h 
+Log Message:
+Set hidden parameters to meaningful values
+
+    *
+------------------------------------------------------------
+User: jurgen  Wed Mar  1 18:01:54 PST 2006
 sourceIdentify/pfiles
 
 Modified Files:
