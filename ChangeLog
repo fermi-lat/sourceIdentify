@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Wed Mar  1 18:01:53 PST 2006
+sourceIdentify/cmt
+
+Modified Files:
+	requirements rh9_gcc32.make 
+Log Message:
+Set hidden parameters to meaningful values
+
+    *
+------------------------------------------------------------
 User: jurgen  Tue Feb 14 07:38:54 PST 2006
 sourceIdentify/src/gtsrcid
 
