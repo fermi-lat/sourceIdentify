@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Thu Sep 20 07:22:06 PDT 2007
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Log.h 
+Log Message:
+Use application name from sourceIdentify.h file
+
+    *
+------------------------------------------------------------
 User: jurgen  Thu Sep 20 07:16:19 PDT 2007
 sourceIdentify/src/gtsrcid
 
