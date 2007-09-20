@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Thu Sep 20 07:16:19 PDT 2007
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	sourceIdentify.cxx sourceIdentify.h 
+Log Message:
+Improve st_app handling (dump version)
+
+    *
+------------------------------------------------------------
 User: jurgen  Thu Sep 20 07:16:18 PDT 2007
 sourceIdentify/cmt
 
