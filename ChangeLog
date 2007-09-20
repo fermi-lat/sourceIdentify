@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Thu Sep 20 07:16:18 PDT 2007
+sourceIdentify/cmt
+
+Modified Files:
+	rh9_gcc32.make 
+Log Message:
+Improve st_app handling (dump version)
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r0p4, operation: add
 Package: sourceIdentify
