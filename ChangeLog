@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: jurgen  Fri Sep 21 05:49:10 PDT 2007
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.cxx Catalogue.h Catalogue_fits.cxx Catalogue_id.cxx 
+	sourceIdentify.cxx 
+Log Message:
+Enhance log-file output and chatter level
+
+    *
+------------------------------------------------------------
+User: jurgen  Fri Sep 21 05:49:10 PDT 2007
 sourceIdentify/pfiles
 
 Modified Files:
