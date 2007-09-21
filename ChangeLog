@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Fri Sep 21 07:30:55 PDT 2007
+sourceIdentify/src/test
+
+Added Files:
+	gtsrcid-gdb gtsrcid.par 
+Log Message:
+Add debugging scripts and parameter file to test folder
+
+    *
+------------------------------------------------------------
 User: jurgen  Fri Sep 21 07:29:03 PDT 2007
 sourceIdentify/src/test
 
