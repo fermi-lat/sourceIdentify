@@ -1,10 +1,13 @@
 /*------------------------------------------------------------------------------
-Id ........: $Id: Log.h,v 1.2 2006/02/01 13:33:36 jurgen Exp $
+Id ........: $Id: Log.h,v 1.3 2007/09/20 14:22:06 jurgen Exp $
 Author ....: $Author: jurgen $
-Revision ..: $Revision: 1.2 $
-Date ......: $Date: 2006/02/01 13:33:36 $
+Revision ..: $Revision: 1.3 $
+Date ......: $Date: 2007/09/20 14:22:06 $
 --------------------------------------------------------------------------------
 $Log: Log.h,v $
+Revision 1.3  2007/09/20 14:22:06  jurgen
+Use application name from sourceIdentify.h file
+
 Revision 1.2  2006/02/01 13:33:36  jurgen
 Tried to fix Win32 compilation bugs.
 Change revision number to 1.3.2.
@@ -33,17 +36,17 @@ typedef enum {
   Error_1,
   Error_2,
   Error_3,
-  Warning_0,   
-  Warning_1, 
-  Warning_2, 
+  Warning_0,
+  Warning_1,
+  Warning_2,
   Warning_3,
-  Alert_0,     
-  Alert_1,   
-  Alert_2,   
+  Alert_0,
+  Alert_1,
+  Alert_2,
   Alert_3,
-  Log_0,       
-  Log_1,     
-  Log_2,     
+  Log_0,
+  Log_1,
+  Log_2,
   Log_3
 } MessageType;
 
