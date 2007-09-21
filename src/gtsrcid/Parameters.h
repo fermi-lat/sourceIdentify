@@ -1,10 +1,15 @@
 /*------------------------------------------------------------------------------
-Id ........: $Id: Parameters.h,v 1.3 2006/02/01 13:33:36 jurgen Exp $
+Id ........: $Id: Parameters.h,v 1.4 2006/02/03 12:14:52 jurgen Exp $
 Author ....: $Author: jurgen $
-Revision ..: $Revision: 1.3 $
-Date ......: $Date: 2006/02/01 13:33:36 $
+Revision ..: $Revision: 1.4 $
+Date ......: $Date: 2006/02/03 12:14:52 $
 --------------------------------------------------------------------------------
 $Log: Parameters.h,v $
+Revision 1.4  2006/02/03 12:14:52  jurgen
+New version that allows additional probabilities to be taken
+into account. The code has been considerably reorganised. Also
+catalogue column prefixes are now handled differently.
+
 Revision 1.3  2006/02/01 13:33:36  jurgen
 Tried to fix Win32 compilation bugs.
 Change revision number to 1.3.2.
@@ -57,7 +62,7 @@ public:
   int    logExplicit(void);                 // Inline
   int    logVerbose(void);                  // Inline
   int    logDebug(void);                    // Inline
-              
+
   // Private methods
 private:
   void   init_memory(void);
