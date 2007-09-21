@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Fri Sep 21 07:29:02 PDT 2007
+sourceIdentify/data/outref
+
+Modified Files:
+	test1.fits test1.log 
+Log Message:
+Correct memory bug and updated test script
+
+    *
+------------------------------------------------------------
 User: jurgen  Fri Sep 21 05:49:10 PDT 2007
 sourceIdentify/src/gtsrcid
 
