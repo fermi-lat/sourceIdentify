@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: jurgen  Fri Sep 21 07:29:03 PDT 2007
+sourceIdentify/src/test
+
+Modified Files:
+	test1.csh 
+Added Files:
+	gtsrcid 
+Log Message:
+Correct memory bug and updated test script
+
+    *
+------------------------------------------------------------
+User: jurgen  Fri Sep 21 07:29:03 PDT 2007
 sourceIdentify/src/gtsrcid
 
 Modified Files:
