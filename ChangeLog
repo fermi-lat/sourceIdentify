@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jurgen  Fri Sep 21 13:27:14 PDT 2007
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.cxx Catalogue_fits.cxx Catalogue_id.cxx 
+Log Message:
+Correct cfits_collect bug (unstable row selection)
+
+    *
+------------------------------------------------------------
+User: jurgen  Fri Sep 21 13:27:14 PDT 2007
 sourceIdentify/cmt
 
 Modified Files:
