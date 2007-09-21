@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Fri Sep 21 13:27:14 PDT 2007
+sourceIdentify/cmt
+
+Modified Files:
+	requirements rh9_gcc32.make 
+Log Message:
+Correct cfits_collect bug (unstable row selection)
+
+    *
+------------------------------------------------------------
 User: jurgen  Fri Sep 21 07:30:55 PDT 2007
 sourceIdentify/src/test
 
