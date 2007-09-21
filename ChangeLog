@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Fri Sep 21 05:49:10 PDT 2007
+sourceIdentify/pfiles
+
+Modified Files:
+	gtsrcid.par 
+Log Message:
+Enhance log-file output and chatter level
+
+    *
+------------------------------------------------------------
 User: jurgen  Thu Sep 20 09:28:21 PDT 2007
 sourceIdentify/src/gtsrcid
 
