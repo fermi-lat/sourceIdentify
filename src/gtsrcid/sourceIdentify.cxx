@@ -1,10 +1,13 @@
 /*------------------------------------------------------------------------------
-Id ........: $Id: sourceIdentify.cxx,v 1.9 2006/03/02 02:01:54 jurgen Exp $
+Id ........: $Id: sourceIdentify.cxx,v 1.10 2007/09/20 14:16:18 jurgen Exp $
 Author ....: $Author: jurgen $
-Revision ..: $Revision: 1.9 $
-Date ......: $Date: 2006/03/02 02:01:54 $
+Revision ..: $Revision: 1.10 $
+Date ......: $Date: 2007/09/20 14:16:18 $
 --------------------------------------------------------------------------------
 $Log: sourceIdentify.cxx,v $
+Revision 1.10  2007/09/20 14:16:18  jurgen
+Improve st_app handling (dump version)
+
 Revision 1.9  2006/03/02 02:01:54  jurgen
 Set hidden parameters to meaningful values
 
@@ -91,15 +94,6 @@ public:
         if (status != STATUS_OK)
           continue;
 
-        // Dump header into log file
-        Log(Log_1, HD_BORDER);
-        Log(Log_1, HD_NAME);
-        Log(Log_1, HD_SEP);
-        Log(Log_1, HD_VERSION);
-        Log(Log_1, HD_DATE);
-        Log(Log_1, HD_AUTHOR);
-        Log(Log_1, HD_BORDER);
-
         // Get parameter file object
         st_app::AppParGroup &pars(getParGroup(TOOL_NAME));
 
@@ -111,14 +105,27 @@ public:
           continue;
         }
 
-        // Dump task parameters
-        status = par.dump(status);
-        if (status != STATUS_OK) {
-          if (par.logTerse())
-            Log(Error_3, "%d : Error while dumping task parameters.", status);      
-          continue;
+        // Dump header into log file
+        if (par.logTerse()) {
+          Log(Log_1, HD_BORDER);
+          Log(Log_1, HD_NAME);
+          Log(Log_1, HD_SEP);
+          Log(Log_1, HD_VERSION);
+          Log(Log_1, HD_DATE);
+          Log(Log_1, HD_AUTHOR);
+          Log(Log_1, HD_BORDER);
         }
-       
+
+        // Dump task parameters
+        if (par.logTerse()) {
+          status = par.dump(status);
+          if (status != STATUS_OK) {
+            if (par.logTerse())
+              Log(Error_3, "%d : Error while dumping task parameters.", status);      
+            continue;
+          }
+        }
+    
         // Build counterpart catalogue
         status = cat.build(&par, status);
         if (status != STATUS_OK) {
@@ -135,7 +142,8 @@ public:
       double  t_elapse = (double)(t_stop - t_start) / (double)CLOCKS_PER_SEC;
 
       // Dump termination message
-      Log(Log_1, "Task terminated using %.3f sec CPU time.", t_elapse);
+      if (par.logTerse())
+        Log(Log_1, "Task terminated using %.3f sec CPU time.", t_elapse);
    
       // Finish log file
       status = LogClose(status);
@@ -156,5 +164,5 @@ st_app::StAppFactory<gtsrcid> g_app_factory("gtsrcid");
  * @brief  Source identification main program.
  * @author J. Knodlseder
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/sourceIdentify/src/gtsrcid/sourceIdentify.cxx,v 1.9 2006/03/02 02:01:54 jurgen Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/sourceIdentify/src/gtsrcid/sourceIdentify.cxx,v 1.10 2007/09/20 14:16:18 jurgen Exp $
  */
