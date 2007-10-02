@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Tue Oct  2 15:01:16 PDT 2007
+sourceIdentify/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Change parameter name maxNumCtp to maxNumCpt
+
+    *
+------------------------------------------------------------
 User: jurgen  Tue Oct  2 14:48:45 PDT 2007
 sourceIdentify/src/gtsrcid
 
