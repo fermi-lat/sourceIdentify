@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jurgen  Tue Oct  2 14:48:45 PDT 2007
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.h Catalogue_fits.cxx 
+Log Message:
+Add PROB_ANGSEP, PROB_ADD and ANGSEP generic columns to FITS output file
+
+    *
+------------------------------------------------------------
+User: jurgen  Tue Oct  2 14:48:45 PDT 2007
 sourceIdentify/cmt
 
 Modified Files:
