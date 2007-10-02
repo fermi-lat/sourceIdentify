@@ -1,10 +1,13 @@
 /*------------------------------------------------------------------------------
-Id ........: $Id: Parameters.h,v 1.4 2006/02/03 12:14:52 jurgen Exp $
+Id ........: $Id: Parameters.h,v 1.5 2007/09/21 14:29:03 jurgen Exp $
 Author ....: $Author: jurgen $
-Revision ..: $Revision: 1.4 $
-Date ......: $Date: 2006/02/03 12:14:52 $
+Revision ..: $Revision: 1.5 $
+Date ......: $Date: 2007/09/21 14:29:03 $
 --------------------------------------------------------------------------------
 $Log: Parameters.h,v $
+Revision 1.5  2007/09/21 14:29:03  jurgen
+Correct memory bug and updated test script
+
 Revision 1.4  2006/02/03 12:14:52  jurgen
 New version that allows additional probabilities to be taken
 into account. The code has been considerably reorganised. Also
@@ -84,7 +87,7 @@ private:
   double                   m_probThres;           // Probability threshold
   double                   m_srcPosError;         // Default source pos. error
   double                   m_cptPosError;         // Default counterpart pos. error
-  long                     m_maxNumCtp;           // Maximum # of counterparts
+  long                     m_maxNumCpt;           // Maximum # of counterparts
   int                      m_chatter;             // Chatter level
   int                      m_clobber;             // Clobber flag
   int                      m_debug;               // Debugging mode activated
