@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jurgen  Tue Oct  2 15:01:16 PDT 2007
+sourceIdentify/pfiles
+
+Modified Files:
+	gtsrcid.par 
+Log Message:
+Change parameter name maxNumCtp to maxNumCpt
+
+    *
+------------------------------------------------------------
+User: jurgen  Tue Oct  2 15:01:16 PDT 2007
 sourceIdentify/doc
 
 Modified Files:
