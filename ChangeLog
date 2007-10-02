@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Tue Oct  2 14:48:45 PDT 2007
+sourceIdentify/cmt
+
+Modified Files:
+	cleanup.csh cleanup.sh rh9_gcc32.make setup.csh setup.sh 
+Log Message:
+Add PROB_ANGSEP, PROB_ADD and ANGSEP generic columns to FITS output file
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r2p0, operation: add
 Package: sourceIdentify
