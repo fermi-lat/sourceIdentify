@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Wed Oct  3 02:06:08 PDT 2007
+sourceIdentify/cmt
+
+Modified Files:
+	rh9_gcc32.make 
+Log Message:
+Add chance coincidence probability PROB_CHANCE
+
+    *
+------------------------------------------------------------
 User: jurgen  Tue Oct  2 15:01:16 PDT 2007
 sourceIdentify/src/gtsrcid
 
