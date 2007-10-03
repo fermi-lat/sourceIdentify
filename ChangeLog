@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jurgen  Wed Oct  3 02:06:08 PDT 2007
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.h Catalogue_fits.cxx Catalogue_id.cxx 
+Log Message:
+Add chance coincidence probability PROB_CHANCE
+
+    *
+------------------------------------------------------------
+User: jurgen  Wed Oct  3 02:06:08 PDT 2007
 sourceIdentify/cmt
 
 Modified Files:
