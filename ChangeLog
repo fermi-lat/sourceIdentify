@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: jurgen  Mon Oct  8 04:02:25 PDT 2007
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.cxx Catalogue.h Catalogue_fits.cxx Catalogue_id.cxx 
+	Parameters.cxx Parameters.h sourceIdentify.h 
+Log Message:
+Implement search for catalogue table information and handle different
+position error types
+
+    *
+------------------------------------------------------------
+User: jurgen  Mon Oct  8 04:02:25 PDT 2007
 sourceIdentify/cmt
 
 Modified Files:
