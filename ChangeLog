@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jurgen  Mon Oct  8 04:02:25 PDT 2007
+sourceIdentify/cmt
+
+Modified Files:
+	rh9_gcc32.make 
+Log Message:
+Implement search for catalogue table information and handle different
+position error types
+
+    *
+------------------------------------------------------------
 User: jurgen  Wed Oct  3 02:06:08 PDT 2007
 sourceIdentify/src/gtsrcid
 
