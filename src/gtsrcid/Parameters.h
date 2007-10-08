@@ -1,10 +1,13 @@
 /*------------------------------------------------------------------------------
-Id ........: $Id: Parameters.h,v 1.5 2007/09/21 14:29:03 jurgen Exp $
+Id ........: $Id: Parameters.h,v 1.6 2007/10/02 22:01:16 jurgen Exp $
 Author ....: $Author: jurgen $
-Revision ..: $Revision: 1.5 $
-Date ......: $Date: 2007/09/21 14:29:03 $
+Revision ..: $Revision: 1.6 $
+Date ......: $Date: 2007/10/02 22:01:16 $
 --------------------------------------------------------------------------------
 $Log: Parameters.h,v $
+Revision 1.6  2007/10/02 22:01:16  jurgen
+Change parameter name maxNumCtp to maxNumCpt
+
 Revision 1.5  2007/09/21 14:29:03  jurgen
 Correct memory bug and updated test script
 
@@ -42,6 +45,7 @@ namespace sourceIdentify {
 typedef enum {
   NotUsed = 1,
   Exponential,
+  Parabolid,
   Gaussian
 } PosProbType;
 
