@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: jurgen  Tue Oct  9 01:17:40 PDT 2007
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.cxx Catalogue.h Catalogue_fits.cxx Catalogue_id.cxx 
+	Parameters.cxx Parameters.h 
+Log Message:
+Correctly interpret positional errors and correctly evaluate PROB_POS
+as likelihood
+
+    *
+------------------------------------------------------------
+User: jurgen  Tue Oct  9 01:17:40 PDT 2007
 sourceIdentify/doc
 
 Modified Files:
