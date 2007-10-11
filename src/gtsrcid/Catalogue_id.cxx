@@ -1,10 +1,13 @@
 /*------------------------------------------------------------------------------
-Id ........: $Id: Catalogue_id.cxx,v 1.10 2007/10/09 08:17:40 jurgen Exp $
+Id ........: $Id: Catalogue_id.cxx,v 1.11 2007/10/09 16:46:23 jurgen Exp $
 Author ....: $Author: jurgen $
-Revision ..: $Revision: 1.10 $
-Date ......: $Date: 2007/10/09 08:17:40 $
+Revision ..: $Revision: 1.11 $
+Date ......: $Date: 2007/10/09 16:46:23 $
 --------------------------------------------------------------------------------
 $Log: Catalogue_id.cxx,v $
+Revision 1.11  2007/10/09 16:46:23  jurgen
+Write counterpart catalogue reference (row) to output catalogue
+
 Revision 1.10  2007/10/09 08:17:40  jurgen
 Correctly interpret positional errors and correctly evaluate PROB_POS
 as likelihood
@@ -480,7 +483,6 @@ Status Catalogue::cid_refine(Parameters *par, long iSrc, Status status) {
 
         // Loop over the additional probability columns
         for (i_add = 0; i_add < num_add; i_add++) {
-
           // Extract probability information from column
           status = cfits_colval(m_memFile, 
                                 (char*)par->m_probColNames[i_add].c_str(),
@@ -513,7 +515,6 @@ Status Catalogue::cid_refine(Parameters *par, long iSrc, Status status) {
 
             // Save probability for each counterpart candidate (for logging)
             m_cc[iCC].prob_add.push_back(prob);
-
           } // endfor: looped over all counterpart candidates
 
         } // endfor: looped over the additional probability columns
