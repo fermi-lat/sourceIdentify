@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Thu Oct 11 06:20:54 PDT 2007
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.cxx Catalogue.h Catalogue_fits.cxx Catalogue_id.cxx 
+Log Message:
+Correctly remove FITS special function columns
+
+    *
+------------------------------------------------------------
 User: jurgen  Wed Oct 10 08:39:12 PDT 2007
 sourceIdentify/src/gtsrcid
 
