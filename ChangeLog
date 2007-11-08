@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jurgen  Thu Nov  8 06:42:11 PST 2007
+sourceIdentify/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+Handle error circles (e.g. 3EG catalogue)
+
+    *
+------------------------------------------------------------
+User: jurgen  Thu Nov  8 06:42:11 PST 2007
 sourceIdentify/cmt
 
 Modified Files:
