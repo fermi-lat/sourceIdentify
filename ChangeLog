@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Fri Nov 23 07:34:12 PST 2007
+sourceIdentify/cmt
+
+Modified Files:
+	cleanup.csh cleanup.sh rh9_gcc32.make setup.csh setup.sh 
+Log Message:
+Removed rh9_gcc32 directory
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r3p2, operation: add
 Package: sourceIdentify
