@@ -1,10 +1,13 @@
 /*------------------------------------------------------------------------------
-Id ........: $Id: sourceIdentify.h,v 1.14 2007/10/11 15:39:27 jurgen Exp $
+Id ........: $Id: sourceIdentify.h,v 1.15 2007/11/08 14:42:11 jurgen Exp $
 Author ....: $Author: jurgen $
-Revision ..: $Revision: 1.14 $
-Date ......: $Date: 2007/10/11 15:39:27 $
+Revision ..: $Revision: 1.15 $
+Date ......: $Date: 2007/11/08 14:42:11 $
 --------------------------------------------------------------------------------
 $Log: sourceIdentify.h,v $
+Revision 1.15  2007/11/08 14:42:11  jurgen
+Handle error circles (e.g. 3EG catalogue)
+
 Revision 1.14  2007/10/11 15:39:27  jurgen
 Update release date
 
@@ -52,9 +55,9 @@ Replace header information with CVS typeset information.
 
 /* Definitions ______________________________________________________________ */
 #define TOOL_NAME     "gtsrcid"
-#define TOOL_VERSION  "v1r3p2"
+#define TOOL_VERSION  "v1r3p4"
 #define TOOL_LOGFILE  "gtsrcid.log"
-#define TOOL_DATE     " 8-Nov-2007"
+#define TOOL_DATE     "30-Nov-2007"
 #define HD_BORDER     "************************************************************"
 #define HD_SEP        "* -------------------------------------------------------- *"
 #define HD_NAME       "*                          gtsrcid                         *"
