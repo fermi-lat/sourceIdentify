@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jurgen  Fri Nov 30 08:19:26 PST 2007
+sourceIdentify/pfiles
+
+Modified Files:
+	gtsrcid.par 
+Log Message:
+Correct version number and add RAdeg/DEdeg columns
+
+    *
+------------------------------------------------------------
+User: jurgen  Fri Nov 30 08:19:26 PST 2007
 sourceIdentify/doc
 
 Modified Files:
