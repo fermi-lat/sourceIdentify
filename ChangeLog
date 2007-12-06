@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Thu Dec  6 08:42:15 PST 2007
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.cxx sourceIdentify.h 
+Log Message:
+Add RA/DEC and PosErr generic names
+
+    *
+------------------------------------------------------------
 User: jurgen  Thu Dec  6 08:42:14 PST 2007
 sourceIdentify/src
 
