@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Sat Feb 23 00:14:23 PST 2008
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.h 
+Log Message:
+correct catalogAccess header file path after catalogAccess modifications
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: sourceIdentify-01-03-05, operation: add
 Package: sourceIdentify
