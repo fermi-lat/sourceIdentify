@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 TAG
+Tag name: sourceIdentify-01-03-07, operation: mov
+Package: sourceIdentify
+User: glast  Mon Feb 25 21:44:28 2008
+Files:
+  sourceIdentify/SConscript  1.2
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: v1r3p7, operation: mov
 Package: sourceIdentify
 User: glast  Mon Feb 25 21:44:13 2008
