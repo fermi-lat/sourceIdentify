@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+TAG
+Tag name: v1r3p7, operation: mov
+Package: sourceIdentify
+User: glast  Mon Feb 25 21:44:13 2008
+Files:
+  sourceIdentify/SConscript  1.2
+
+    *
+------------------------------------------------------------
 User: glastrm  Mon Feb 25 21:42:03 PST 2008
 ScienceTools-scons/sourceIdentify
 
