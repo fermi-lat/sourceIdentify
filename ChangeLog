@@ -1,4 +1,46 @@
 ------------------------------------------------------------
+TAG
+Tag name: v1r3p8, operation: add
+Package: sourceIdentify
+User: jurgen  Fri Mar  7 01:20:07 2008
+Files:
+  sourceIdentify/.cvsignore  1.2
+  sourceIdentify/ChangeLog  1.210
+  sourceIdentify/SConscript  1.2
+  sourceIdentify/cmt/setup.csh  1.16
+  sourceIdentify/cmt/requirements  1.23
+  sourceIdentify/cmt/setup.sh  1.16
+  sourceIdentify/cmt/.cvsignore  1.1
+  sourceIdentify/cmt/cleanup.csh  1.16
+  sourceIdentify/cmt/rh9_gcc32.make  1.28
+  sourceIdentify/cmt/cleanup.sh  1.16
+  sourceIdentify/cmt/Makefile  1.1.1.1
+  sourceIdentify/data/3EG.fits  1.1
+  sourceIdentify/data/radio_white1.4GHz.tsv  1.1
+  sourceIdentify/data/outref/test1.log  1.5
+  sourceIdentify/data/outref/test1.fits  1.4
+  sourceIdentify/doc/release.notes  1.26
+  sourceIdentify/doc/used_packages.html  1.2
+  sourceIdentify/pfiles/gtsrcid.par  1.11
+  sourceIdentify/src/mainpage.h  1.2
+  sourceIdentify/src/gtsrcid/Parameters.h  1.8
+  sourceIdentify/src/gtsrcid/sourceIdentify.h  1.18
+  sourceIdentify/src/gtsrcid/Catalogue_fits.cxx  1.13
+  sourceIdentify/src/gtsrcid/Catalogue_id.cxx  1.14
+  sourceIdentify/src/gtsrcid/Catalogue.h  1.19
+  sourceIdentify/src/gtsrcid/Catalogue.cxx  1.25
+  sourceIdentify/src/gtsrcid/Parameters.cxx  1.10
+  sourceIdentify/src/gtsrcid/sourceIdentify.cxx  1.12
+  sourceIdentify/src/gtsrcid/Log.cxx  1.4
+  sourceIdentify/src/gtsrcid/Catalogue_nr.cxx  1.1
+  sourceIdentify/src/gtsrcid/Log.h  1.4
+  sourceIdentify/src/test/test1.csh  1.6
+  sourceIdentify/src/test/gtsrcid  1.2
+  sourceIdentify/src/test/gtsrcid-gdb  1.1
+  sourceIdentify/src/test/gtsrcid.par  1.1
+
+    *
+------------------------------------------------------------
 User: jurgen  Fri Mar  7 01:19:57 PST 2008
 sourceIdentify/doc
 
