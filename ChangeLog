@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jurgen  Fri Mar  7 01:17:36 PST 2008
+sourceIdentify/cmt
+
+Modified Files:
+	cleanup.csh cleanup.sh rh9_gcc32.make setup.csh setup.sh 
+Log Message:
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: sourceIdentify-01-03-07, operation: mov
 Package: sourceIdentify
