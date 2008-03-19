@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glastrm  Wed Mar 19 13:43:02 PDT 2008
+ScienceTools-scons/sourceIdentify
+
+Modified Files:
+	SConscript 
+Log Message:
+Register data files
+    *
+------------------------------------------------------------
 TAG
 Tag name: sourceIdentify-01-03-08, operation: add
 Package: sourceIdentify
