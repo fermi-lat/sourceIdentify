@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Thu Mar 20 14:56:26 PDT 2008
+sourceIdentify/cmt
+
+Modified Files:
+	rh9_gcc32.make 
+Log Message:
+implement local counterpart density
+
+    *
+------------------------------------------------------------
 User: jurgen  Thu Mar 20 05:17:44 PDT 2008
 sourceIdentify/src/gtsrcid
 
