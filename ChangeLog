@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Thu Mar 20 05:17:44 PDT 2008
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.cxx sourceIdentify.h 
+Log Message:
+Invert _RA/_DE and RA/DE column name search
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: sourceIdentify-01-03-10, operation: add
 Package: sourceIdentify
