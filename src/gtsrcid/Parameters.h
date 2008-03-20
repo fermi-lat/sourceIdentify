@@ -1,10 +1,14 @@
 /*------------------------------------------------------------------------------
-Id ........: $Id: Parameters.h,v 1.7 2007/10/08 11:02:25 jurgen Exp $
+Id ........: $Id: Parameters.h,v 1.8 2007/10/09 08:17:40 jurgen Exp $
 Author ....: $Author: jurgen $
-Revision ..: $Revision: 1.7 $
-Date ......: $Date: 2007/10/08 11:02:25 $
+Revision ..: $Revision: 1.8 $
+Date ......: $Date: 2007/10/09 08:17:40 $
 --------------------------------------------------------------------------------
 $Log: Parameters.h,v $
+Revision 1.8  2007/10/09 08:17:40  jurgen
+Correctly interpret positional errors and correctly evaluate PROB_POS
+as likelihood
+
 Revision 1.7  2007/10/08 11:02:25  jurgen
 Implement search for catalogue table information and handle different
 position error types
@@ -47,10 +51,15 @@ namespace sourceIdentify {
 
 /* Type defintions __________________________________________________________ */
 typedef enum {
-  NotUsed = 1,
+  NoPos = 1,
   Exponential,
   Gaussian
 } PosProbType;
+
+typedef enum {
+  NoChance = 1,
+  Local
+} ChanceProbType;
 
 
 /* Classes __________________________________________________________________ */
@@ -90,6 +99,7 @@ private:
   std::vector<std::string> m_outCatQtyFormula;    // New output catalogue quantities
   std::vector<std::string> m_select;              // Selections
   PosProbType              m_posProbType;         // Position probability type
+  ChanceProbType           m_chanceProbType;      // Chance coincidence prob. type
   std::vector<std::string> m_probColNames;        // Probability column names
   double                   m_probThres;           // Probability threshold
   double                   m_srcPosError;         // Default source pos. error
