@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jurgen  Thu Mar 20 04:00:21 PDT 2008
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue_fits.cxx 
+Log Message:
+Correctly extract source number of indices above 999
+
+    *
+------------------------------------------------------------
+User: jurgen  Thu Mar 20 04:00:21 PDT 2008
 sourceIdentify/cmt
 
 Modified Files:
