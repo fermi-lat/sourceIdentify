@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jurgen  Thu Mar 20 14:56:26 PDT 2008
+sourceIdentify/pfiles
+
+Modified Files:
+	gtsrcid.par 
+Log Message:
+implement local counterpart density
+
+    *
+------------------------------------------------------------
+User: jurgen  Thu Mar 20 14:56:26 PDT 2008
 sourceIdentify/cmt
 
 Modified Files:
