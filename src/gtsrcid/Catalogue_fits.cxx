@@ -1,10 +1,13 @@
 /*------------------------------------------------------------------------------
-Id ........: $Id: Catalogue_fits.cxx,v 1.15 2008/03/20 21:56:26 jurgen Exp $
+Id ........: $Id: Catalogue_fits.cxx,v 1.16 2008/03/21 09:10:12 jurgen Exp $
 Author ....: $Author: jurgen $
-Revision ..: $Revision: 1.15 $
-Date ......: $Date: 2008/03/20 21:56:26 $
+Revision ..: $Revision: 1.16 $
+Date ......: $Date: 2008/03/21 09:10:12 $
 --------------------------------------------------------------------------------
 $Log: Catalogue_fits.cxx,v $
+Revision 1.16  2008/03/21 09:10:12  jurgen
+Enhance code documentation.
+
 Revision 1.15  2008/03/20 21:56:26  jurgen
 implement local counterpart density
 
@@ -1129,7 +1132,7 @@ Status Catalogue::cfits_add(fitsfile *fptr, long iSrc, Parameters *par,
 
       // Add local counterpart density
       for (row = 0; row < nrows; row++)
-        dptr[row] = m_cc[row].rho;
+        dptr[row] = m_rho;
       fstatus = fits_write_col(fptr, TDOUBLE, OUTCAT_COL_RHO_COLNUM,
                                frow, 1, nrows, dptr, &fstatus);
       if (fstatus != 0) {
