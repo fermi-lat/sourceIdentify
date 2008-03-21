@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: jurgen  Fri Mar 21 02:10:12 PDT 2008
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.cxx Catalogue.h Catalogue_fits.cxx Catalogue_id.cxx 
+	Catalogue_nr.cxx Log.cxx Log.h Parameters.cxx Parameters.h 
+	sourceIdentify.cxx sourceIdentify.h 
+Log Message:
+Enhance code documentation.
+
+    *
+------------------------------------------------------------
+User: jurgen  Fri Mar 21 02:10:12 PDT 2008
 sourceIdentify/cmt
 
 Modified Files:
