@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Wed Mar 26 09:46:58 PDT 2008
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.cxx Catalogue_fits.cxx 
+Log Message:
+add more information to FITS file header
+
+    *
+------------------------------------------------------------
 User: jurgen  Wed Mar 26 06:37:53 PDT 2008
 sourceIdentify/src/gtsrcid
 
