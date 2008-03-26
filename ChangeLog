@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Wed Mar 26 09:57:30 PDT 2008
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.h Catalogue_id.cxx 
+Log Message:
+implement global counterpart density evaluation
+
+    *
+------------------------------------------------------------
 User: jurgen  Wed Mar 26 09:46:58 PDT 2008
 sourceIdentify/src/gtsrcid
 
