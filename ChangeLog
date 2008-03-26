@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: jurgen  Wed Mar 26 06:37:10 PDT 2008
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.cxx Catalogue.h Catalogue_fits.cxx Catalogue_id.cxx 
+	Parameters.cxx Parameters.h 
+Log Message:
+Generalize probability calculation and implement Bayesian method
+
+    *
+------------------------------------------------------------
+User: jurgen  Wed Mar 26 06:37:10 PDT 2008
 sourceIdentify/pfiles
 
 Modified Files:
