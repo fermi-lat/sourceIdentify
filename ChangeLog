@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Wed Mar 26 06:37:53 PDT 2008
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.h 
+Log Message:
+Remove unused members
+
+    *
+------------------------------------------------------------
 User: jurgen  Wed Mar 26 06:37:10 PDT 2008
 sourceIdentify/src/gtsrcid
 
