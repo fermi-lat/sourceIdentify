@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Wed Mar 26 06:37:10 PDT 2008
+sourceIdentify/doc
+
+Modified Files:
+	used_packages.html 
+Log Message:
+Generalize probability calculation and implement Bayesian method
+
+    *
+------------------------------------------------------------
 User: jurgen  Fri Mar 21 09:46:14 PDT 2008
 sourceIdentify/src/gtsrcid
 
