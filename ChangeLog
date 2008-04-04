@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Fri Apr  4 07:55:52 PDT 2008
+sourceIdentify/cmt
+
+Modified Files:
+	cleanup.csh cleanup.sh rh9_gcc32.make setup.csh setup.sh 
+Log Message:
+Remove counterpart candidate working memory and introduce permanent counterpart candidate memory
+
+    *
+------------------------------------------------------------
 User: jurgen  Wed Mar 26 09:57:30 PDT 2008
 sourceIdentify/src/gtsrcid
 
