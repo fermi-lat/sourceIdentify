@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Tue Apr 15 15:30:54 PDT 2008
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.cxx Catalogue.h Catalogue_id.cxx 
+Log Message:
+Cleanup counterpart statistics
+
+    *
+------------------------------------------------------------
 User: jurgen  Tue Apr 15 14:24:12 PDT 2008
 sourceIdentify/src/gtsrcid
 
