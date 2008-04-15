@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jurgen  Tue Apr 15 14:24:12 PDT 2008
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.cxx Catalogue.h Catalogue_fits.cxx Catalogue_id.cxx 
+	sourceIdentify.h 
+Log Message:
+Introduce sparse matrix for source catalogue probability computation.
+
+    *
+------------------------------------------------------------
 User: jurgen  Tue Apr 15 14:24:11 PDT 2008
 sourceIdentify/cmt
 
