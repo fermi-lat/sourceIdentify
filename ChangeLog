@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Tue Apr 15 14:24:11 PDT 2008
+sourceIdentify/cmt
+
+Modified Files:
+	requirements rh9_gcc32.make 
+Log Message:
+Introduce sparse matrix for source catalogue probability computation.
+
+    *
+------------------------------------------------------------
 User: jurgen  Fri Apr  4 07:55:52 PDT 2008
 sourceIdentify/src/gtsrcid
 
