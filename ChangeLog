@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Wed Apr 16 15:00:34 PDT 2008
+sourceIdentify/cmt
+
+Modified Files:
+	rh9_gcc32.make 
+Log Message:
+Compute unique posterior probabilities
+
+    *
+------------------------------------------------------------
 User: jurgen  Tue Apr 15 15:30:54 PDT 2008
 sourceIdentify/src/gtsrcid
 
