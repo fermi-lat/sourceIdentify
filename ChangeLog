@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jurgen  Wed Apr 16 15:00:34 PDT 2008
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.cxx Catalogue.h Catalogue_id.cxx 
+Log Message:
+Compute unique posterior probabilities
+
+    *
+------------------------------------------------------------
+User: jurgen  Wed Apr 16 15:00:34 PDT 2008
 sourceIdentify/cmt
 
 Modified Files:
