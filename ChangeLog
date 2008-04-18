@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Fri Apr 18 13:50:33 PDT 2008
+sourceIdentify/cmt
+
+Modified Files:
+	requirements rh9_gcc32.make 
+Log Message:
+Implement catch-22 scheme for prior probability calculation and compute log likelihood-ratio instead of likelihood ratio (avoid numerical problems)
+
+    *
+------------------------------------------------------------
 User: jurgen  Fri Apr 18 09:14:16 PDT 2008
 sourceIdentify/src/gtsrcid
 
