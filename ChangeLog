@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Fri Apr 18 03:43:20 PDT 2008
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.cxx Catalogue.h Catalogue_id.cxx 
+Log Message:
+Allow for divergent LRs (flag them)
+
+    *
+------------------------------------------------------------
 User: jurgen  Wed Apr 16 15:00:34 PDT 2008
 sourceIdentify/src/gtsrcid
 
