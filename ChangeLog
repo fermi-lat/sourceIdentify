@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Fri Apr 18 09:14:16 PDT 2008
+sourceIdentify/cmt
+
+Modified Files:
+	rh9_gcc32.make 
+Log Message:
+Add LR statistics to log file
+
+    *
+------------------------------------------------------------
 User: jurgen  Fri Apr 18 03:43:20 PDT 2008
 sourceIdentify/src/gtsrcid
 
