@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Wed Apr 23 08:09:21 PDT 2008
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Parameters.cxx sourceIdentify.h 
+Log Message:
+Check for catch-22 in upper case
+
+    *
+------------------------------------------------------------
 User: jurgen  Wed Apr 23 07:12:03 PDT 2008
 sourceIdentify/src/gtsrcid
 
