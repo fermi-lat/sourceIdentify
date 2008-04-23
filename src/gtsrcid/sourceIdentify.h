@@ -1,10 +1,13 @@
 /*------------------------------------------------------------------------------
-Id ........: $Id: sourceIdentify.h,v 1.22 2008/03/21 09:10:12 jurgen Exp $
+Id ........: $Id: sourceIdentify.h,v 1.23 2008/04/15 21:24:12 jurgen Exp $
 Author ....: $Author: jurgen $
-Revision ..: $Revision: 1.22 $
-Date ......: $Date: 2008/03/21 09:10:12 $
+Revision ..: $Revision: 1.23 $
+Date ......: $Date: 2008/04/15 21:24:12 $
 --------------------------------------------------------------------------------
 $Log: sourceIdentify.h,v $
+Revision 1.23  2008/04/15 21:24:12  jurgen
+Introduce sparse matrix for source catalogue probability computation.
+
 Revision 1.22  2008/03/21 09:10:12  jurgen
 Enhance code documentation.
 
@@ -132,7 +135,8 @@ typedef enum  {                                  // Function status code
   STATUS_CAT_SEL_FAILED    = -100403,             // Selection failed
   STATUS_FCT_NOT_FOUND     = -100500,             // Function not found
   STATUS_FCT_INVALID       = -100502,             // Invalid function
-  STATUS_FCT_NO_CLOSING    = -100503              // No closing parenthesis
+  STATUS_FCT_NO_CLOSING    = -100503,             // No closing parenthesis
+  STATUS_FCT_BAD_NUM_ARG   = -100504              // Bad number of function args
 } Status;
 
 /* Prototypes _______________________________________________________________ */
