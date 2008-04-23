@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Wed Apr 23 08:42:06 PDT 2008
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.cxx Catalogue_fits.cxx 
+Log Message:
+Don't close in-memory catalogue (error if catalogue is empty)
+
+    *
+------------------------------------------------------------
 User: jurgen  Wed Apr 23 08:09:21 PDT 2008
 sourceIdentify/src/gtsrcid
 
