@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Wed Apr 23 07:12:03 PDT 2008
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.h Catalogue_fits.cxx sourceIdentify.h 
+Log Message:
+Implement zero-argument special functions nsrc(), nlat() and ncpt()
+
+    *
+------------------------------------------------------------
 User: jurgen  Fri Apr 18 13:50:33 PDT 2008
 sourceIdentify/src/gtsrcid
 
