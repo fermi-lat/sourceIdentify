@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Thu Apr 24 07:55:17 PDT 2008
+sourceIdentify/pfiles
+
+Modified Files:
+	gtsrcid.par 
+Log Message:
+Implement simple FoM scheme
+
+    *
+------------------------------------------------------------
 User: jurgen  Wed Apr 23 08:42:06 PDT 2008
 sourceIdentify/src/gtsrcid
 
