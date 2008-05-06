@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jurgen  Tue May  6 09:00:04 PDT 2008
+sourceIdentify/python
+
+Added Files:
+	srcid.py 
+Log Message:
+Import srcid.py script and classes definition into CVS
+
+    *
+------------------------------------------------------------
+User: jurgen  Tue May  6 09:00:04 PDT 2008
 sourceIdentify/cmt
 
 Modified Files:
