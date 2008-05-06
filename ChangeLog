@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: jurgen  Tue May  6 09:00:04 PDT 2008
+sourceIdentify/python/classes
+
+Added Files:
+	__init__.py agn.py blac.py blazar.py eg3.py hmxb.py lmxb.py 
+	microqso.py pulsar.py pwn.py qso.py seyfert.py snr.py tev.py 
+Log Message:
+Import srcid.py script and classes definition into CVS
+
+    *
+------------------------------------------------------------
+User: jurgen  Tue May  6 09:00:04 PDT 2008
 sourceIdentify/python
 
 Added Files:
