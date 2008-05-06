@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Tue May  6 09:00:04 PDT 2008
+sourceIdentify/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Import srcid.py script and classes definition into CVS
+
+    *
+------------------------------------------------------------
 User: jurgen  Tue May  6 08:58:44 PDT 2008
 sourceIdentify/python/classes
 
