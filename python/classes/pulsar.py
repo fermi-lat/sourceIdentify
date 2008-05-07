@@ -2,18 +2,9 @@
 # Source class: Pulsars
 #--------------------------------------------------------------------------------------------
 #
-# $Author: knodlseder $
-# $Revision: 1.3 $
-# $Date: 2008/03/26 16:14:47 $
-#--------------------------------------------------------------------------------------------
-# catid:            Catalogue Identifier (prefixes results and determines result name)
-# catname:          Catalogue FITS name
-# new_quantity:     List of new quantities
-# selection:        List of selection criteria
-# prob_method:      Probability method
-# prob_prior:       Prior probability
-# prob_thres:       Probability threshold
-# max_counterparts: Maximum number of counterparts
+# $Author: jurgen $
+# $Revision: 1.1 $
+# $Date: 2008/05/06 16:00:04 $
 #--------------------------------------------------------------------------------------------
 """
 Pulsar Source Class (ATNF catalogue).
@@ -26,14 +17,17 @@ catid = "PUL"
 catname = "obj-pulsar.fits"
 
 # Probability method and threshold
-prob_method = "PROB_POST"
-prob_prior  = 0.01
-prob_thres  = 0.10
+prob_method      = "PROB_POST"    # Formula used to calculate probability
+prob_prior       = "0.01"         # Formula used to calculate prior
+prob_thres       = 0.10           # Probability threshold
+figure_of_merit  = ""             # Formula used to calculate FoM
 
-# Maximum number of counterparts
+# Maximum number of counterparts per LAT source
 max_counterparts = 10
 
-# Selection criteria
-selection = ['@PUL_EDOTD2 > 10e+32']
+# List of new catalogue quantities (setup up to 9 formulae in the list)
+new_quantity = [ "" , "" ]
 
-#chatter=1
+# List of source selection criteria (setup up to 9 criteria in the list)
+selection = [ '@PUL_EDOTD2 > 10e+32' ]
+
