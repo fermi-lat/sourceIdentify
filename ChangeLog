@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Wed May  7 10:15:46 PDT 2008
+sourceIdentify/cmt
+
+Modified Files:
+	requirements rh9_gcc32.make 
+Log Message:
+Correct use of sane
+
+    *
+------------------------------------------------------------
 User: jurgen  Wed May  7 09:30:53 PDT 2008
 sourceIdentify/python/classes
 
