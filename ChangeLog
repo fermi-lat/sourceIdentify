@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glastrm  Thu Jun 19 16:50:53 PDT 2008
+ScienceTools-scons/sourceIdentify
+
+Modified Files:
+	SConscript 
+Log Message:
+Added Author and Version fields
+    *
+------------------------------------------------------------
 User: jurgen  Wed May  7 10:15:46 PDT 2008
 sourceIdentify/cmt
 
