@@ -1,10 +1,13 @@
 /*------------------------------------------------------------------------------
-Id ........: $Id: Catalogue.h,v 1.35 2008/04/24 14:55:17 jurgen Exp $
+Id ........: $Id: Catalogue.h,v 1.36 2008/05/06 16:00:04 jurgen Exp $
 Author ....: $Author: jurgen $
-Revision ..: $Revision: 1.35 $
-Date ......: $Date: 2008/04/24 14:55:17 $
+Revision ..: $Revision: 1.36 $
+Date ......: $Date: 2008/05/06 16:00:04 $
 --------------------------------------------------------------------------------
 $Log: Catalogue.h,v $
+Revision 1.36  2008/05/06 16:00:04  jurgen
+Import srcid.py script and classes definition into CVS
+
 Revision 1.35  2008/04/24 14:55:17  jurgen
 Implement simple FoM scheme
 
@@ -134,6 +137,9 @@ Replace header information with CVS typeset information.
 namespace sourceIdentify {
 
 /* Definitions ______________________________________________________________ */
+#define OUTCAT_PRE_CHAR               '@'
+#define OUTCAT_PRE_STRING             "@"
+//
 #define OUTCAT_MAX_STRING_LEN         256
 #define OUTCAT_MAX_KEY_LEN            256
 #define OUTCAT_EXT_NAME               "GLAST_CAT"
