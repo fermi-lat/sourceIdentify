@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jurgen  Tue Jul  8 11:43:15 PDT 2008
+sourceIdentify/src/test
+
+Modified Files:
+	gtsrcid test1.csh 
+Log Message:
+Remove GtApp, parametrize prefix symbol and update unit test1
+
+    *
+------------------------------------------------------------
+User: jurgen  Tue Jul  8 11:43:15 PDT 2008
 sourceIdentify/src/gtsrcid
 
 Modified Files:
