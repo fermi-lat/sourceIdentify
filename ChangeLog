@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Tue Jul  8 11:43:14 PDT 2008
+sourceIdentify/cmt
+
+Modified Files:
+	requirements rh9_gcc32.make 
+Log Message:
+Remove GtApp, parametrize prefix symbol and update unit test1
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r3p10, operation: mov
 Package: sourceIdentify
