@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jurgen  Tue Jul  8 11:43:14 PDT 2008
+sourceIdentify/pfiles
+
+Modified Files:
+	gtsrcid.par 
+Log Message:
+Remove GtApp, parametrize prefix symbol and update unit test1
+
+    *
+------------------------------------------------------------
+User: jurgen  Tue Jul  8 11:43:14 PDT 2008
 sourceIdentify/cmt
 
 Modified Files:
