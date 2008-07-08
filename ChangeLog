@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Tue Jul  8 14:21:55 PDT 2008
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.cxx 
+Log Message:
+Do column name selection only from first letter on
+
+    *
+------------------------------------------------------------
 User: jurgen  Tue Jul  8 13:57:06 PDT 2008
 sourceIdentify/src/gtsrcid
 
