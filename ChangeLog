@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Tue Jul  8 11:43:15 PDT 2008
+sourceIdentify/python
+
+Modified Files:
+	srcid.py 
+Log Message:
+Remove GtApp, parametrize prefix symbol and update unit test1
+
+    *
+------------------------------------------------------------
 User: jurgen  Tue Jul  8 11:43:14 PDT 2008
 sourceIdentify/pfiles
 
