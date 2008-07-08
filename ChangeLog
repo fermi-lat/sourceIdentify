@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Tue Jul  8 13:57:05 PDT 2008
+sourceIdentify/cmt
+
+Modified Files:
+	rh9_gcc32.make 
+Log Message:
+Implement final selection (allows to filter on evaluated quantities)
+
+    *
+------------------------------------------------------------
 User: jurgen  Tue Jul  8 11:43:15 PDT 2008
 sourceIdentify/src/test
 
