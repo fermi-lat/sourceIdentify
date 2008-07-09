@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Tue Jul  8 17:32:59 PDT 2008
+sourceIdentify/python
+
+Modified Files:
+	srcid.py 
+Log Message:
+Implement new LAT catalogue format for ID information
+
+    *
+------------------------------------------------------------
 User: jurgen  Tue Jul  8 14:21:55 PDT 2008
 sourceIdentify/src/gtsrcid
 
