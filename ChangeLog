@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: jurgen  Wed Aug 20 04:52:21 PDT 2008
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.cxx Catalogue.h Catalogue_fits.cxx Catalogue_id.cxx 
+	sourceIdentify.h 
+Log Message:
+Correct probability computation and resolve STGEN-56
+
+    *
+------------------------------------------------------------
+User: jurgen  Wed Aug 20 04:52:21 PDT 2008
 sourceIdentify/python
 
 Modified Files:
