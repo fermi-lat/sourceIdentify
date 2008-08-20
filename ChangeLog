@@ -1,4 +1,19 @@
 ------------------------------------------------------------
+User: jurgen  Wed Aug 20 04:59:16 PDT 2008
+sourceIdentify/python/classes
+
+Modified Files:
+	__init__.py agn.py blazar.py eg3.py hmxb.py microqso.py 
+	pulsar.py pwn.py qso.py seyfert.py snr.py tev.py 
+Added Files:
+	bllac.py bzcat.py cosb.py egr.py 
+Removed Files:
+	blac.py lmxb.py 
+Log Message:
+Rename blac into bllac and add bzcat, cosb and egr   
+
+    *
+------------------------------------------------------------
 User: jurgen  Wed Aug 20 04:52:21 PDT 2008
 sourceIdentify/src/gtsrcid
 
