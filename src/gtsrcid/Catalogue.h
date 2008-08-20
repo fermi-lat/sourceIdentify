@@ -1,10 +1,13 @@
 /*------------------------------------------------------------------------------
-Id ........: $Id: Catalogue.h,v 1.37 2008/07/08 18:43:15 jurgen Exp $
+Id ........: $Id: Catalogue.h,v 1.38 2008/07/08 20:57:06 jurgen Exp $
 Author ....: $Author: jurgen $
-Revision ..: $Revision: 1.37 $
-Date ......: $Date: 2008/07/08 18:43:15 $
+Revision ..: $Revision: 1.38 $
+Date ......: $Date: 2008/07/08 20:57:06 $
 --------------------------------------------------------------------------------
 $Log: Catalogue.h,v $
+Revision 1.38  2008/07/08 20:57:06  jurgen
+Implement final selection (allows to filter on evaluated quantities)
+
 Revision 1.37  2008/07/08 18:43:15  jurgen
 Remove GtApp, parametrize prefix symbol and update unit test1
 
@@ -319,7 +322,7 @@ const double e_norm_95 = 1.0 / sqrt(2.9957230);  //!< 95.000%, 2 dof
 const double e_norm_99 = 1.0 / sqrt(4.6051713);  //!< 99.000%, 2 dof
 
 /* Search strings (need "stop" as last string !!!) __________________________ */
-const std::string search_id[] = {"NAME", "ID", "stop"};
+const std::string search_id[] = {"NAME", "ID", "NICKNAME", "stop"};
 
 /* Special function strings (need "stop" as last string !!!) ________________ */
 const std::string fct_names[] = {"gammln", "erf",  "erfc",
