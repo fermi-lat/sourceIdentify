@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Thu Aug 28 00:32:37 PDT 2008
+sourceIdentify/python
+
+Modified Files:
+	srcid.py 
+Log Message:
+enhance catalogue repository finding and missing catalogue handling
+
+    *
+------------------------------------------------------------
 User: jurgen  Thu Aug 28 00:09:35 PDT 2008
 sourceIdentify/python
 
