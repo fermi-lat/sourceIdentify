@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Thu Aug 28 00:09:35 PDT 2008
+sourceIdentify/python
+
+Modified Files:
+	srcid.py 
+Log Message:
+correctly handle single source identifications
+
+    *
+------------------------------------------------------------
 User: jurgen  Wed Aug 20 04:59:16 PDT 2008
 sourceIdentify/python/classes
 
