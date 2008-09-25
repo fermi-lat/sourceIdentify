@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: jurgen  Thu Sep 25 07:26:29 PDT 2008
+sourceIdentify/python/classes
+
+Modified Files:
+	__init__.py agn.py bllac.py bzcat.py cosb.py eg3.py egr.py 
+	hmxb.py microqso.py pulsar.py pwn.py qso.py seyfert.py snr.py 
+	tev.py 
+Removed Files:
+	blazar.py 
+Log Message:
+
+    *
+------------------------------------------------------------
 User: jurgen  Thu Sep 25 07:26:28 PDT 2008
 sourceIdentify/python
 
