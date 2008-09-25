@@ -4,8 +4,8 @@
 #                    LAT source association pipeline
 # ------------------------------------------------------------------- #
 # Author: $Author: jurgen $
-# Revision: $Revision: 1.7 $
-# Date: $Date: 2008/08/28 07:09:35 $
+# Revision: $Revision: 1.8 $
+# Date: $Date: 2008/08/28 07:32:37 $
 #=====================================================================#
 
 import os                   # operating system module
@@ -51,6 +51,8 @@ def run_command(cmd):
 	# Run job
 	#print cmd
 	error, result = commands.getstatusoutput(cmd)
+	#print error
+	#print result
 	
 	# Return error and result
 	return error, result
