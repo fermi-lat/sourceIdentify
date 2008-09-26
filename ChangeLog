@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Fri Sep 26 00:59:39 PDT 2008
+sourceIdentify/cmt
+
+Modified Files:
+	cleanup.csh cleanup.sh rh9_gcc32.make setup.csh setup.sh 
+Log Message:
+Correctly cast pointer (for Win32 compile)
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: sourceIdentify-02-00-01, operation: add
 Package: sourceIdentify
