@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+TAG
+Tag name: v2r0p2, operation: mov
+Package: sourceIdentify
+User: glastrm  Fri Sep 26 01:30:43 2008
+Files:
+  sourceIdentify/SConscript  1.7
+
+    *
+------------------------------------------------------------
 User: glastrm  Fri Sep 26 01:30:37 PDT 2008
 sourceIdentify
 
