@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jurgen  Fri Sep 26 03:12:14 PDT 2008
+sourceIdentify/python/classes
+
+Modified Files:
+	agn.py bllac.py bzcat.py cgrabs.py cosb.py eg3.py egr.py 
+	hmxb.py microqso.py pulsar.py pwn.py qso.py seyfert.py snr.py 
+	tev.py 
+Log Message:
+Correct CGRABS FITS filename
+
+    *
+------------------------------------------------------------
 User: jurgen  Fri Sep 26 03:09:31 PDT 2008
 sourceIdentify/python/classes
 
