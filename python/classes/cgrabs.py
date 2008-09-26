@@ -3,8 +3,8 @@
 #--------------------------------------------------------------------------------------------
 #
 # $Author: jurgen $
-# $Revision: 1.2 $
-# $Date: 2008/05/07 16:30:53 $
+# $Revision: 1.1 $
+# $Date: 2008/09/25 14:31:21 $
 #--------------------------------------------------------------------------------------------
 """
 Blazar Source Class (CGRaBS).
@@ -14,7 +14,7 @@ Blazar Source Class (CGRaBS).
 catid = "CGRABS"
 
 # Catalogue FITS filename
-catname = "obj-blazar.fits"
+catname = "obj-cgrabs.fits"
 
 # Probability method and threshold
 prob_method      = "PROB_POST"        # Use posterior probability
