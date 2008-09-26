@@ -1,10 +1,13 @@
 /*------------------------------------------------------------------------------
-Id ........: $Id: Catalogue_fits.cxx,v 1.28 2008/07/08 20:57:06 jurgen Exp $
+Id ........: $Id: Catalogue_fits.cxx,v 1.29 2008/08/20 11:52:21 jurgen Exp $
 Author ....: $Author: jurgen $
-Revision ..: $Revision: 1.28 $
-Date ......: $Date: 2008/07/08 20:57:06 $
+Revision ..: $Revision: 1.29 $
+Date ......: $Date: 2008/08/20 11:52:21 $
 --------------------------------------------------------------------------------
 $Log: Catalogue_fits.cxx,v $
+Revision 1.29  2008/08/20 11:52:21  jurgen
+Correct probability computation and resolve STGEN-56
+
 Revision 1.28  2008/07/08 20:57:06  jurgen
 Implement final selection (allows to filter on evaluated quantities)
 
@@ -2874,9 +2877,9 @@ Status Catalogue::cfits_set_pars(fitsfile *fptr, Parameters *par, Status status)
       }
 
       // Write parameters
-      fstatus = fits_update_key_str(fptr, "P_METHOD", par->m_probMethod.c_str(),
+      fstatus = fits_update_key_str(fptr, "P_METHOD", (char*)par->m_probMethod.c_str(),
                                     "Probability method", &fstatus);
-      fstatus = fits_update_key_str(fptr, "P_PRIOR", par->m_probPrior.c_str(),
+      fstatus = fits_update_key_str(fptr, "P_PRIOR", (char*)par->m_probPrior.c_str(),
                                     "Prior probability", &fstatus);
       fstatus = fits_update_key_dbl(fptr, "P_THRES", par->m_probThres,
                                     4, "Probability threshold", &fstatus);
