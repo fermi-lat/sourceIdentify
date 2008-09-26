@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jurgen  Fri Sep 26 00:59:39 PDT 2008
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue_fits.cxx 
+Log Message:
+Correctly cast pointer (for Win32 compile)
+
+    *
+------------------------------------------------------------
+User: jurgen  Fri Sep 26 00:59:39 PDT 2008
 sourceIdentify/cmt
 
 Modified Files:
