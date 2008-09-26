@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Fri Sep 26 03:09:31 PDT 2008
+sourceIdentify/python/classes
+
+Modified Files:
+	cgrabs.py 
+Log Message:
+Correct CGRABS FITS filename
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: sourceIdentify-02-00-02, operation: add
 Package: sourceIdentify
