@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jurgen  Mon Nov 24 09:14:36 PST 2008
+sourceIdentify/python
+
+Modified Files:
+	srcid.py 
+Log Message:
+Correct reg filename access and avoid deleting of additional HDUs
+
+
+    *
+------------------------------------------------------------
 User: jurgen  Fri Sep 26 03:12:14 PDT 2008
 sourceIdentify/python/classes
 
