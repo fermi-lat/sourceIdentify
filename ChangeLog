@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jurgen  Wed Nov 26 02:34:35 PST 2008
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	sourceIdentify.h 
+Log Message:
+Prepare to tag v2r1p0
+
+    *
+------------------------------------------------------------
+User: jurgen  Wed Nov 26 02:34:35 PST 2008
 sourceIdentify/pfiles
 
 Modified Files:
