@@ -1,7 +1,7 @@
 # -*- python -*-
-# $Id: SConscript,v 1.6 2008/09/25 15:30:39 glastrm Exp $
+# $Id: SConscript,v 1.7 2008/09/26 08:30:37 glastrm Exp $
 # Authors: Jurgen Knodlseder <knodlseder@cesr.fr>
-# Version: sourceIdentify-02-00-02
+# Version: sourceIdentify-02-01-00
 Import('baseEnv')
 Import('listFiles')
 progEnv = baseEnv.Clone()
