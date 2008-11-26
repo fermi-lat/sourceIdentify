@@ -1,4 +1,20 @@
 ------------------------------------------------------------
+User: jurgen  Wed Nov 26 02:31:18 PST 2008
+sourceIdentify/python/classes
+
+Modified Files:
+	__init__.py agn.py bllac.py bzcat.py cgrabs.py cosb.py eg3.py 
+	egr.py hmxb.py microqso.py pwn.py qso.py seyfert.py snr.py 
+	tev.py 
+Added Files:
+	crates.py pulsar_high.py pulsar_low.py starbursts.py 
+Removed Files:
+	pulsar.py 
+Log Message:
+
+
+    *
+------------------------------------------------------------
 User: jurgen  Mon Nov 24 09:14:36 PST 2008
 sourceIdentify/python
 
