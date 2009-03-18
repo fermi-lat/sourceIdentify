@@ -4,8 +4,8 @@
 #                    LAT source association pipeline
 # ------------------------------------------------------------------- #
 # Author: $Author: jurgen $
-# Revision: $Revision: 1.9 $
-# Date: $Date: 2008/09/25 14:26:28 $
+# Revision: $Revision: 1.10 $
+# Date: $Date: 2008/11/24 17:14:36 $
 #=====================================================================#
 
 import os                   # operating system module
@@ -238,8 +238,13 @@ def get_fits_cat(file, catname='GLAST_CAT'):
 		except KeyError:
 			pass
 	
-	# Return second extension
-	return hdulist[1]
+	# If we have not found the requested extension then return
+	# the second in the list
+	if len(hdulist) >= 2:
+		return hdulist[1]
+	else:
+		print 'ERROR: Catalogue extension not found in file "'+str(file)+'"'
+		sys.exit(0)
 
 
 #==========================#
@@ -978,7 +983,12 @@ if __name__ == '__main__':
 		
 		# Run gtsrcid
 		error, result = run_command(cmd)
-		#run_gtsrcid(pars)
+		if error != 0:
+			print 'WARNING: gtsrcid error while processing catalogue ' + cpt_url
+			lines = result.splitlines(False)
+			for line in lines:
+				print '         '+line
+			continue
 		
 		# Rename result file
 		os.rename('gtsrcid.log', pars['cptCatPrefix'].lower() + '.log')
