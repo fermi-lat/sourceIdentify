@@ -1,10 +1,13 @@
 /*------------------------------------------------------------------------------
-Id ........: $Id: sourceIdentify.h,v 1.27 2008/11/26 10:34:35 jurgen Exp $
+Id ........: $Id: sourceIdentify.h,v 1.28 2009/03/18 10:06:58 jurgen Exp $
 Author ....: $Author: jurgen $
-Revision ..: $Revision: 1.27 $
-Date ......: $Date: 2008/11/26 10:34:35 $
+Revision ..: $Revision: 1.28 $
+Date ......: $Date: 2009/03/18 10:06:58 $
 --------------------------------------------------------------------------------
 $Log: sourceIdentify.h,v $
+Revision 1.28  2009/03/18 10:06:58  jurgen
+Update version number
+
 Revision 1.27  2008/11/26 10:34:35  jurgen
 Prepare to tag v2r1p0
 
@@ -97,9 +100,9 @@ Replace header information with CVS typeset information.
 
 /* Definitions ______________________________________________________________ */
 #define TOOL_NAME     "gtsrcid"
-#define TOOL_VERSION  "v2r1p2"
+#define TOOL_VERSION  "v2r2p0"
 #define TOOL_LOGFILE  "gtsrcid.log"
-#define TOOL_DATE     "18-Mar-2009"
+#define TOOL_DATE     "24-Mar-2009"
 #define HD_BORDER     "************************************************************"
 #define HD_SEP        "* -------------------------------------------------------- *"
 #define HD_NAME       "*                          gtsrcid                         *"
