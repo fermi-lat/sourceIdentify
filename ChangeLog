@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jurgen  Thu Mar 26 07:15:05 PDT 2009
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.cxx Catalogue.h sourceIdentify.h 
+Log Message:
+Properly handle NULL error radii (by assuming an minimum 1D 1sigma error of 0.005 deg)
+
+    *
+------------------------------------------------------------
+User: jurgen  Thu Mar 26 07:15:05 PDT 2009
 sourceIdentify/python
 
 Modified Files:
