@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Thu Mar 26 07:15:05 PDT 2009
+sourceIdentify/cmt
+
+Modified Files:
+	rh9_gcc32.make 
+Log Message:
+Properly handle NULL error radii (by assuming an minimum 1D 1sigma error of 0.005 deg)
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-09-11-00, operation: add
 Package: sourceIdentify
