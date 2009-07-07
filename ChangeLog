@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jurgen  Tue Jul  7 14:32:52 PDT 2009
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue_fits.cxx sourceIdentify.h 
+Log Message:
+Correctly read binary double columns
+
+    *
+------------------------------------------------------------
+User: jurgen  Tue Jul  7 14:32:52 PDT 2009
 sourceIdentify/cmt
 
 Modified Files:
