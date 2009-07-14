@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Jul 14 16:21:28 PDT 2009
+ScienceTools-scons/sourceIdentify
+
+Modified Files:
+	SConscript 
+Log Message:
+Use registerTargets
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-09-15-03, operation: add
 Package: sourceIdentify
