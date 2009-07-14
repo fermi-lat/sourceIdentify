@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Id: SConscript,v 1.10 2009/03/26 14:30:37 glastrm Exp $
+# $Id: SConscript,v 1.11 2009/07/07 22:31:33 glastrm Exp $
 # Authors: Jurgen Knodlseder <knodlseder@cesr.fr>
 # Version: sourceIdentify-02-02-01
 Import('baseEnv')
@@ -12,4 +12,7 @@ progEnv.Tool('catalogAccessLib')
 
 gtsrcidBin = progEnv.Program('gtsrcid', listFiles(['src/gtsrcid/*.cxx']))
 
-progEnv.Tool('registerObjects', package = 'sourceIdentify', binaries = [gtsrcidBin], pfiles = listFiles(['pfiles/*.par']), data = listFiles(['data/*'], recursive = True))
+progEnv.Tool('registerTargets', package = 'sourceIdentify',
+             binaryCxts = [[gtsrcidBin, progEnv]],
+             pfiles = listFiles(['pfiles/*.par']),
+             data = listFiles(['data/*'], recursive = True))
