@@ -4,8 +4,8 @@
 #                    LAT source association pipeline
 # ------------------------------------------------------------------- #
 # Author: $Author: jurgen $
-# Revision: $Revision: 1.11 $
-# Date: $Date: 2009/03/18 10:01:59 $
+# Revision: $Revision: 1.12 $
+# Date: $Date: 2009/03/26 14:15:05 $
 #=====================================================================#
 
 import os                   # operating system module
@@ -890,11 +890,12 @@ if __name__ == '__main__':
 		class_list.remove(path_classes + '/__init__.py')
 	except ValueError:
 		pass
+	class_list.sort()
 	
 	# Create __init__.py file
 	try:
 		filename = path_classes + '/__init__.py'
-		names    = [os.path.basename(s).rstrip('.py') for s in class_list]
+		names    = [os.path.basename(s).rstrip('py').rstrip('.') for s in class_list]
 		file     = open(filename, 'w')
 		string   = '__all__ = ' + str(names) + '\n'
 		file.write('# This file is required so that the current directory is '\
@@ -923,7 +924,7 @@ if __name__ == '__main__':
 	for class_one in class_list:
 		
 		# Get source class module name
-		class_name = os.path.basename(class_one).rstrip('.py')
+		class_name = os.path.basename(class_one).rstrip('py').rstrip('.')
 		this       = eval(class_name)
 		
 		# Get source class parameters
