@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Wed Jul 15 15:22:07 PDT 2009
+sourceIdentify/cmt
+
+Modified Files:
+	cleanup.csh cleanup.sh rh9_gcc32.make setup.csh setup.sh 
+Log Message:
+Correct python rstrip bug by double stripping
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: sourceIdentify-02-02-02, operation: add
 Package: sourceIdentify
