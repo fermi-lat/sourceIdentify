@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Wed Jul 15 16:14:30 PDT 2009
+sourceIdentify/cmt
+
+Modified Files:
+	rh9_gcc32.make 
+Log Message:
+Correctly write double precision columns
+
+    *
+------------------------------------------------------------
 User: jurgen  Wed Jul 15 15:22:07 PDT 2009
 sourceIdentify/python
 
