@@ -4,8 +4,8 @@
 #                    LAT source association pipeline
 # ------------------------------------------------------------------- #
 # Author: $Author: jurgen $
-# Revision: $Revision: 1.12 $
-# Date: $Date: 2009/03/26 14:15:05 $
+# Revision: $Revision: 1.13 $
+# Date: $Date: 2009/07/15 22:22:07 $
 #=====================================================================#
 
 import os                   # operating system module
@@ -582,6 +582,12 @@ def create_lat_cat(lat_name, srcid_name, out_name, cpt_cats):
 					idlist[i].append(entry)
 					if len(idlist[i]) > max_cpt:
 						max_cpt = len(idlist[i])
+	
+	# Stop if there were no counterparts
+	if max_cpt == 0:
+		print 'WARNING: No counterparts found, no LAT format compatible catalogue built.'
+		return
+
 	
 	# Set column format strings
 	num_cpt  = max_cpt
