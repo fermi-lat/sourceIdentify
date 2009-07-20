@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Mon Jul 20 00:12:34 PDT 2009
+sourceIdentify/python
+
+Modified Files:
+	srcid.py 
+Log Message:
+Don't build LAT catalogue if no counterparts were found
+
+    *
+------------------------------------------------------------
 User: jurgen  Wed Jul 15 16:14:30 PDT 2009
 sourceIdentify/src/gtsrcid
 
