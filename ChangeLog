@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Sat Jul 25 05:48:57 PDT 2009
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue_id.cxx 
+Log Message:
+Implement Jean Ballet's chance PDF
+
+    *
+------------------------------------------------------------
 User: jurgen  Mon Jul 20 00:12:34 PDT 2009
 sourceIdentify/python
 
