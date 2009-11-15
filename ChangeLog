@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: jurgen  Sun Nov 15 05:28:52 PST 2009
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue_id.cxx 
+Log Message:
+
+Optionally multiply PROB_POST_SINGLE by FOM
+
+    *
+------------------------------------------------------------
+User: jurgen  Sun Nov 15 05:28:52 PST 2009
 sourceIdentify/cmt
 
 Modified Files:
