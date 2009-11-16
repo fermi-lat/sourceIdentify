@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Mon Nov 16 08:56:28 PST 2009
+sourceIdentify/python
+
+Modified Files:
+	srcid.py 
+Log Message:
+Properly convert column names for FoM et al.
+
+    *
+------------------------------------------------------------
 User: jurgen  Sun Nov 15 05:28:52 PST 2009
 sourceIdentify/src/gtsrcid
 
