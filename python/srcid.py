@@ -4,8 +4,8 @@
 #                    LAT source association pipeline
 # ------------------------------------------------------------------- #
 # Author: $Author: jurgen $
-# Revision: $Revision: 1.13 $
-# Date: $Date: 2009/07/15 22:22:07 $
+# Revision: $Revision: 1.14 $
+# Date: $Date: 2009/07/20 07:12:34 $
 #=====================================================================#
 
 import os                   # operating system module
@@ -512,6 +512,11 @@ def expand_column_names(pars):
 	# Get counterpart catalogue names
 	hdu = get_fits_cat(pars['cptCatName'])
 	names.extend([col_prefix+pars['cptCatPrefix']+'_'+s for s in hdu.columns.names])
+	
+	# Expand column names in method, Prior, and FOM
+	pars['probMethod'] = expand_string(str(pars['probMethod']), names)
+	pars['probPrior']  = expand_string(str(pars['probPrior']), names)
+	pars['fom']        = expand_string(str(pars['fom']), names)
 	
 	# Expand column names in quantity parameters
 	for index in range(1,10):
