@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Mon Nov 16 09:04:41 PST 2009
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue_id.cxx 
+Log Message:
+Properly compute counterpart density for FoM (count all sources with FoM >= FoM0 instead of FoM <= FoM0)
+
+    *
+------------------------------------------------------------
 User: jurgen  Mon Nov 16 08:56:28 PST 2009
 sourceIdentify/python
 
