@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Tue Nov 24 08:35:03 PST 2009
+sourceIdentify/cmt
+
+Modified Files:
+	rh9_gcc32.make 
+Log Message:
+Correct floating point exception on 64Bit machines
+
+    *
+------------------------------------------------------------
 User: jurgen  Tue Nov 24 08:15:19 PST 2009
 sourceIdentify/doc
 
