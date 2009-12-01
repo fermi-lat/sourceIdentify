@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Tue Dec  1 05:25:24 PST 2009
+sourceIdentify/cmt
+
+Modified Files:
+	cleanup.csh cleanup.sh rh9_gcc32.make setup.csh setup.sh 
+Log Message:
+Correct FoM implementation
+
+    *
+------------------------------------------------------------
 User: jurgen  Tue Nov 24 08:35:03 PST 2009
 sourceIdentify/src/gtsrcid
 
