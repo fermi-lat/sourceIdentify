@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jurgen  Tue Dec  1 05:25:24 PST 2009
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue_id.cxx sourceIdentify.h 
+Log Message:
+Correct FoM implementation
+
+    *
+------------------------------------------------------------
+User: jurgen  Tue Dec  1 05:25:24 PST 2009
 sourceIdentify/cmt
 
 Modified Files:
