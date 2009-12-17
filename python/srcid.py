@@ -4,8 +4,8 @@
 #                    LAT source association pipeline
 # ------------------------------------------------------------------- #
 # Author: $Author: jurgen $
-# Revision: $Revision: 1.14 $
-# Date: $Date: 2009/07/20 07:12:34 $
+# Revision: $Revision: 1.15 $
+# Date: $Date: 2009/11/16 16:56:28 $
 #=====================================================================#
 
 import os                   # operating system module
@@ -793,13 +793,20 @@ def create_lat_cat(lat_name, srcid_name, out_name, cpt_cats):
 				if (colmin != 'none' and colpos != 'none'):
 					vmaj = hdu_lat.data.field(colmaj)[i]
 					vmin = hdu_lat.data.field(colmin)[i]
+					vang = hdu_lat.data.field(colpos)[i] + 90.0
+					if vang >= 360.0:
+						vang = vang - 360.0
 					if abs(vmaj) == float("inf"):
 						vmaj = 1.0 / 60.0
 					if abs(vmin) == float("inf"):
 						vmin = 1.0 / 60.0
+					if str(vmaj) == "nan":
+						vmaj = 1.0 / 60.0
+					if str(vmin) == "nan":
+						vmin = 1.0 / 60.0
 					smaj = '%8.5f' % vmaj
 					smin = '%8.5f' % vmin
-					pang = '%8.5f' % hdu_lat.data.field(colpos)[i]
+					pang = '%8.5f' % vang
 					lat_region = 'ellipse('+ra+','+dec+','+ \
 					              smaj+','+smin+','+pang+')'
 				else:
