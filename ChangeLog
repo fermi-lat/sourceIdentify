@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Thu Dec 17 08:55:06 PST 2009
+sourceIdentify/python
+
+Modified Files:
+	srcid.py 
+Log Message:
+Correct DS9 region file (NaN and position angle)
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-09-15-06, operation: add
 Package: sourceIdentify
