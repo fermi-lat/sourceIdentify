@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Tue Jan 12 00:57:23 PST 2010
+sourceIdentify/python
+
+Modified Files:
+	srcid.py 
+Log Message:
+Correct NULL entries for N_ID=1
+
+    *
+------------------------------------------------------------
 User: jurgen  Thu Dec 17 08:55:06 PST 2009
 sourceIdentify/python
 
