@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jurgen  Tue Jan 12 00:57:23 PST 2010
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue_id.cxx sourceIdentify.h 
+Log Message:
+Correct NULL entries for N_ID=1
+
+    *
+------------------------------------------------------------
+User: jurgen  Tue Jan 12 00:57:23 PST 2010
 sourceIdentify/python
 
 Modified Files:
