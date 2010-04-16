@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Fri Apr 16 14:53:15 PDT 2010
+sourceIdentify/cmt
+
+Modified Files:
+	rh9_gcc32.make 
+Log Message:
+Fully implement HEALPix counterpart density maps
+
+    *
+------------------------------------------------------------
 User: jurgen  Fri Apr 16 09:16:19 PDT 2010
 sourceIdentify/src/gtsrcid
 
