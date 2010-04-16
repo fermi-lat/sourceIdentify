@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Fri Apr 16 14:53:16 PDT 2010
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.cxx Catalogue.h Catalogue_id.cxx GHealpix.cxx 
+Log Message:
+Fully implement HEALPix counterpart density maps
+
+    *
+------------------------------------------------------------
 User: jurgen  Fri Apr 16 14:53:15 PDT 2010
 sourceIdentify/cmt
 
