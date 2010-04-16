@@ -4,8 +4,8 @@
 #                    LAT source association pipeline
 # ------------------------------------------------------------------- #
 # Author: $Author: jurgen $
-# Revision: $Revision: 1.16 $
-# Date: $Date: 2009/12/17 16:55:06 $
+# Revision: $Revision: 1.17 $
+# Date: $Date: 2010/01/12 08:57:23 $
 #=====================================================================#
 
 import os                   # operating system module
@@ -823,7 +823,7 @@ def create_lat_cat(lat_name, srcid_name, out_name, cpt_cats):
 		data_number[i] = nids
 		
 		# Sort list
-		row.sort(compare_by('prob'), reverse=True)
+		#row.sort(compare_by('prob'), reverse=True)
 		
 		# Loop over all counterparts
 		for k, cpt in enumerate(row):
