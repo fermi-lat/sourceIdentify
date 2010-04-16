@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jurgen  Fri Apr 16 09:16:19 PDT 2010
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.cxx Catalogue.h 
+Added Files:
+	GHealpix.cxx GHealpix.h GSkyDir.cxx GSkyDir.h 
+Log Message:
+Implement HEALPix interface to read counterpart density maps
+
+    *
+------------------------------------------------------------
 User: jurgen  Fri Apr 16 08:23:11 PDT 2010
 sourceIdentify/src/gtsrcid
 
