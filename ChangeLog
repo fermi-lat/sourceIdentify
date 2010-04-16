@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jurgen  Fri Apr 16 08:23:11 PDT 2010
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.cxx sourceIdentify.h 
+Log Message:
+Move euler and modula in GSkyDir.cxx
+
+    *
+------------------------------------------------------------
+User: jurgen  Fri Apr 16 08:23:11 PDT 2010
 sourceIdentify/python
 
 Modified Files:
