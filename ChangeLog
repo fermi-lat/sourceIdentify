@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Sun Sep 26 12:01:11 PDT 2010
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.cxx 
+Log Message:
+Correctly read error ellipse information.
+
+    *
+------------------------------------------------------------
 User: jurgen  Sun Sep 26 12:01:10 PDT 2010
 sourceIdentify/python
 
