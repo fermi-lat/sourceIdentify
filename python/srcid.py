@@ -4,8 +4,8 @@
 #                    LAT source association pipeline
 # ------------------------------------------------------------------- #
 # Author: $Author: jurgen $
-# Revision: $Revision: 1.17 $
-# Date: $Date: 2010/01/12 08:57:23 $
+# Revision: $Revision: 1.18 $
+# Date: $Date: 2010/04/16 15:23:11 $
 #=====================================================================#
 
 import os                   # operating system module
@@ -169,9 +169,13 @@ def set_pars(module, chatter=False):
 	       'debug': "no", \
 	       'mode': "ql"}
 	
-	# Extract catalogue name (mandatory parameter)
+	# Extract catalogue name (mandatory parameter). Prepend only path if catalogue
+	# name does not exist as a file.
 	if hasattr(module, 'catname'):
-		par['cptCatName'] = get_cat_path() + '/' + module.catname
+		catname = module.catname
+		if not os.path.isfile(catname):
+			catname = get_cat_path() + '/' + module.catname
+		par['cptCatName'] = catname
 	else:
 		print "ERROR: no 'catname' specified."
 		sys.exit(0)
