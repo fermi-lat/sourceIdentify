@@ -1,10 +1,13 @@
 /*------------------------------------------------------------------------------
-Id ........: $Id: Catalogue.cxx,v 1.52 2010/09/26 19:01:11 jurgen Exp $
+Id ........: $Id: Catalogue.cxx,v 1.53 2010/10/13 14:19:35 jurgen Exp $
 Author ....: $Author: jurgen $
-Revision ..: $Revision: 1.52 $
-Date ......: $Date: 2010/09/26 19:01:11 $
+Revision ..: $Revision: 1.53 $
+Date ......: $Date: 2010/10/13 14:19:35 $
 --------------------------------------------------------------------------------
 $Log: Catalogue.cxx,v $
+Revision 1.53  2010/10/13 14:19:35  jurgen
+Dump candidates before probability cut in refine step
+
 Revision 1.52  2010/09/26 19:01:11  jurgen
 Correctly read error ellipse information.
 
@@ -1130,7 +1133,7 @@ Status Catalogue::get_input_descriptor(Parameters *par, std::string catName,
     int                      caterr;
     std::vector<std::string> titles;
     int                      fstatus;
-    char                     comment[80];
+    //char                     comment[80];
     fitsfile                *fptr;
 
 
