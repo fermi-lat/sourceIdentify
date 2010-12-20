@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jurgen  Mon Dec 20 00:52:00 PST 2010
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.cxx Catalogue_fits.cxx GHealpix.cxx sourceIdentify.h 
+Log Message:
+Adapt to gcc 4.4
+
+    *
+------------------------------------------------------------
+User: jurgen  Mon Dec 20 00:52:00 PST 2010
 sourceIdentify/cmt
 
 Modified Files:
