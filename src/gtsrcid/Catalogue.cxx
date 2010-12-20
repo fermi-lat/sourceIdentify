@@ -1,10 +1,13 @@
 /*------------------------------------------------------------------------------
-Id ........: $Id: Catalogue.cxx,v 1.53 2010/10/13 14:19:35 jurgen Exp $
+Id ........: $Id: Catalogue.cxx,v 1.54 2010/11/04 21:20:35 jurgen Exp $
 Author ....: $Author: jurgen $
-Revision ..: $Revision: 1.53 $
-Date ......: $Date: 2010/10/13 14:19:35 $
+Revision ..: $Revision: 1.54 $
+Date ......: $Date: 2010/11/04 21:20:35 $
 --------------------------------------------------------------------------------
 $Log: Catalogue.cxx,v $
+Revision 1.54  2010/11/04 21:20:35  jurgen
+Remove unused variable
+
 Revision 1.53  2010/10/13 14:19:35  jurgen
 Dump candidates before probability cut in refine step
 
@@ -178,6 +181,7 @@ Replace header information with CVS typeset information.
 
 /* Includes _________________________________________________________________ */
 #include <exception>
+#include <cstring>
 #include "sourceIdentify.h"
 #include "Catalogue.h"
 #include "Log.h"

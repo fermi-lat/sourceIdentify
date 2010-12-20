@@ -1,10 +1,13 @@
 /*------------------------------------------------------------------------------
-Id ........: $Id: Catalogue_fits.cxx,v 1.31 2009/07/07 21:32:52 jurgen Exp $
+Id ........: $Id: Catalogue_fits.cxx,v 1.32 2009/07/15 23:14:30 jurgen Exp $
 Author ....: $Author: jurgen $
-Revision ..: $Revision: 1.31 $
-Date ......: $Date: 2009/07/07 21:32:52 $
+Revision ..: $Revision: 1.32 $
+Date ......: $Date: 2009/07/15 23:14:30 $
 --------------------------------------------------------------------------------
 $Log: Catalogue_fits.cxx,v $
+Revision 1.32  2009/07/15 23:14:30  jurgen
+Correctly write double precision columns
+
 Revision 1.31  2009/07/07 21:32:52  jurgen
 Correctly read binary double columns
 
@@ -111,6 +114,7 @@ creation and allow in memory catalogues and FITS disk catalogues.
  */
 
 /* Includes _________________________________________________________________ */
+#include <cstring>
 #include "sourceIdentify.h"
 #include "Catalogue.h"
 #include "Log.h"
