@@ -1,10 +1,13 @@
 /*------------------------------------------------------------------------------
-Id ........: $Id: GHealpix.cxx,v 1.1 2010/04/16 16:16:19 jurgen Exp $
+Id ........: $Id: GHealpix.cxx,v 1.2 2010/04/16 21:53:16 jurgen Exp $
 Author ....: $Author: jurgen $
-Revision ..: $Revision: 1.1 $
-Date ......: $Date: 2010/04/16 16:16:19 $
+Revision ..: $Revision: 1.2 $
+Date ......: $Date: 2010/04/16 21:53:16 $
 --------------------------------------------------------------------------------
 $Log: GHealpix.cxx,v $
+Revision 1.2  2010/04/16 21:53:16  jurgen
+Fully implement HEALPix counterpart density maps
+
 Revision 1.1  2010/04/16 16:16:19  jurgen
 Implement HEALPix interface to read counterpart density maps
 
@@ -18,6 +21,7 @@ Implement HEALPix interface to read counterpart density maps
 /* Includes _________________________________________________________________ */
 #include <iostream>
 #include <cmath>
+#include <cstring>
 #include <stdexcept>
 #include "GHealpix.h"
 #include "Log.h"
