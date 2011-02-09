@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Wed Feb  9 00:14:11 PST 2011
+sourceIdentify/cmt
+
+Modified Files:
+	rh9_gcc32.make 
+Log Message:
+Add "Source_Name" to possible names in counterpart catalogues (srcid.py)
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-09-21-00, operation: add
 Package: sourceIdentify
