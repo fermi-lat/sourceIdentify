@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Wed Feb  9 00:14:12 PST 2011
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.cxx 
+Log Message:
+Add "Source_Name" to possible names in counterpart catalogues (srcid.py)
+
+    *
+------------------------------------------------------------
 User: jurgen  Wed Feb  9 00:14:11 PST 2011
 sourceIdentify/python
 
