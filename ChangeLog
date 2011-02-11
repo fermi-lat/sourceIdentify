@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Fri Feb 11 00:36:17 PST 2011
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.h sourceIdentify.h 
+Log Message:
+Increase maximum string length for columns to 8192 characters
+
+    *
+------------------------------------------------------------
 User: jurgen  Fri Feb 11 00:36:16 PST 2011
 sourceIdentify/cmt
 
