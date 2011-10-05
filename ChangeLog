@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: jurgen  Wed Oct  5 13:30:10 PDT 2011
+sourceIdentify/python
+
+Modified Files:
+	srcid.py 
+Log Message:
+Correctly forward row information for missing source names
+    *
+------------------------------------------------------------
+User: jurgen  Wed Oct  5 13:30:10 PDT 2011
 sourceIdentify/cmt
 
 Modified Files:
