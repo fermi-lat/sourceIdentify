@@ -4,8 +4,8 @@
 #                    LAT source association pipeline
 # ------------------------------------------------------------------- #
 # Author: $Author: jurgen $
-# Revision: $Revision: 1.20 $
-# Date: $Date: 2011/02/09 08:14:11 $
+# Revision: $Revision: 1.22 $
+# Date: $Date: 2011/10/05 21:10:11 $
 #=====================================================================#
 
 import os                   # operating system module
@@ -381,7 +381,7 @@ def attach_counterparts(pars, hdu_lat):
 					name = row.field(cpt_name_key)
 					if name == '':
 						ref  = long(float(row.field('REF'))+1.5)
-						name = '[Row='+str(ref)+']'
+						name = '<Row='+str(ref)+'>'
 				else:
 					name = 'NoNameColumnFound'
 				
