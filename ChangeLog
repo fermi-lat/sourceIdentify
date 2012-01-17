@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: jurgen  Tue Jan 17 03:07:42 PST 2012
+sourceIdentify/python
+
+Modified Files:
+	srcid.py 
+Log Message:
+Correct format string for logging
+Change CESR to IRAP
+
+    *
+------------------------------------------------------------
+User: jurgen  Tue Jan 17 03:07:42 PST 2012
 sourceIdentify/pfiles
 
 Modified Files:
