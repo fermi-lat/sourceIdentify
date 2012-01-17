@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jurgen  Tue Jan 17 03:07:42 PST 2012
+sourceIdentify/cmt
+
+Modified Files:
+	requirements rh9_gcc32.make 
+Log Message:
+Correct format string for logging
+Change CESR to IRAP
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-09-26-02, operation: add
 Package: sourceIdentify
