@@ -4,8 +4,8 @@
 #                    LAT source association pipeline
 # ------------------------------------------------------------------- #
 # Author: $Author: jurgen $
-# Revision: $Revision: 1.22 $
-# Date: $Date: 2011/10/05 21:10:11 $
+# Revision: $Revision: 1.23 $
+# Date: $Date: 2011/10/05 21:18:53 $
 #=====================================================================#
 
 import os                   # operating system module
@@ -907,6 +907,10 @@ if __name__ == '__main__':
 		print '     -h              Display this usage message'
 		print '     -C classdir     Specify alternative classes directory'
 		sys.exit()
+
+	# Keep extension cases
+	if 'setExtensionNameCaseSensitive' in dir(pyfits):
+		pyfits.setExtensionNameCaseSensitive()
 	
 	# Extract LAT catalogue filename
 	lat_filename = sys.argv[1]
