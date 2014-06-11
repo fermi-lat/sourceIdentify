@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Wed Jun 11 09:59:29 PDT 2014
+sourceIdentify/cmt
+
+Modified Files:
+	rh9_gcc32.make 
+Log Message:
+Read absolute position error from 2nd FITS file extension.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-09-33-03, operation: add
 Package: sourceIdentify
