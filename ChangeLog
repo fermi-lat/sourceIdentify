@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jurgen  Thu Jun 12 05:02:35 PDT 2014
+sourceIdentify/src/gtsrcid
+
+Modified Files:
+	Catalogue.cxx Catalogue.h sourceIdentify.h 
+Log Message:
+Added 1e-4 margin to error circle, update version number
+
+    *
+------------------------------------------------------------
 User: jurgen  Wed Jun 11 09:59:29 PDT 2014
 sourceIdentify/src/gtsrcid
 
