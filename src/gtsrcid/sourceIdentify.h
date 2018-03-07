@@ -141,8 +141,8 @@ Replace header information with CVS typeset information.
 #define HD_BORDER     "************************************************************"
 #define HD_SEP        "* -------------------------------------------------------- *"
 #define HD_NAME       "*                          gtsrcid                         *"
-#define HD_VERSION    "* Revision : "TOOL_VERSION"                                        *"
-#define HD_DATE       "* Date     : "TOOL_DATE"                                   *"
+#define HD_VERSION    "* Revision : " TOOL_VERSION "                                        *"
+#define HD_DATE       "* Date     : " TOOL_DATE "                                   *"
 #define HD_AUTHOR     "* Author   : Jurgen Knodlseder (IRAP)                      *"
 #define USE_ST_APP 1
 
