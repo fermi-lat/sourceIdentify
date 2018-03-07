@@ -204,7 +204,7 @@ Status Catalogue::cid_source(Parameters *par, SourceInfo *src, Status status) {
       // Dump source information (optionally)
       if (par->logNormal()) {
         if (src->info->pos_valid) {
-          Log(Log_2, " Source %5d .....................: %20s"SRC_FORMAT,
+          Log(Log_2, " Source %5d .....................: %20s" SRC_FORMAT,
               src->iSrc+1, src->info->name.c_str(),
               src->info->pos_eq_ra, src->info->pos_eq_dec,
               src->info->pos_err_maj, src->info->pos_err_min,
@@ -2094,7 +2094,7 @@ Status Catalogue::cid_dump(Parameters *par, SourceInfo *src, Status status) {
         if (par->logNormal()) {
           if (cpt->pos_valid) {
             if (src->cc[iCC].likrat_div) {
-              Log(Log_2, "  Cpt%5d[P=%3.0f%%] r95=%7.3f' sep=%7.3f' PA=%4.0f: %20s"SRC_FORMAT,
+              Log(Log_2, "  Cpt%5d[P=%3.0f%%] r95=%7.3f' sep=%7.3f' PA=%4.0f: %20s" SRC_FORMAT,
                   iCC+1,
                   src->cc[iCC].prob_post_single*100.0,
                   src->cc[iCC].psi*60.0,
@@ -2105,7 +2105,7 @@ Status Catalogue::cid_dump(Parameters *par, SourceInfo *src, Status status) {
                   cpt->pos_err_maj, cpt->pos_err_min, cpt->pos_err_ang);
             }
             else {
-              Log(Log_2, "  Cpt%5d P=%3.0f%% r95=%7.3f' S=%7.3f' PA=%4.0f: %20s"SRC_FORMAT,
+              Log(Log_2, "  Cpt%5d P=%3.0f%% r95=%7.3f' S=%7.3f' PA=%4.0f: %20s" SRC_FORMAT,
                   iCC+1,
                   src->cc[iCC].prob_post_single*100.0,
                   src->cc[iCC].psi*60.0,
