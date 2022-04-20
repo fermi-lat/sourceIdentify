@@ -12,3 +12,10 @@ add_executable(
   src/gtsrcid/sourceIdentify.cxx
 )
 target_link_libraries(gtsrcid PRIVATE catalogAccess hoops st_app st_facilities)
+
+###############################################################
+# Installation
+###############################################################
+install(TARGETS gtsrcid RUNTIME DESTINATION ${FERMI_INSTALL_BINDIR})
+install(DIRECTORY data/ DESTINATION ${FERMI_INSTALL_DATADIR})
+install(DIRECTORY pfiles/ DESTINATION ${FERMI_INSTALL_PFILESDIR})
