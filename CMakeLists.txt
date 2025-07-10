@@ -1,4 +1,6 @@
 ###### Executables ######
+set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
+
 add_executable(
   gtsrcid
   src/gtsrcid/Catalogue.cxx
