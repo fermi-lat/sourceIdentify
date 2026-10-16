@@ -218,22 +218,22 @@ using namespace catalogAccess;
 
 
 /* Private Prototypes _______________________________________________________ */
-std::string find(std::vector <std::string> &arg, std::string match);
-double      modulo(double v1, double v2);
+auto find(std::vector <std::string> &arg, std::string match) -> std::string;
+auto      modulo(double v1, double v2) -> double;
 void        euler(const int& type, const double& xin, const double &yin, 
                   double* xout, double *yout);
-Status      get_info(Parameters *par, InCatalogue *in, Status status);
-Status      get_id_info(Parameters *par, InCatalogue *in, 
+auto      get_info(Parameters *par, InCatalogue *in, Status status) -> Status;
+auto      get_id_info(Parameters *par, InCatalogue *in, 
                         std::vector <std::string> &qtyNames,
                         std::vector <std::string> &qtyUCDs,
-                        Status status);
-Status      get_pos_info(Parameters *par, InCatalogue *in,
+                        Status status) -> Status;
+auto      get_pos_info(Parameters *par, InCatalogue *in,
                          std::vector <std::string> &qtyNames,
                          std::vector <std::string> &qtyUCDs,
-                         Status status);
-Status      get_pos_error_info(Parameters *par, InCatalogue *in,
+                         Status status) -> Status;
+auto      get_pos_error_info(Parameters *par, InCatalogue *in,
                                std::vector <std::string> &qtyNames,
-                               Status status);
+                               Status status) -> Status;
 void        set_info(Parameters *par, InCatalogue *in, int &i, ObjectInfo *ptr,
                      double &posErr);
 
@@ -247,7 +247,7 @@ void        set_info(Parameters *par, InCatalogue *in, int &i, ObjectInfo *ptr,
  *
  * @param[in] arg String to convert into upper case.
  ******************************************************************************/
-std::string upper(std::string arg) {
+auto upper(std::string arg) -> std::string {
 
   // Copy argument
   std::string result = arg;
@@ -272,7 +272,7 @@ std::string upper(std::string arg) {
  * by 'match'. If more than a single match exists, the shortest of all matches
  * is returned.
  ******************************************************************************/
-std::string find(std::vector <std::string> &arg, std::string match) {
+auto find(std::vector <std::string> &arg, std::string match) -> std::string {
 
   // Initialise result
   std::string result;
@@ -314,7 +314,7 @@ std::string find(std::vector <std::string> &arg, std::string match) {
  * @param[in] in Pointer to input catalogue.
  * @param[in] status Error status.
  ******************************************************************************/
-Status get_info(Parameters *par, InCatalogue *in, Status status) {
+auto get_info(Parameters *par, InCatalogue *in, Status status) -> Status {
 
     // Declare local variables
     int                       numKeys;
@@ -391,10 +391,10 @@ Status get_info(Parameters *par, InCatalogue *in, Status status) {
  * 1) Search for column with UCD 'ID_MAIN'
  * 2) Search for column with names contained in search string (NAME, ID)
  ******************************************************************************/
-Status get_id_info(Parameters *par, InCatalogue *in,
+auto get_id_info(Parameters *par, InCatalogue *in,
                    std::vector <std::string> &qtyNames,
                    std::vector <std::string> &qtyUCDs,
-                   Status status) {
+                   Status status) -> Status {
 
     // Debug mode: Entry
     if (par->logDebug())
@@ -461,10 +461,10 @@ Status get_id_info(Parameters *par, InCatalogue *in,
  * 4) Search for columns with names 'RAJ2000' & 'DEJ2000'
  * 5) Search for columns with names 'RA' & 'DEC'
  ******************************************************************************/
-Status get_pos_info(Parameters *par, InCatalogue *in,
+auto get_pos_info(Parameters *par, InCatalogue *in,
                     std::vector <std::string> &qtyNames,
                     std::vector <std::string> &qtyUCDs,
-                    Status status) {
+                    Status status) -> Status {
 
     // Debug mode: Entry
     if (par->logDebug())
@@ -638,9 +638,9 @@ Status get_pos_info(Parameters *par, InCatalogue *in,
  * 6) Search for columns with name 'theta95'
  * 7) Search for columns with name 'PosErr'
  ******************************************************************************/
-Status get_pos_error_info(Parameters *par, InCatalogue *in,
+auto get_pos_error_info(Parameters *par, InCatalogue *in,
                           std::vector <std::string> &qtyNames,
-                          Status status) {
+                          Status status) -> Status {
 
     // Debug mode: Entry
     if (par->logDebug())
@@ -1142,8 +1142,8 @@ void Catalogue::free_memory(void) {
  * @param[in] in Pointer to input catalogue.
  * @param[in] status Error status.
  ******************************************************************************/
-Status Catalogue::get_input_descriptor(Parameters *par, std::string catName,
-                                       InCatalogue *in, Status status) {
+auto Catalogue::get_input_descriptor(Parameters *par, std::string catName,
+                                       InCatalogue *in, Status status) -> Status {
 
     // Declare local variables
     int                      caterr;
@@ -1292,8 +1292,8 @@ Status Catalogue::get_input_descriptor(Parameters *par, std::string catName,
  * @param[in] posErr Error radius in case that information is missing in catalogue.
  * @param[in] status Error status.
  ******************************************************************************/
-Status Catalogue::get_input_catalogue(Parameters *par, InCatalogue *in,
-                                      double posErr, Status status) {
+auto Catalogue::get_input_catalogue(Parameters *par, InCatalogue *in,
+                                      double posErr, Status status) -> Status {
 
     // Debug mode: Entry
     if (par->logDebug())
@@ -1379,8 +1379,8 @@ Status Catalogue::get_input_catalogue(Parameters *par, InCatalogue *in,
  * @param[in] in Pointer to input catalogue.
  * @param[in] status Error status.
  ******************************************************************************/
-Status Catalogue::dump_descriptor(Parameters *par, InCatalogue *in,
-                                  Status status) {
+auto Catalogue::dump_descriptor(Parameters *par, InCatalogue *in,
+                                  Status status) -> Status {
 
     // Declare local variables
     long                                               iQty;
@@ -1580,8 +1580,8 @@ Status Catalogue::dump_descriptor(Parameters *par, InCatalogue *in,
  * Products over k (the LAT source indices) are quickly done by multiplication
  * over a column.
  ******************************************************************************/
-Status Catalogue::compute_prob_post_cat(Parameters *par, Status status,
-                                        int quiet) {
+auto Catalogue::compute_prob_post_cat(Parameters *par, Status status,
+                                        int quiet) -> Status {
 
     // Temporary memory pointer
     double* tmp_prob   = NULL;  // Sparse matrix elements
@@ -1815,7 +1815,7 @@ Status Catalogue::compute_prob_post_cat(Parameters *par, Status status,
  * @param[in] status Error status.
  * @param[in] quiet No information logging.
  ******************************************************************************/
-Status Catalogue::compute_prob_post(Parameters *par, Status status, int quiet) {
+auto Catalogue::compute_prob_post(Parameters *par, Status status, int quiet) -> Status {
 
     // Debug mode: Entry
     if (par->logDebug())
@@ -1931,7 +1931,7 @@ Status Catalogue::compute_prob_post(Parameters *par, Status status, int quiet) {
  * @param[in] par Pointer to gtsrcid parameters.
  * @param[in] status Error status.
  ******************************************************************************/
-Status Catalogue::compute_prob(Parameters *par, Status status) {
+auto Catalogue::compute_prob(Parameters *par, Status status) -> Status {
 
     // Debug mode: Entry
     if (par->logDebug())
@@ -2045,7 +2045,7 @@ Status Catalogue::compute_prob(Parameters *par, Status status) {
  * @param[in] par Pointer to gtsrcid parameters.
  * @param[in] status Error status.
  ******************************************************************************/
-Status Catalogue::catch22(Parameters *par, Status status) {
+auto Catalogue::catch22(Parameters *par, Status status) -> Status {
 
     // Debug mode: Entry
     if (par->logDebug())
@@ -2263,7 +2263,7 @@ Status Catalogue::catch22(Parameters *par, Status status) {
  * that survived the refine step. The names of these counterparts and their
  * associated probabilities are stored in the vector m_cpt_names.
  ******************************************************************************/
-Status Catalogue::dump_results(Parameters *par, Status status) {
+auto Catalogue::dump_results(Parameters *par, Status status) -> Status {
 
     // Declare local variables
     ObjectInfo *src;
@@ -2452,7 +2452,7 @@ Status Catalogue::dump_results(Parameters *par, Status status) {
  *   +-- dump_results (dump results)
  * \endverbatim
  ******************************************************************************/
-Status Catalogue::build(Parameters *par, Status status) {
+auto Catalogue::build(Parameters *par, Status status) -> Status {
 
     // Debug mode: Entry
     if (par->logDebug())

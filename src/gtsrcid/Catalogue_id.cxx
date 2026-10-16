@@ -189,7 +189,7 @@ using namespace catalogAccess;
  *
  * Finally, all candidates are added to the output catalogue.
  ******************************************************************************/
-Status Catalogue::cid_source(Parameters *par, SourceInfo *src, Status status) {
+auto Catalogue::cid_source(Parameters *par, SourceInfo *src, Status status) -> Status {
 
     // Debug mode: Entry
     #if LOW_LEVEL_DEBUG
@@ -299,7 +299,7 @@ Status Catalogue::cid_source(Parameters *par, SourceInfo *src, Status status) {
  *
  * This method sets the number of filter step candidates in src->numFilter.
  ******************************************************************************/
-Status Catalogue::cid_filter(Parameters *par, SourceInfo *src, Status status) {
+auto Catalogue::cid_filter(Parameters *par, SourceInfo *src, Status status) -> Status {
 
     // Declare local variables
     long        numNoPos;
@@ -523,7 +523,7 @@ Status Catalogue::cid_filter(Parameters *par, SourceInfo *src, Status status) {
  * This method expects src->numFilter counterparts. It sets the number of
  * selected candidates in src->numSelect.
  ******************************************************************************/
-Status Catalogue::cid_select(Parameters *par, SourceInfo *src, Status status) {
+auto Catalogue::cid_select(Parameters *par, SourceInfo *src, Status status) -> Status {
 
     // Declare local variables
     std::vector<std::string> col_id;
@@ -662,7 +662,7 @@ Status Catalogue::cid_select(Parameters *par, SourceInfo *src, Status status) {
  * This method expects src->numSelect counterparts. It sets the number of refine
  * step candidates in src->numRefine.
  ******************************************************************************/
-Status Catalogue::cid_refine(Parameters *par, SourceInfo *src, Status status) {
+auto Catalogue::cid_refine(Parameters *par, SourceInfo *src, Status status) -> Status {
 
     // Declare local variables
 
@@ -835,7 +835,7 @@ Status Catalogue::cid_refine(Parameters *par, SourceInfo *src, Status status) {
  * This method expects src->numRefine counterparts. It sets the number of
  * selected candidates in src->numRefine.
  ******************************************************************************/
-Status Catalogue::cid_reselect(Parameters *par, SourceInfo *src, Status status) {
+auto Catalogue::cid_reselect(Parameters *par, SourceInfo *src, Status status) -> Status {
 
     // Declare local variables
     std::vector<std::string> col_id;
@@ -956,7 +956,7 @@ Status Catalogue::cid_reselect(Parameters *par, SourceInfo *src, Status status) 
  *
  * This method expects src->numSelect counterparts.
  ******************************************************************************/
-Status Catalogue::cid_fom(Parameters *par, SourceInfo *src, Status status) {
+auto Catalogue::cid_fom(Parameters *par, SourceInfo *src, Status status) -> Status {
 
     // Debug mode: Entry
     #if LOW_LEVEL_DEBUG
@@ -1077,7 +1077,7 @@ Status Catalogue::cid_fom(Parameters *par, SourceInfo *src, Status status) {
  *
  * This method expects src->numSelect counterparts.
  ******************************************************************************/
-Status Catalogue::cid_prob_pos(Parameters *par, SourceInfo *src, Status status) {
+auto Catalogue::cid_prob_pos(Parameters *par, SourceInfo *src, Status status) -> Status {
 
     // Debug mode: Entry
     #if LOW_LEVEL_DEBUG
@@ -1232,7 +1232,7 @@ Status Catalogue::cid_prob_pos(Parameters *par, SourceInfo *src, Status status) 
  *
  * This method expects src->numSelect counterparts.
  ******************************************************************************/
-Status Catalogue::cid_prob_chance(Parameters *par, SourceInfo *src, Status status) {
+auto Catalogue::cid_prob_chance(Parameters *par, SourceInfo *src, Status status) -> Status {
 
     // Debug mode: Entry
     #if LOW_LEVEL_DEBUG
@@ -1345,7 +1345,7 @@ Status Catalogue::cid_prob_chance(Parameters *par, SourceInfo *src, Status statu
  *
  * This method expects src->numSelect counterparts.
  ******************************************************************************/
-Status Catalogue::cid_prob_prior(Parameters *par, SourceInfo *src, Status status) {
+auto Catalogue::cid_prob_prior(Parameters *par, SourceInfo *src, Status status) -> Status {
 
     // Debug mode: Entry
     #if LOW_LEVEL_DEBUG
@@ -1469,8 +1469,8 @@ Status Catalogue::cid_prob_prior(Parameters *par, SourceInfo *src, Status status
  *
  * This method expects src->numSelect counterparts.
  ******************************************************************************/
-Status Catalogue::cid_prob_post_single(Parameters *par, SourceInfo *src,
-                                       Status status) {
+auto Catalogue::cid_prob_post_single(Parameters *par, SourceInfo *src,
+                                       Status status) -> Status {
 
     // Debug mode: Entry
     #if LOW_LEVEL_DEBUG
@@ -1598,7 +1598,7 @@ Status Catalogue::cid_prob_post_single(Parameters *par, SourceInfo *src,
  *
  * This method expects src->Refine counterparts.
  ******************************************************************************/
-Status Catalogue::cid_prob(Parameters *par, SourceInfo *src, Status status) {
+auto Catalogue::cid_prob(Parameters *par, SourceInfo *src, Status status) -> Status {
 
     // Debug mode: Entry
     #if LOW_LEVEL_DEBUG
@@ -1719,8 +1719,8 @@ Status Catalogue::cid_prob(Parameters *par, SourceInfo *src, Status status) {
  *
  * This method expects src->numSelect counterparts.
  ******************************************************************************/
-Status Catalogue::cid_local_density(Parameters *par, SourceInfo *src,
-                                    Status status) {
+auto Catalogue::cid_local_density(Parameters *par, SourceInfo *src,
+                                    Status status) -> Status {
 
     // Debug mode: Entry
     #if LOW_LEVEL_DEBUG
@@ -1850,8 +1850,8 @@ Status Catalogue::cid_local_density(Parameters *par, SourceInfo *src,
  *
  * This method expects src->numSelect counterparts.
  ******************************************************************************/
-Status Catalogue::cid_global_density(Parameters *par, SourceInfo *src,
-                                     Status status) {
+auto Catalogue::cid_global_density(Parameters *par, SourceInfo *src,
+                                     Status status) -> Status {
 
     // Debug mode: Entry
     #if LOW_LEVEL_DEBUG
@@ -1912,8 +1912,8 @@ Status Catalogue::cid_global_density(Parameters *par, SourceInfo *src,
  *
  * This method expects src->numSelect counterparts.
  ******************************************************************************/
-Status Catalogue::cid_map_density(Parameters *par, SourceInfo *src,
-                                  Status status) {
+auto Catalogue::cid_map_density(Parameters *par, SourceInfo *src,
+                                  Status status) -> Status {
 
     // Debug mode: Entry
     #if LOW_LEVEL_DEBUG
@@ -1992,8 +1992,8 @@ Status Catalogue::cid_map_density(Parameters *par, SourceInfo *src,
  * Sort by increasing probability and in case of equal probability) by 
  * decreasing angular separation
  ******************************************************************************/
-Status Catalogue::cid_sort(Parameters *par, SourceInfo *src, int num,
-                           Status status) {
+auto Catalogue::cid_sort(Parameters *par, SourceInfo *src, int num,
+                           Status status) -> Status {
 
     // Debug mode: Entry
     if (par->logDebug())
@@ -2061,7 +2061,7 @@ Status Catalogue::cid_sort(Parameters *par, SourceInfo *src, int num,
  *
  * This method expects src->numRefine counterparts.
  ******************************************************************************/
-Status Catalogue::cid_dump(Parameters *par, SourceInfo *src, Status status) {
+auto Catalogue::cid_dump(Parameters *par, SourceInfo *src, Status status) -> Status {
 
     // Declare local variables
 
@@ -2185,7 +2185,7 @@ Status Catalogue::cid_dump(Parameters *par, SourceInfo *src, Status status) {
 /* -------------------------------------------------------------------------- */
 /* Private method: assign source name if string                               */
 /*----------------------------------------------------------------------------*/
-std::string Catalogue::cid_assign_src_name(std::string name, int row) {
+auto Catalogue::cid_assign_src_name(std::string name, int row) -> std::string {
 
     // If string is empty then assign a default name
     std::string empty = name;

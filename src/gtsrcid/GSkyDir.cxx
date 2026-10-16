@@ -21,7 +21,7 @@ $Log$
 namespace sourceIdentify {
 
 /* __ Prototype __________________________________________________________ */
-double modulo(double v1, double v2);
+auto modulo(double v1, double v2) -> double;
 void   euler(const int& type, const double& xin, const double &yin, 
              double* xout, double *yout);
 
@@ -92,7 +92,7 @@ GSkyDir::~GSkyDir()
 /***********************************************************************//**
  * @brief Assignment operator
  ***************************************************************************/
-GSkyDir& GSkyDir::operator= (const GSkyDir& dir)
+auto GSkyDir::operator= (const GSkyDir& dir) -> GSkyDir&
 {
     // Execute only if object is not identical
     if (this != &dir) {
@@ -206,7 +206,7 @@ void GSkyDir::lb_deg(const double& l, const double& b)
 /***********************************************************************//**
  * @brief Returns galactic longitude in radians
  ***************************************************************************/
-double GSkyDir::l(void)
+auto GSkyDir::l(void) -> double
 {
     // If we have no galactic coordinates then get them now
     if (!m_has_lb && m_has_radec)
@@ -220,7 +220,7 @@ double GSkyDir::l(void)
 /***********************************************************************//**
  * @brief Returns galactic longitude in degrees
  ***************************************************************************/
-double GSkyDir::l_deg(void)
+auto GSkyDir::l_deg(void) -> double
 {
     // If we have no galactic coordinates then get them now
     if (!m_has_lb && m_has_radec)
@@ -234,7 +234,7 @@ double GSkyDir::l_deg(void)
 /***********************************************************************//**
  * @brief Returns galactic latitude in radians
  ***************************************************************************/
-double GSkyDir::b(void)
+auto GSkyDir::b(void) -> double
 {
     // If we have no galactic coordinates then get them now
     if (!m_has_lb && m_has_radec)
@@ -248,7 +248,7 @@ double GSkyDir::b(void)
 /***********************************************************************//**
  * @brief Returns galactic latitude in degrees
  ***************************************************************************/
-double GSkyDir::b_deg(void)
+auto GSkyDir::b_deg(void) -> double
 {
     // If we have no galactic coordinates then get them now
     if (!m_has_lb && m_has_radec)
@@ -262,7 +262,7 @@ double GSkyDir::b_deg(void)
 /***********************************************************************//**
  * @brief Returns Right Ascension in radians
  ***************************************************************************/
-double GSkyDir::ra(void)
+auto GSkyDir::ra(void) -> double
 {
     // If we have no equatorial coordinates then get them now
     if (!m_has_radec && m_has_lb)
@@ -276,7 +276,7 @@ double GSkyDir::ra(void)
 /***********************************************************************//**
  * @brief Returns Right Ascension in degrees
  ***************************************************************************/
-double GSkyDir::ra_deg(void)
+auto GSkyDir::ra_deg(void) -> double
 {
     // If we have no equatorial coordinates then get them now
     if (!m_has_radec && m_has_lb)
@@ -290,7 +290,7 @@ double GSkyDir::ra_deg(void)
 /***********************************************************************//**
  * @brief Returns Declination in radians
  ***************************************************************************/
-double GSkyDir::dec(void)
+auto GSkyDir::dec(void) -> double
 {
     // If we have no equatorial coordinates then get them now
     if (!m_has_radec && m_has_lb)
@@ -304,7 +304,7 @@ double GSkyDir::dec(void)
 /***********************************************************************//**
  * @brief Returns Declination in degrees
  ***************************************************************************/
-double GSkyDir::dec_deg(void)
+auto GSkyDir::dec_deg(void) -> double
 {
     // If we have no equatorial coordinates then get them now
     if (!m_has_radec && m_has_lb)
@@ -411,7 +411,7 @@ void GSkyDir::gal2equ(void)
  * @param[in] os Output stream
  * @param[in] column Sky direction to put in output stream
  ***************************************************************************/
-std::ostream& operator<< (std::ostream& os, const GSkyDir& dir)
+auto operator<< (std::ostream& os, const GSkyDir& dir) -> std::ostream&
 {
     // Create coordinate system dependent output
     if (dir.m_has_lb)
@@ -480,7 +480,7 @@ void euler(const int& type, const double& xin, const double &yin,
  * The result is non-negative.
  * \a v1 can be positive or negative; \a v2 must be positive.
  ***************************************************************************/
-double modulo(double v1, double v2)
+auto modulo(double v1, double v2) -> double
 {
     // Return
     return (v1 >= 0) ? ((v1 < v2) ? v1 : fmod(v1,v2)) : (fmod(v1,v2)+v2);

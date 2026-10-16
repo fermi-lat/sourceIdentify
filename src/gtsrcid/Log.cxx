@@ -24,10 +24,10 @@ Replace header information with CVS typeset information.
  */
 
 /* Includes _________________________________________________________________ */
-#include <stdio.h>      // for "FILE" type
-#include <string.h>     // for "memcpy" function
-#include <stdarg.h>     // for "va_list" type
-#include <time.h>       // for time functions
+#include <cstdio>      // for "FILE" type
+#include <cstring>     // for "memcpy" function
+#include <cstdarg>     // for "va_list" type
+#include <ctime>       // for time functions
 #include "sourceIdentify.h"
 #include "Log.h"
 
@@ -54,7 +54,7 @@ FILE *gLogFilePtr = NULL;
  * @param[in] taskName Name of task.
  * @param[in] status Error status.
  ******************************************************************************/
-Status LogInit(const char *logName, const char *taskName, Status status) {
+auto LogInit(const char *logName, const char *taskName, Status status) -> Status {
 
     // Declare (and initialise) variables
 
@@ -103,7 +103,7 @@ Status LogInit(const char *logName, const char *taskName, Status status) {
  *
  * @param[in] status Error status.
  ******************************************************************************/
-Status LogClose(Status status) {
+auto LogClose(Status status) -> Status {
 
     // Declare (and initialise) variables
 
@@ -132,7 +132,7 @@ Status LogClose(Status status) {
  * @param[in] msgType Message type.
  * @param[in] msgFormat Pointer to message format.
  ******************************************************************************/
-Status Log(MessageType msgType, const char *msgFormat, ...) {
+auto Log(MessageType msgType, const char *msgFormat, ...) -> Status {
 
     // Declare (and initialise) variables
     Status    status = STATUS_OK;

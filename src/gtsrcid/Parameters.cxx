@@ -61,7 +61,7 @@ Replace header information with CVS typeset information.
  */
 
 /* Includes _________________________________________________________________ */
-#include <stdio.h>                       // for "sprintf" function
+#include <cstdio>                       // for "sprintf" function
 #include "sourceIdentify.h"
 #include "Parameters.h"
 #include "Log.h"                         // for parameter dumping/errors
@@ -79,7 +79,7 @@ int g_u9_verbosity;
 
 
 /* Prototypes _______________________________________________________________ */
-std::string trim(std::string str);
+auto trim(std::string str) -> std::string;
 
 
 /*============================================================================*/
@@ -91,7 +91,7 @@ std::string trim(std::string str);
  *
  * @param[in] str String from which whitespace is to be removed.
  ******************************************************************************/
-std::string trim(std::string str) {
+auto trim(std::string str) -> std::string {
 
     // Declare variables
     char const* delims = " \t\r\n";
@@ -194,7 +194,7 @@ void Parameters::free_memory(void) {
  * 'CHANCE':    Inclusion of local chance coincidence probability.
  * All other names correspond to columns in the catalogues.
  ******************************************************************************/
-Status Parameters::load(st_app::AppParGroup &pars, Status status) {
+auto Parameters::load(st_app::AppParGroup &pars, Status status) -> Status {
 
     // Declare local variables
     char                   parname[MAX_CHAR];
@@ -340,7 +340,7 @@ Status Parameters::load(st_app::AppParGroup &pars, Status status) {
  *
  * @param[in] status Error status.
  ******************************************************************************/
-Status Parameters::dump(Status status) {
+auto Parameters::dump(Status status) -> Status {
 
     // Declare local variables
     std::string::size_type i;

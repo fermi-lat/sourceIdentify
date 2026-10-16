@@ -47,7 +47,7 @@ Replace header information with CVS typeset information.
  */
 
 /* Includes _________________________________________________________________ */
-#include <time.h>            // for "clock_t" type
+#include <ctime>            // for "clock_t" type
 #include "sourceIdentify.h"
 #include "Parameters.h"
 #include "Log.h"

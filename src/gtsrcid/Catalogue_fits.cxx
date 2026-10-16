@@ -146,18 +146,18 @@ int g_col_special = 1;
 
 
 /* Special function prototypes ______________________________________________ */
-std::vector<double> funct_gammln(std::vector<double> arg);
-std::vector<double> funct_erf(std::vector<double> arg);
-std::vector<double> funct_erfc(std::vector<double> arg);
-std::vector<double> funct_set(int num, double value);
+auto funct_gammln(std::vector<double> arg) -> std::vector<double>;
+auto funct_erf(std::vector<double> arg) -> std::vector<double>;
+auto funct_erfc(std::vector<double> arg) -> std::vector<double>;
+auto funct_set(int num, double value) -> std::vector<double>;
 
 /* Private Prototypes _______________________________________________________ */
-int set_fits_col_format(catalogAccess::Quantity *desc, std::string *format);
-int fits_tform_binary(int typecode, long repeat, long width, 
-                      std::string *format);
-Status extract_next_special_function(std::string formula,
+auto set_fits_col_format(catalogAccess::Quantity *desc, std::string *format) -> int;
+auto fits_tform_binary(int typecode, long repeat, long width, 
+                      std::string *format) -> int;
+auto extract_next_special_function(std::string formula,
                                      std::string &new_formula,
-                                     SpecialFcts &fcts);
+                                     SpecialFcts &fcts) -> Status;
 
 
 /*============================================================================*/
@@ -171,7 +171,7 @@ Status extract_next_special_function(std::string formula,
  *
  * Implemented from Numerical Recipes, V2.08
  ******************************************************************************/
-std::vector<double> funct_gammln(std::vector<double> arg) {
+auto funct_gammln(std::vector<double> arg) -> std::vector<double> {
 
     // Get vector dimension
     int n = (int)arg.size();
@@ -208,7 +208,7 @@ std::vector<double> funct_gammln(std::vector<double> arg) {
  *
  * Implemented from Numerical Recipes, V2.08
  ******************************************************************************/
-std::vector<double> funct_erf(std::vector<double> arg) {
+auto funct_erf(std::vector<double> arg) -> std::vector<double> {
 
     // Get vector dimension
     int n = (int)arg.size();
@@ -235,7 +235,7 @@ std::vector<double> funct_erf(std::vector<double> arg) {
  *
  * Implemented from Numerical Recipes, V2.08
  ******************************************************************************/
-std::vector<double> funct_erfc(std::vector<double> arg) {
+auto funct_erfc(std::vector<double> arg) -> std::vector<double> {
 
     // Get vector dimension
     int n = (int)arg.size();
@@ -260,7 +260,7 @@ std::vector<double> funct_erfc(std::vector<double> arg) {
  *
  * @param[in] num Vector dimension of result
  ******************************************************************************/
-std::vector<double> funct_set(int num, double value) {
+auto funct_set(int num, double value) -> std::vector<double> {
 
     // Allocate result vector
     std::vector<double> res(num);
@@ -285,7 +285,7 @@ std::vector<double> funct_set(int num, double value) {
  * @param[in] desc Pointer to catalogue descriptor.
  * @param[out] format Pointer to result format string.
  ******************************************************************************/
-int set_fits_col_format(catalogAccess::Quantity *desc, std::string *format) {
+auto set_fits_col_format(catalogAccess::Quantity *desc, std::string *format) -> int {
 
     // Declare local variables
     std::string            col_format;
@@ -346,8 +346,8 @@ int set_fits_col_format(catalogAccess::Quantity *desc, std::string *format) {
  * @param[in] width Column width.
  * @param[out] format Pointer to result format string.
  ******************************************************************************/
-int fits_tform_binary(int typecode, long repeat, long width,
-                      std::string *format) {
+auto fits_tform_binary(int typecode, long repeat, long width,
+                      std::string *format) -> int {
 
     // Declare local variables
     char add[256];
@@ -422,9 +422,9 @@ int fits_tform_binary(int typecode, long repeat, long width,
  * @param[out] new_formula Formula after function extraction.
  * @param[out] fcts List of special functions.
  ******************************************************************************/
-Status extract_next_special_function(std::string formula,
+auto extract_next_special_function(std::string formula,
                                      std::string &new_formula,
-                                     SpecialFcts &fcts) {
+                                     SpecialFcts &fcts) -> Status {
 
     // Initialise return status
     int    fct_inx = -1;
@@ -549,8 +549,8 @@ Status extract_next_special_function(std::string formula,
  * @param[in] par Pointer to gtsrcid parameters.
  * @param[in] status Error status.
  ******************************************************************************/
-Status Catalogue::cfits_create(fitsfile **fptr, char *filename, Parameters *par,
-                               Status status) {
+auto Catalogue::cfits_create(fitsfile **fptr, char *filename, Parameters *par,
+                               Status status) -> Status {
 
     // Declare local variables
     int                                    fstatus;
@@ -969,7 +969,7 @@ Status Catalogue::cfits_create(fitsfile **fptr, char *filename, Parameters *par,
  * Deletes all rows from a FITS table. This method is mainly used to reset the
  * in-memory FITS catalogue.
  ******************************************************************************/
-Status Catalogue::cfits_clear(fitsfile *fptr, Parameters *par, Status status) {
+auto Catalogue::cfits_clear(fitsfile *fptr, Parameters *par, Status status) -> Status {
 
     // Declare local variables
     int  fstatus;
@@ -1036,8 +1036,8 @@ Status Catalogue::cfits_clear(fitsfile *fptr, Parameters *par, Status status) {
  * @param[in] src Pointer to source information.
  * @param[in] status Error status.
  ******************************************************************************/
-Status Catalogue::cfits_add(fitsfile *fptr, Parameters *par, SourceInfo *src,
-                            int num, Status status) {
+auto Catalogue::cfits_add(fitsfile *fptr, Parameters *par, SourceInfo *src,
+                            int num, Status status) -> Status {
 
     // Declare local variables
     int           fstatus;
@@ -1563,7 +1563,7 @@ Status Catalogue::cfits_add(fitsfile *fptr, Parameters *par, SourceInfo *src,
  * @param[in] par Pointer to gtsrcid parameters.
  * @param[in] status Error status.
  ******************************************************************************/
-Status Catalogue::cfits_eval(fitsfile *fptr, Parameters *par, Status status) {
+auto Catalogue::cfits_eval(fitsfile *fptr, Parameters *par, Status status) -> Status {
 
     // Debug mode: Entry
     if (par->logDebug())
@@ -1641,9 +1641,9 @@ Status Catalogue::cfits_eval(fitsfile *fptr, Parameters *par, Status status) {
  * @param[in] formula Formula to be evaluated.
  * @param[in] status Error status.
  ******************************************************************************/
-Status Catalogue::cfits_eval_column(fitsfile *fptr, Parameters *par,
+auto Catalogue::cfits_eval_column(fitsfile *fptr, Parameters *par,
                                     std::string column,std::string formula,
-                                    Status status) {
+                                    Status status) -> Status {
 
     // Debug mode: Entry
     if (par->logDebug())
@@ -1713,10 +1713,10 @@ Status Catalogue::cfits_eval_column(fitsfile *fptr, Parameters *par,
  * @param[in,out] formula Formula.
  * @param[in] status Error status.
  ******************************************************************************/
-Status Catalogue::cfits_eval_special_expression(fitsfile *fptr, Parameters *par,
+auto Catalogue::cfits_eval_special_expression(fitsfile *fptr, Parameters *par,
                                                 std::string column,
                                                 std::string &formula,
-                                                Status status) {
+                                                Status status) -> Status {
 
     // Declare local variables
     int         fstatus;
@@ -1866,12 +1866,12 @@ Status Catalogue::cfits_eval_special_expression(fitsfile *fptr, Parameters *par,
  * @param[in] nargs Number of function arguments
  * @param[in] status Error status.
  ******************************************************************************/
-Status Catalogue::cfits_eval_special_function(fitsfile *fptr, Parameters *par,
+auto Catalogue::cfits_eval_special_function(fitsfile *fptr, Parameters *par,
                                               std::string fct,
                                               std::string column_res,
                                               std::string column_arg,
                                               int nargs,
-                                              Status status) {
+                                              Status status) -> Status {
 
     // Declare local variables
     std::vector<double> arg;
@@ -1975,10 +1975,10 @@ Status Catalogue::cfits_eval_special_function(fitsfile *fptr, Parameters *par,
  * formula calculator. The result is stored in the table column specified by
  * 'column'.
  ******************************************************************************/
-Status Catalogue::cfits_eval_regular_expression(fitsfile *fptr, Parameters *par,
+auto Catalogue::cfits_eval_regular_expression(fitsfile *fptr, Parameters *par,
                                                 std::string column,
                                                 std::string formula,
-                                                Status status) {
+                                                Status status) -> Status {
 
     // Declare local variables
     int         fstatus;
@@ -2055,8 +2055,8 @@ Status Catalogue::cfits_eval_regular_expression(fitsfile *fptr, Parameters *par,
  * @param[in] par Pointer to gtsrcid parameters.
  * @param[in] status Error status.
  ******************************************************************************/
-Status Catalogue::cfits_eval_clear(fitsfile *fptr, Parameters *par, 
-                                   Status status) {
+auto Catalogue::cfits_eval_clear(fitsfile *fptr, Parameters *par, 
+                                   Status status) -> Status {
 
     // Declare local variables
     int               fstatus;
@@ -2129,8 +2129,8 @@ Status Catalogue::cfits_eval_clear(fitsfile *fptr, Parameters *par,
  * @param[in] num Number of sources to update.
  * @param[in] status Error status.
  ******************************************************************************/
-Status Catalogue::cfits_update(fitsfile *fptr, Parameters *par, SourceInfo *src,
-                               int num, Status status) {
+auto Catalogue::cfits_update(fitsfile *fptr, Parameters *par, SourceInfo *src,
+                               int num, Status status) -> Status {
 
     // Debug mode: Entry
     if (par->logDebug())
@@ -2198,8 +2198,8 @@ Status Catalogue::cfits_update(fitsfile *fptr, Parameters *par, SourceInfo *src,
  * Performs table row selection for one specific catalogue source. The result
  * of the selection process is stored in the m_cpt_stat table.
  ******************************************************************************/
-Status Catalogue::cfits_select(fitsfile *fptr, Parameters *par, SourceInfo *src,
-                               Status status) {
+auto Catalogue::cfits_select(fitsfile *fptr, Parameters *par, SourceInfo *src,
+                               Status status) -> Status {
 
     // Declare local variables
     int  fstatus;
@@ -2308,7 +2308,7 @@ Status Catalogue::cfits_select(fitsfile *fptr, Parameters *par, SourceInfo *src,
  * Performs table row selection for complete catalogue source. This is useful
  * at the end to filter also on derived quantities.
  ******************************************************************************/
-Status Catalogue::cfits_select(fitsfile *fptr, Parameters *par, Status status) {
+auto Catalogue::cfits_select(fitsfile *fptr, Parameters *par, Status status) -> Status {
 
     // Declare local variables
     int  fstatus;
@@ -2417,8 +2417,8 @@ Status Catalogue::cfits_select(fitsfile *fptr, Parameters *par, Status status) {
  * vector that contains the number of counterparts for each source of the
  * input catalogue.
  ******************************************************************************/
-Status Catalogue::cfits_collect(fitsfile *fptr, Parameters *par,
-                                std::vector<int> &stat, Status status) {
+auto Catalogue::cfits_collect(fitsfile *fptr, Parameters *par,
+                                std::vector<int> &stat, Status status) -> Status {
 
     // Declare local variables
     std::vector<std::string> col_id;
@@ -2536,10 +2536,10 @@ Status Catalogue::cfits_collect(fitsfile *fptr, Parameters *par,
  * @param[out] col Vector of values.
  * @param[in] status Error status.
  ******************************************************************************/
-Status Catalogue::cfits_get_col(fitsfile *fptr, Parameters *par,
+auto Catalogue::cfits_get_col(fitsfile *fptr, Parameters *par,
                                 std::string colname,
                                 std::vector<double> &col,
-                                Status status) {
+                                Status status) -> Status {
 
     // Declare local variables
     int     colnum;
@@ -2640,10 +2640,10 @@ Status Catalogue::cfits_get_col(fitsfile *fptr, Parameters *par,
  * @param[in] col String vector column.
  * @param[in] status Error status.
  ******************************************************************************/
-Status Catalogue::cfits_get_col_str(fitsfile *fptr, Parameters *par, 
+auto Catalogue::cfits_get_col_str(fitsfile *fptr, Parameters *par, 
                                     std::string colname,
                                     std::vector<std::string> &col,
-                                    Status status) {
+                                    Status status) -> Status {
 
     // Declare local variables
     int    colnum;
@@ -2779,10 +2779,10 @@ Status Catalogue::cfits_get_col_str(fitsfile *fptr, Parameters *par,
  * @param[in] col Vector of values.
  * @param[in] status Error status.
  ******************************************************************************/
-Status Catalogue::cfits_set_col(fitsfile *fptr, Parameters *par,
+auto Catalogue::cfits_set_col(fitsfile *fptr, Parameters *par,
                                 std::string colname,
                                 std::vector<double> &col,
-                                Status status) {
+                                Status status) -> Status {
 
     // Declare local variables
     int     fstatus;
@@ -2908,7 +2908,7 @@ Status Catalogue::cfits_set_col(fitsfile *fptr, Parameters *par,
  * @param[in] par Pointer to gtsrcid parameters.
  * @param[in] status Error status.
  ******************************************************************************/
-Status Catalogue::cfits_set_pars(fitsfile *fptr, Parameters *par, Status status) {
+auto Catalogue::cfits_set_pars(fitsfile *fptr, Parameters *par, Status status) -> Status {
 
     // Declare local variables
     int fstatus;
@@ -2981,7 +2981,7 @@ Status Catalogue::cfits_set_pars(fitsfile *fptr, Parameters *par, Status status)
  * @param[in] par Pointer to gtsrcid parameters.
  * @param[in] status Error status.
  ******************************************************************************/
-Status Catalogue::cfits_save(fitsfile *fptr, Parameters *par, Status status) {
+auto Catalogue::cfits_save(fitsfile *fptr, Parameters *par, Status status) -> Status {
 
     // Declare local variables
     int fstatus;

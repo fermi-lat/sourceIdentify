@@ -30,8 +30,8 @@ Implement HEALPix interface to read counterpart density maps
 namespace sourceIdentify {
 
 /* __ Local prototypes ___________________________________________________ */
-unsigned int isqrt(unsigned int arg);
-double       modulo(double v1, double v2);
+auto isqrt(unsigned int arg) -> unsigned int;
+auto       modulo(double v1, double v2) -> double;
 
 /* __ Constants __________________________________________________________ */
 const int    jrll[12]   = {2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4};
@@ -209,7 +209,7 @@ GHealpix::~GHealpix()
  * @param[in] pixel pixel number (starting from 0)
  * @param[in] element vector element number (starting from 0)
  ***************************************************************************/
-double& GHealpix::operator() (int pixel, int element)
+auto GHealpix::operator() (int pixel, int element) -> double&
 {
     // Check pixel validity
     if (pixel < 0 || pixel >= m_num_pixels || element < 0 || element >= m_size_pixels)
@@ -226,7 +226,7 @@ double& GHealpix::operator() (int pixel, int element)
  * @param[in] pixel pixel number (starting from 0)
  * @param[in] element vector element number (starting from 0)
  ***************************************************************************/
-const double& GHealpix::operator() (int pixel, int element) const
+auto GHealpix::operator() (int pixel, int element) const -> const double&
 {
     // Check pixel validity
     if (pixel < 0 || pixel >= m_num_pixels || element < 0 || element >= m_size_pixels)
@@ -242,7 +242,7 @@ const double& GHealpix::operator() (int pixel, int element) const
  *
  * @param[in] pixels GHealpix instance to be assigned
  ***************************************************************************/
-GHealpix& GHealpix::operator= (const GHealpix& pixels)
+auto GHealpix::operator= (const GHealpix& pixels) -> GHealpix&
 {
     // Execute only if object is not identical
     if (this != &pixels) {
@@ -381,7 +381,7 @@ void GHealpix::read(fitsfile *fptr)
 /***********************************************************************//**
  * @brief Returns number of divisions of the side of each base pixel.
  ***************************************************************************/
-int GHealpix::nside(void) const
+auto GHealpix::nside(void) const -> int
 {
     // Return nside
     return m_nside;
@@ -391,7 +391,7 @@ int GHealpix::nside(void) const
 /***********************************************************************//**
  * @brief Returns ordering parameter.
  ***************************************************************************/
-int GHealpix::order(void) const
+auto GHealpix::order(void) const -> int
 {
     // Return order
     return m_order;
@@ -401,7 +401,7 @@ int GHealpix::order(void) const
 /***********************************************************************//**
  * @brief Returns number of pixels.
  ***************************************************************************/
-int GHealpix::npix(void) const
+auto GHealpix::npix(void) const -> int
 {
     // Return nside
     return m_num_pixels;
@@ -411,7 +411,7 @@ int GHealpix::npix(void) const
 /***********************************************************************//**
  * @brief Returns solid angle of pixel
  ***************************************************************************/
-double GHealpix::omega(void) const
+auto GHealpix::omega(void) const -> double
 {
     // Return solid angle
     return m_omega;
@@ -423,7 +423,7 @@ double GHealpix::omega(void) const
  *
  * @param[in] ipix Pixel number (0,1,...,num_pixels)
  ***************************************************************************/
-GSkyDir GHealpix::pix2ang(const int& ipix)
+auto GHealpix::pix2ang(const int& ipix) -> GSkyDir
 {
     // Declare result
     GSkyDir result;
@@ -464,7 +464,7 @@ GSkyDir GHealpix::pix2ang(const int& ipix)
  *
  * @param[in] ipix Pixel number (0,1,...,num_pixels)
  ***************************************************************************/
-int GHealpix::ang2pix(GSkyDir dir) const
+auto GHealpix::ang2pix(GSkyDir dir) const -> int
 {
     // Declare result
     int    ipix;
@@ -618,7 +618,7 @@ void GHealpix::free_members(void)
 /***********************************************************************//**
  * @brief Clone Healpix representation
  ***************************************************************************/
-GHealpix* GHealpix::clone(void) const
+auto GHealpix::clone(void) const -> GHealpix*
 {
     return new GHealpix(*this);
 }
@@ -629,7 +629,7 @@ GHealpix* GHealpix::clone(void) const
  *
  * @param[in] nside Number of sides.
  ***************************************************************************/
-int GHealpix::nside2order(int nside)
+auto GHealpix::nside2order(int nside) -> int
 {
     // Initialise order
     int order = -1;
@@ -678,7 +678,7 @@ void GHealpix::pix2xy(const int& ipix, int* x, int* y)
  * @param[in] x x coordinate.
  * @param[in] y y coordinate.
  ***************************************************************************/
-int GHealpix::xy2pix(int x, int y) const
+auto GHealpix::xy2pix(int x, int y) const -> int
 {
     // Return pixel
     return utab[x&0xff] | (utab[x>>8]<<16) | (utab[y&0xff]<<1) | (utab[y>>8]<<17);
@@ -807,7 +807,7 @@ void GHealpix::pix2ang_nest(int ipix, double* theta, double* phi)
  * @param[in] z Cosine of zenith angle - cos(theta).
  * @param[in] phi Azimuth angle in radians.
  ***************************************************************************/
-int GHealpix::ang2pix_z_phi_ring(double z, double phi) const
+auto GHealpix::ang2pix_z_phi_ring(double z, double phi) const -> int
 {
     // Initialise pixel
     int ipix = 0;
@@ -855,7 +855,7 @@ int GHealpix::ang2pix_z_phi_ring(double z, double phi) const
  * @param[in] z Cosine of zenith angle - cos(theta).
  * @param[in] phi Azimuth angle in radians.
  ***************************************************************************/
-int GHealpix::ang2pix_z_phi_nest(double z, double phi) const
+auto GHealpix::ang2pix_z_phi_nest(double z, double phi) const -> int
 {
     // Initialise face and pixel numbers
     int face_num;
@@ -925,7 +925,7 @@ int GHealpix::ang2pix_z_phi_nest(double z, double phi) const
  * @param[in] os Output stream
  * @param[in] column Healpix array to put in output stream
  ***************************************************************************/
-std::ostream& operator<< (std::ostream& os, const GHealpix& pixels)
+auto operator<< (std::ostream& os, const GHealpix& pixels) -> std::ostream&
 {
     // Put header in stream
     os << "=== GHealpix ===" << std::endl;
@@ -990,7 +990,7 @@ std::ostream& operator<< (std::ostream& os, const GHealpix& pixels)
  *
  * Returns the integer \a n, which fulfills \a n*n <= arg < (n+1)*(n+1).
  ***************************************************************************/
-unsigned int isqrt(unsigned int arg)
+auto isqrt(unsigned int arg) -> unsigned int
 {
     // Return
     return unsigned(sqrt(arg+0.5));

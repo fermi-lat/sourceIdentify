@@ -42,7 +42,7 @@ namespace sourceIdentify {
  *
  * Implemented from Numerical Recipes, V2.08
  ******************************************************************************/
-double nr_gammln(double arg) {
+auto nr_gammln(double arg) -> double {
 
     // Initialise
     double x   = arg;
@@ -78,7 +78,7 @@ double nr_gammln(double arg) {
  *
  * Implemented from Numerical Recipes, V2.08
  ******************************************************************************/
-double nr_gammp(double a, double x) {
+auto nr_gammp(double a, double x) -> double {
 
     // Check arguments
     if (x < 0.0 || a <= 0.0) {
@@ -111,7 +111,7 @@ double nr_gammp(double a, double x) {
  *
  * Implemented from Numerical Recipes, V2.08
  ******************************************************************************/
-double nr_gammq(double a, double x) {
+auto nr_gammq(double a, double x) -> double {
 
     // Check arguments
     if (x < 0.0 || a <= 0.0) {
