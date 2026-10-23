@@ -188,7 +188,9 @@ selections per class).
 
 ### Environment variables
 
-None in `gtsrcid` itself. `PFILES` is used through `st_app`/`ape`.
+None in `gtsrcid` itself (no `getenv` calls). `PFILES` is used through
+`st_app`/`ape`; see "Runtime environment" in ScienceTools'
+`docs/architecture/README.md`.
 
 ## Build and test
 
@@ -219,6 +221,10 @@ None in `gtsrcid` itself. `PFILES` is used through `st_app`/`ape`.
     (v1r2p0). The current output will differ.
   - That reference run uses a TSV counterpart catalogue, which currently
     fails to load (see below).
+  - ScienceTools' `recipe/tests/ST-unit-test` never lists `gtsrcid` or
+    any sourceIdentify test (neither the default nor the ROOT list), and
+    `fermitools-data` has no `outrefFiles/sourceIdentify`. See "Testing" in
+    ScienceTools' `docs/architecture/README.md`.
 - **Quick manual check** (FITS × FITS; this works). Run it in a scratch
   directory, because it writes `gtsrcid.log` there. `$D` is the directory
   that holds `3EG.fits` (`data/` in the source tree, or
