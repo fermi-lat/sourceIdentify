@@ -38,7 +38,7 @@ namespace sourceIdentify {
 
 /* Globals __________________________________________________________________ */
 char  gLogTaskName[100];
-FILE *gLogFilePtr = NULL;
+FILE *gLogFilePtr = nullptr;
 
 
 /* Type defintions __________________________________________________________ */
@@ -65,16 +65,16 @@ auto LogInit(const char *logName, const char *taskName, Status status) -> Status
       sprintf(gLogTaskName, "%s", "");
 
       // If there is already a log file opened then close it first
-      if (gLogFilePtr != NULL) {
+      if (gLogFilePtr != nullptr) {
         status = LogClose(status);
         if (status != STATUS_OK)
           continue;
         else
-          gLogFilePtr = NULL;
+          gLogFilePtr = nullptr;
       }
 
       // Open log file
-      if (gLogFilePtr == NULL)
+      if (gLogFilePtr == nullptr)
         gLogFilePtr = fopen(logName, "w");
       else {
         status = STATUS_LOG_OPEN_FAILED;
@@ -82,7 +82,7 @@ auto LogInit(const char *logName, const char *taskName, Status status) -> Status
       }
 
       // If log file is not opened then signal an error
-      if (gLogFilePtr == NULL) {
+      if (gLogFilePtr == nullptr) {
         status = STATUS_LOG_OPEN_FAILED;
         continue;
       }
@@ -111,7 +111,7 @@ auto LogClose(Status status) -> Status {
     do {
 
       // Close log file
-      if (gLogFilePtr != NULL)
+      if (gLogFilePtr != nullptr)
         fclose(gLogFilePtr);
       else {
         status = STATUS_LOG_CLOSE_FAILED;
@@ -145,7 +145,7 @@ auto Log(MessageType msgType, const char *msgFormat, ...) -> Status {
     do {
 
       // If no log file has been opened then open one now
-      if (gLogFilePtr == NULL) {
+      if (gLogFilePtr == nullptr) {
         status = LogInit(DEFAULT_LOG_FILENAME, DEFAULT_TASK_NAME, status);
         if (status != STATUS_OK)
           continue;
@@ -207,7 +207,7 @@ auto Log(MessageType msgType, const char *msgFormat, ...) -> Status {
       }
 
       // Get time
-      now = time(NULL);
+      now = time(nullptr);
       #ifdef HAVE_GMTIME_R
       gmtime_r(&now, &timeStruct);
       #else

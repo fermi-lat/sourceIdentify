@@ -426,7 +426,7 @@ auto Catalogue::cid_filter(Parameters *par, SourceInfo *src, Status status) -> S
 
         // Allocate memory for counterpart candidates
         src->cc = new CCElement[src->numFilter];
-        if (src->cc == NULL) {
+        if (src->cc == nullptr) {
           status = STATUS_MEM_ALLOC;
           if (par->logTerse())
             Log(Error_2, "%d : Memory allocation failure.", (Status)status);

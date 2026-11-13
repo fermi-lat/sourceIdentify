@@ -1008,7 +1008,7 @@ void Catalogue::init_memory(void) {
       // Initialise source catalogue private members
       m_src.numLoad     = 0;
       m_src.numTotal    = 0;
-      m_src.object      = NULL;
+      m_src.object      = nullptr;
       m_src.col_e_type  = NoError;
       m_src.e_pos_scale = 1.0;
       m_src.inName.clear();
@@ -1029,7 +1029,7 @@ void Catalogue::init_memory(void) {
       // Initialise counterpart catalogue private members
       m_cpt.numLoad     = 0;
       m_cpt.numTotal    = 0;
-      m_cpt.object      = NULL;
+      m_cpt.object      = nullptr;
       m_cpt.col_e_type  = NoError;
       m_cpt.e_pos_scale = 1.0;
       m_cpt.inName.clear();
@@ -1048,18 +1048,18 @@ void Catalogue::init_memory(void) {
       m_cpt.col_e_min.clear();
 
       // Intialise catalogue FITS files
-      m_memFile = NULL;
-      m_outFile = NULL;
+      m_memFile = nullptr;
+      m_outFile = nullptr;
 
       // Initialise source information
-      m_info = NULL;
+      m_info = nullptr;
 
       // Initialise list of selected counterparts
-      m_cpt_sel = NULL;
+      m_cpt_sel = nullptr;
 
       // Initialise counterpart statistics
       m_num_Sel  = 0;
-      m_cpt_stat = NULL;
+      m_cpt_stat = nullptr;
 
       // Initialise counterpart density flag
       m_has_density = 0;
@@ -1106,18 +1106,18 @@ void Catalogue::free_memory(void) {
     do {
 
       // Free source information
-      if (m_info != NULL) {
+      if (m_info != nullptr) {
         for (int i = 0; i < m_src.numLoad; ++i) {
-          if (m_info[i].cc != NULL) delete [] m_info[i].cc;
+          if (m_info[i].cc != nullptr) delete [] m_info[i].cc;
         }
         delete [] m_info;
       }
 
       // Free temporary memory
-      if (m_src.object != NULL) delete [] m_src.object;
-      if (m_cpt.object != NULL) delete [] m_cpt.object;
-      if (m_cpt_stat   != NULL) delete [] m_cpt_stat;
-      if (m_cpt_sel    != NULL) delete [] m_cpt_sel;
+      if (m_src.object != nullptr) delete [] m_src.object;
+      if (m_cpt.object != nullptr) delete [] m_cpt.object;
+      if (m_cpt_stat   != nullptr) delete [] m_cpt_stat;
+      if (m_cpt_sel    != nullptr) delete [] m_cpt_sel;
 
       // Initialise memory
       init_memory();
@@ -1338,9 +1338,9 @@ auto Catalogue::get_input_catalogue(Parameters *par, InCatalogue *in,
         continue;
 
       // Allocate memory for object information
-      if (in->object != NULL) delete [] in->object;
+      if (in->object != nullptr) delete [] in->object;
       in->object = new ObjectInfo[in->numLoad];
-      if (in->object == NULL) {
+      if (in->object == nullptr) {
         status = STATUS_MEM_ALLOC;
         if (par->logTerse())
           Log(Error_2, "%d : Memory allocation failure.", (Status)status);
@@ -1584,10 +1584,10 @@ auto Catalogue::compute_prob_post_cat(Parameters *par, Status status,
                                         int quiet) -> Status {
 
     // Temporary memory pointer
-    double* tmp_prob   = NULL;  // Sparse matrix elements
-    double* tmp_sum    = NULL;  // Normalization sum
-    int*    tmp_k      = NULL;  // LAT source index k for each element
-    int*    tmp_istart = NULL;  // First element index in each column
+    double* tmp_prob   = nullptr;  // Sparse matrix elements
+    double* tmp_sum    = nullptr;  // Normalization sum
+    int*    tmp_k      = nullptr;  // LAT source index k for each element
+    int*    tmp_istart = nullptr;  // First element index in each column
 
     // Debug mode: Entry
     if (par->logDebug())
@@ -1607,7 +1607,7 @@ auto Catalogue::compute_prob_post_cat(Parameters *par, Status status,
       // normalization sum
       tmp_istart = new int[m_cpt.numLoad+1];
       tmp_sum    = new double[m_cpt.numLoad];
-      if (tmp_istart == NULL || tmp_sum == NULL) {
+      if (tmp_istart == nullptr || tmp_sum == nullptr) {
         status = STATUS_MEM_ALLOC;
         if (par->logTerse())
           Log(Error_2, "%d : Memory allocation failure.", (Status)status);
@@ -1648,7 +1648,7 @@ auto Catalogue::compute_prob_post_cat(Parameters *par, Status status,
       // Allocate memory for sparse matrix element values and indices
       tmp_prob   = new double[num_elements];
       tmp_k      = new int[num_elements];
-      if (tmp_prob == NULL || tmp_k == NULL) {
+      if (tmp_prob == nullptr || tmp_k == nullptr) {
         status = STATUS_MEM_ALLOC;
         if (par->logTerse())
           Log(Error_2, "%d : Memory allocation failure.", (Status)status);
@@ -1792,10 +1792,10 @@ auto Catalogue::compute_prob_post_cat(Parameters *par, Status status,
     } while (0); // End of main do-loop
 
     // Delete temporary memory
-    if (tmp_prob   != NULL) delete [] tmp_prob;
-    if (tmp_k      != NULL) delete [] tmp_k;
-    if (tmp_istart != NULL) delete [] tmp_istart;
-    if (tmp_sum    != NULL) delete [] tmp_sum;
+    if (tmp_prob   != nullptr) delete [] tmp_prob;
+    if (tmp_k      != nullptr) delete [] tmp_k;
+    if (tmp_istart != nullptr) delete [] tmp_istart;
+    if (tmp_sum    != nullptr) delete [] tmp_sum;
 
     // Debug mode: Entry
     if (par->logDebug())
@@ -2612,7 +2612,7 @@ auto Catalogue::build(Parameters *par, Status status) -> Status {
 
       // Allocate source information
       m_info = new SourceInfo[m_src.numLoad];
-      if (m_info == NULL) {
+      if (m_info == nullptr) {
         status = STATUS_MEM_ALLOC;
         if (par->logTerse())
           Log(Error_2, "%d : Memory allocation failure.", (Status)status);
@@ -2628,7 +2628,7 @@ auto Catalogue::build(Parameters *par, Status status) -> Status {
         m_info[iSrc].numRefine    = 0;
         m_info[iSrc].numClaimed   = 0;
         m_info[iSrc].numFinalSel  = 0;
-        m_info[iSrc].cc           = NULL;
+        m_info[iSrc].cc           = nullptr;
         m_info[iSrc].filter_rad   = 0.0;
         m_info[iSrc].ring_rad_min = 0.0;
         m_info[iSrc].ring_rad_max = 0.0;
@@ -2637,7 +2637,7 @@ auto Catalogue::build(Parameters *par, Status status) -> Status {
 
       // Allocate list of selected counterparts
       m_cpt_sel = new int[m_cpt.numLoad];
-      if (m_cpt_sel == NULL) {
+      if (m_cpt_sel == nullptr) {
         status = STATUS_MEM_ALLOC;
         if (par->logTerse())
           Log(Error_2, "%d : Memory allocation failure.", (Status)status);
@@ -2652,7 +2652,7 @@ auto Catalogue::build(Parameters *par, Status status) -> Status {
 
       // Allocate selection statistics
       m_cpt_stat = new int[m_src.numLoad*(m_num_Sel+1)];
-      if (m_cpt_stat == NULL) {
+      if (m_cpt_stat == nullptr) {
         status = STATUS_MEM_ALLOC;
         if (par->logTerse())
           Log(Error_2, "%d : Memory allocation failure.", (Status)status);

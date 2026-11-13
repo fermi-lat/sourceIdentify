@@ -81,7 +81,7 @@ public:
     }
 
     // Destructor
-    virtual ~gtsrcid() throw() { }
+    virtual ~gtsrcid() throw() = default;
 
     // Standard main for gtsrcid application
     virtual void run() {

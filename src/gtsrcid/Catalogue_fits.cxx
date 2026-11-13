@@ -132,13 +132,13 @@ using namespace catalogAccess;
 
 
 /* Type defintions __________________________________________________________ */
-typedef struct {                          // Special functions
+using SpecialFcts = struct {                          // Special functions
   std::vector <std::string> fct;            // Function names
   std::vector <std::string> arg;            // Function arguments
   std::vector <std::string> colname_res;    // Result column names
   std::vector <std::string> colname_arg;    // Argument column names
   std::vector <int>         nargs;          // Number of function arguments
-} SpecialFcts;
+};
 
 
 /* Globals __________________________________________________________________ */
@@ -580,10 +580,10 @@ auto Catalogue::cfits_create(fitsfile **fptr, char *filename, Parameters *par,
       Log(Log_0, " ==> ENTRY: Catalogue::cfits_create");
 
     // Initialise temporary memory pointers
-    ttype   = NULL;
-    tform   = NULL;
-    tunit   = NULL;
-    tbucd   = NULL;
+    ttype   = nullptr;
+    tform   = nullptr;
+    tunit   = nullptr;
+    tbucd   = nullptr;
     num_col = 0;
 
     // Initialise FITSIO status
@@ -597,7 +597,7 @@ auto Catalogue::cfits_create(fitsfile **fptr, char *filename, Parameters *par,
         continue;
 
       // Fall through if we have no filename
-      if (filename == NULL)
+      if (filename == nullptr)
         continue;
 
       // Dump header (optionally)
@@ -679,10 +679,10 @@ auto Catalogue::cfits_create(fitsfile **fptr, char *filename, Parameters *par,
       tform = new char*[num_col];
       tunit = new char*[num_col];
       tbucd = new char*[num_col];
-      if (ttype == NULL ||
-          tform == NULL ||
-          tunit == NULL ||
-          tbucd == NULL) {
+      if (ttype == nullptr ||
+          tform == nullptr ||
+          tunit == nullptr ||
+          tbucd == nullptr) {
         status = STATUS_MEM_ALLOC;
         if (par->logTerse())
           Log(Error_2, "%d : Memory allocation failure.", (Status)status);
@@ -693,10 +693,10 @@ auto Catalogue::cfits_create(fitsfile **fptr, char *filename, Parameters *par,
         tform[col] = new char[OUTCAT_MAX_KEY_LEN];
         tunit[col] = new char[OUTCAT_MAX_KEY_LEN];
         tbucd[col] = new char[OUTCAT_MAX_KEY_LEN];
-        if (ttype[col] == NULL ||
-            tform[col] == NULL ||
-            tunit[col] == NULL ||
-            tbucd[col] == NULL) {
+        if (ttype[col] == nullptr ||
+            tform[col] == nullptr ||
+            tunit[col] == nullptr ||
+            tbucd[col] == nullptr) {
           status = STATUS_MEM_ALLOC;
           if (par->logTerse())
             Log(Error_2, "%d : Memory allocation failure.", (Status)status);
@@ -919,27 +919,27 @@ auto Catalogue::cfits_create(fitsfile **fptr, char *filename, Parameters *par,
     } while (0); // End of main do-loop
 
     // Free temporary memory
-    if (ttype != NULL) {
+    if (ttype != nullptr) {
       for (col = 0; col < num_col; col++) {
-        if (ttype[col] != NULL) delete [] ttype[col];
+        if (ttype[col] != nullptr) delete [] ttype[col];
       }
       delete [] ttype;
     }
-    if (tform != NULL) {
+    if (tform != nullptr) {
       for (col = 0; col < num_col; col++) {
-        if (tform[col] != NULL) delete [] tform[col];
+        if (tform[col] != nullptr) delete [] tform[col];
       }
       delete [] tform;
     }
-    if (tunit != NULL) {
+    if (tunit != nullptr) {
       for (col = 0; col < num_col; col++) {
-        if (tunit[col] != NULL) delete [] tunit[col];
+        if (tunit[col] != nullptr) delete [] tunit[col];
       }
       delete [] tunit;
     }
-    if (tbucd != NULL) {
+    if (tbucd != nullptr) {
       for (col = 0; col < num_col; col++) {
-        if (tbucd[col] != NULL) delete [] tbucd[col];
+        if (tbucd[col] != nullptr) delete [] tbucd[col];
       }
       delete [] tbucd;
     }
@@ -1062,9 +1062,9 @@ auto Catalogue::cfits_add(fitsfile *fptr, Parameters *par, SourceInfo *src,
       Log(Log_0, " ==> ENTRY: Catalogue::cfits_add");
 
     // Initialise temporary memory pointers
-    dptr  = NULL;
-    lptr  = NULL;
-    cptr  = NULL;
+    dptr  = nullptr;
+    lptr  = nullptr;
+    cptr  = nullptr;
     nrows = 0;
 
     // Initialise FITSIO status
@@ -1108,7 +1108,7 @@ auto Catalogue::cfits_add(fitsfile *fptr, Parameters *par, SourceInfo *src,
       dptr = new double[nrows];
       lptr = new long[nrows];
       cptr = new char*[nrows];
-      if (dptr == NULL || lptr == NULL || cptr == NULL) {
+      if (dptr == nullptr || lptr == nullptr || cptr == nullptr) {
         status = STATUS_MEM_ALLOC;
         if (par->logTerse())
           Log(Error_2, "%d : Memory allocation failure.", (Status)status);
@@ -1116,7 +1116,7 @@ auto Catalogue::cfits_add(fitsfile *fptr, Parameters *par, SourceInfo *src,
       }
       for (row = 0; row < nrows; row++) {
         cptr[row] = new char[OUTCAT_MAX_STRING_LEN];
-        if (cptr[row] == NULL) {
+        if (cptr[row] == nullptr) {
           status = STATUS_MEM_ALLOC;
           if (par->logTerse())
             Log(Error_2, "%d : Memory allocation failure.", (Status)status);
@@ -1532,11 +1532,11 @@ auto Catalogue::cfits_add(fitsfile *fptr, Parameters *par, SourceInfo *src,
     } while (0); // End of main do-loop
 
     // Delete temporary memory
-    if (dptr != NULL) delete [] dptr;
-    if (lptr != NULL) delete [] lptr;
-    if (cptr != NULL) {
+    if (dptr != nullptr) delete [] dptr;
+    if (lptr != nullptr) delete [] lptr;
+    if (cptr != nullptr) {
       for (row = 0; row < nrows; row++) {
-        if (cptr[row] != NULL) delete [] cptr[row];
+        if (cptr[row] != nullptr) delete [] cptr[row];
       }
       delete [] cptr;
     }
@@ -2000,7 +2000,7 @@ auto Catalogue::cfits_eval_regular_expression(fitsfile *fptr, Parameters *par,
       // Test expression to determine the format of the new column
       fstatus = fits_test_expr(fptr,
                                (char*)formula.c_str(),
-                               0, &datatype, &nelements, &naxis, NULL,
+                               0, &datatype, &nelements, &naxis, nullptr,
                                &fstatus);
       if (fstatus != 0) {
         if (par->logTerse())
@@ -2546,7 +2546,7 @@ auto Catalogue::cfits_get_col(fitsfile *fptr, Parameters *par,
     int     anynul;
     long    numRows;
     int     fstatus;
-    double* tmp = NULL;
+    double* tmp = nullptr;
 
     // Debug mode: Entry
     if (par->logDebug())
@@ -2590,7 +2590,7 @@ auto Catalogue::cfits_get_col(fitsfile *fptr, Parameters *par,
 
       // Allocate temporary memory to hold the data
       tmp = new double[numRows];
-      if (tmp == NULL) {
+      if (tmp == nullptr) {
         status = STATUS_MEM_ALLOC;
         if (par->logTerse())
           Log(Error_2, "%d : Memory allocation failure.", (Status)status);
@@ -2599,7 +2599,7 @@ auto Catalogue::cfits_get_col(fitsfile *fptr, Parameters *par,
 
       // Read column data
       fstatus = fits_read_col(fptr, TDOUBLE, colnum, 1, 1, numRows,
-                              0, tmp, &anynul, &fstatus);
+                              nullptr, tmp, &anynul, &fstatus);
       if (fstatus != 0) {
         if (par->logTerse())
           Log(Error_2, "%d : Unable to read data from column %s in catalogue.",
@@ -2614,7 +2614,7 @@ auto Catalogue::cfits_get_col(fitsfile *fptr, Parameters *par,
     } while (0); // End of main do-loop
 
     // Free temporary memory
-    if (tmp != NULL) delete [] tmp;
+    if (tmp != nullptr) delete [] tmp;
 
     // Set FITSIO status
     if (status == STATUS_OK)
@@ -2653,7 +2653,7 @@ auto Catalogue::cfits_get_col_str(fitsfile *fptr, Parameters *par,
     long   width;
     long   numRows;
     int    fstatus;
-    char** tmp_id = NULL;
+    char** tmp_id = nullptr;
 
     // Debug mode: Entry
     if (par->logDebug())
@@ -2708,16 +2708,16 @@ auto Catalogue::cfits_get_col_str(fitsfile *fptr, Parameters *par,
 
       // Allocate temporary memory to hold the ID column
       tmp_id = (char  **)calloc(numRows,sizeof(char *));
-      if (tmp_id == NULL) {
+      if (tmp_id == nullptr) {
         status = STATUS_MEM_ALLOC;
         if (par->logTerse())
           Log(Error_2, "%d : Memory allocation failure.", (Status)status);
         continue;
       }
       for (int i = 0; i < numRows; ++i) {
-        tmp_id[i] = NULL;
+        tmp_id[i] = nullptr;
         tmp_id[i] = (char  *)calloc(width+1,sizeof(char));
-        if (tmp_id[i] == NULL) {
+        if (tmp_id[i] == nullptr) {
           status = STATUS_MEM_ALLOC;
           break;
         }
@@ -2730,7 +2730,7 @@ auto Catalogue::cfits_get_col_str(fitsfile *fptr, Parameters *par,
 
       // Read column data
       fstatus = fits_read_col_str(fptr, colnum, 1, 1, numRows,
-                                  NULL, tmp_id, &anynul, &fstatus);
+                                  nullptr, tmp_id, &anynul, &fstatus);
       if (fstatus != 0) {
         if (par->logTerse())
           Log(Error_2, "%d : Unable to read data from column %s in catalogue.",
@@ -2748,7 +2748,7 @@ auto Catalogue::cfits_get_col_str(fitsfile *fptr, Parameters *par,
     } while (0); // End of main do-loop
 
     // Free temporary memory
-    if (tmp_id != NULL) {
+    if (tmp_id != nullptr) {
       for (int i = 0; i < numRows; ++i) {
         free(tmp_id[i]);
       }
@@ -2788,7 +2788,7 @@ auto Catalogue::cfits_set_col(fitsfile *fptr, Parameters *par,
     int     fstatus;
     int     colnum;
     long    numRows;
-    double* tmp = NULL;
+    double* tmp = nullptr;
 
     // Debug mode: Entry
     if (par->logDebug())
@@ -2860,7 +2860,7 @@ auto Catalogue::cfits_set_col(fitsfile *fptr, Parameters *par,
 
       // Allocate temporary memory to hold the data
       tmp = new double[numRows];
-      if (tmp == NULL) {
+      if (tmp == nullptr) {
         status = STATUS_MEM_ALLOC;
         if (par->logTerse())
           Log(Error_2, "%d : Memory allocation failure.", (Status)status);
@@ -2884,7 +2884,7 @@ auto Catalogue::cfits_set_col(fitsfile *fptr, Parameters *par,
     } while (0); // End of main do-loop
 
     // Free temporary memory
-    if (tmp != NULL) delete [] tmp;
+    if (tmp != nullptr) delete [] tmp;
 
     // Set FITSIO status
     if (status == STATUS_OK)

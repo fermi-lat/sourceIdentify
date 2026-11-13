@@ -294,21 +294,21 @@ void GHealpix::read(fitsfile *fptr)
     init_members();
 
     // Read NSIDE keyword
-    fstatus = fits_read_key_lng(fptr, "NSIDE", &nside, NULL, &fstatus);
+    fstatus = fits_read_key_lng(fptr, "NSIDE", &nside, nullptr, &fstatus);
     if (fstatus != 0)
         throw std::string("GHealpix: Unable to read HEALPIX keyword NSIDE.");
     m_nside = (int)nside;
 
     // Read ORDERING keyword
-    fstatus = fits_read_key_str(fptr, "ORDERING", ordering, NULL, &fstatus);
+    fstatus = fits_read_key_str(fptr, "ORDERING", ordering, nullptr, &fstatus);
     if (fstatus != 0)
         throw std::string("GHealpix: Unable to read HEALPIX keyword ORDERING.");
 
     // Read COORDSYS or HIER_CRD keywords
-    fstatus = fits_read_key_str(fptr, "COORDSYS", coordsys, NULL, &fstatus);
+    fstatus = fits_read_key_str(fptr, "COORDSYS", coordsys, nullptr, &fstatus);
     if (fstatus != 0) {
         fstatus = 0;
-        fstatus = fits_read_key_str(fptr, "HIER_CRD", coordsys, NULL, &fstatus);
+        fstatus = fits_read_key_str(fptr, "HIER_CRD", coordsys, nullptr, &fstatus);
     }
     if (fstatus != 0)
         throw std::string("GHealpix: Unable to read HEALPIX keywords COORDSYS or HIER_CRD.");
@@ -355,7 +355,7 @@ void GHealpix::read(fitsfile *fptr)
             throw std::string("GHealpix: Unable to read number of rows in HEALPIX table.");
 
         // Determine number of elements per column
-        fstatus = fits_get_coltype(fptr, 1, NULL, &elements, NULL, &fstatus);
+        fstatus = fits_get_coltype(fptr, 1, nullptr, &elements, nullptr, &fstatus);
         if (fstatus != 0)
             throw std::string("GHealpix: Unable to read number of rows in HEALPIX table.");
 
@@ -525,7 +525,7 @@ void GHealpix::init_members(void)
     m_fact1       = 0.0;
     m_fact2       = 0.0;
     m_omega       = 0.0;
-    m_pixels      = NULL;
+    m_pixels      = nullptr;
 
     // Construct conversion arrays
     for (int m = 0; m < 0x100; ++m) {
@@ -587,7 +587,7 @@ void GHealpix::copy_members(const GHealpix& pixels)
 
     // Copy arrays
     if (m_num_pixels > 0) {
-        if (m_size_pixels > 0 && pixels.m_pixels != NULL) {
+        if (m_size_pixels > 0 && pixels.m_pixels != nullptr) {
             int size = m_num_pixels*m_size_pixels;
             m_pixels = new double[size];
             memcpy(m_pixels, pixels.m_pixels, size*sizeof(double));
@@ -605,10 +605,10 @@ void GHealpix::copy_members(const GHealpix& pixels)
 void GHealpix::free_members(void)
 {
     // Free memory
-    if (m_pixels != NULL) delete [] m_pixels;
+    if (m_pixels != nullptr) delete [] m_pixels;
 
     // Mark memory as free
-    m_pixels = NULL;
+    m_pixels = nullptr;
 
     // Return
     return;
